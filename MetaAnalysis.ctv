@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-04-04</version>
+ <version>2013-04-17</version>
 
  <info>
 <p>
@@ -159,10 +159,6 @@
    meta-regression. It also provides via a two-stage approach
    meta-analysis of correlation or covariance matrices.
    </li>
-   <li>
-   <pkg>mmeta</pkg> provides a Bayesian approach using
-   Sarmanov beta priors for the bivariate case.
-   </li>
    </ul>
 
 <h4>Meta-analysis of studies of diagnostic tests</h4>
@@ -302,7 +298,6 @@
   <pkg>MetaPCA</pkg>
   <pkg>MetaQC</pkg>
   <pkg>metatest</pkg>
-  <pkg>mmeta</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>psychometric</pkg>
