@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-04-17</version>
+ <version>2013-06-12</version>
 
  <info>
 <p>
@@ -78,9 +78,11 @@
    </li>
    
    <li>
-   A Bayesian approach is contained in <pkg>bspmma</pkg> which 
+   Bayesian approaches are contained in two packages.
+   <pkg>bspmma</pkg> which 
     provides two different models: a non-parametric and a semi-parametric.
     Graphical display of the results is provided.
+   <pkg>metamisc</pkg> provides a method with priors suggested by Higgins.
    </li>
    <li>
     Some packages concentrate on providing a specialised version of the core
@@ -88,7 +90,9 @@
     functions. These are: <pkg>metagen</pkg> which provides
      an improved method of obtaining confidence intervals,
      <pkg>metaLik</pkg>
-    which uses a more sophisticated approach to the likelihood, and
+    which uses a more sophisticated approach to the likelihood,
+    <pkg>metamisc</pkg> which as well as the method of moments provides two likelihood-based
+    methods, and
     <pkg>metatest</pkg> which provides
      another improved method of obtaining confidence intervals.
    </li>
@@ -144,12 +148,15 @@
    In the situation where the outcome is multivariate:
    <ul>
    <li>
+   <pkg>mmeta</pkg> provides a method using Sarmanov beta prior distributions,
+   </li>
+   <li>
    <pkg>mvmeta</pkg> provides a range of model fitting procedures
-   and includes meta-regression.
+   and includes meta-regression,
    </li>
    <li>
    <pkg>mvtmeta</pkg> provides multivariate meta-analysis 
-   although not meta-regression.
+   although not meta-regression,
    </li>
    <li>
    <rforge>metaSEM</rforge> is available from R-Forge and
@@ -247,6 +254,7 @@
     of genomic data,
    <pkg>MetaQC</pkg> provides objective quality control and
     inclusion/exclusion criteria for genomic meta-analysis,
+   <pkg>MetaSKAT</pkg> provides meta-analysis for the SKAT test,
    <pkg>skatMeta</pkg> provides meta-analysis for the SKAT test.
    </p>
 <h4>Others</h4>
@@ -262,7 +270,11 @@
     provides meta-analysis as part of a package primarily dedicated to the determination
     of sample size in cluster randomised trials.
    </p>
-
+   <p>
+   <pkg>CAMAN</pkg> offers the possibility of using finite semiparametric mixtures as an
+    alternative to the random effects model where there is heterogeneity.
+   Covariates can be included to provide meta-regression.
+   </p>
    <p>
     <pkg>RcmdrPlugin.MA</pkg>
     provides an interface to the Rcmdr GUI.
@@ -273,6 +285,7 @@
  <packagelist>
   <pkg>bamdit</pkg>
   <pkg>bspmma</pkg>
+  <pkg>CAMAN</pkg>
   <pkg>copas</pkg>
   <pkg>compute.es</pkg>
   <pkg>CRTSize</pkg>       
@@ -297,7 +310,9 @@
   <pkg>MetaPath</pkg>
   <pkg>MetaPCA</pkg>
   <pkg>MetaQC</pkg>
+  <pkg>MetaSKAT</pkg>
   <pkg>metatest</pkg>
+  <pkg>mmeta</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>psychometric</pkg>
