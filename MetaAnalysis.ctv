@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-06-12</version>
+ <version>2013-06-21</version>
 
  <info>
 <p>
@@ -241,7 +241,6 @@
    <p>
     There are a number of packages specialising in genetic data:
    <pkg>gap</pkg> combines p-values,
-   <pkg>MADAM</pkg> combines p-values using Fisher's method,
    <pkg>MAMA</pkg> provides meta-analysis of microarray data,
    <pkg>MetABEL</pkg> provides meta-analysis of genome wide SNP association
       results,
@@ -296,7 +295,6 @@
   <pkg>MAc</pkg>
   <pkg>MAd</pkg>
   <pkg>mada</pkg>
-  <pkg>MADAM</pkg>
   <pkg>MAMA</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
