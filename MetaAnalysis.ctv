@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-06-21</version>
+ <version>2013-08-05</version>
 
  <info>
 <p>
@@ -235,12 +235,14 @@
    <p>Also known as multiple treatment comparison.</p>
 
    <p>This is provided by <pkg>gemtc</pkg> which acts as a front-end to your
-   favourite MCMC package.</p>
+   favourite MCMC package and by <pkg>netmeta</pkg> which works in a frequentist
+   framework.</p>
 
 <h4>Genetics</h4>
    <p>
     There are a number of packages specialising in genetic data:
    <pkg>gap</pkg> combines p-values,
+   <pkg>MADAM</pkg> combines p-values using Fisher's method,
    <pkg>MAMA</pkg> provides meta-analysis of microarray data,
    <pkg>MetABEL</pkg> provides meta-analysis of genome wide SNP association
       results,
@@ -253,8 +255,8 @@
     of genomic data,
    <pkg>MetaQC</pkg> provides objective quality control and
     inclusion/exclusion criteria for genomic meta-analysis,
-   <pkg>MetaSKAT</pkg> provides meta-analysis for the SKAT test,
-   <pkg>skatMeta</pkg> provides meta-analysis for the SKAT test.
+   <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>, and
+   <pkg>skatMeta</pkg> provide meta-analysis for the SKAT test.
    </p>
 <h4>Others</h4>
 
@@ -295,6 +297,7 @@
   <pkg>MAc</pkg>
   <pkg>MAd</pkg>
   <pkg>mada</pkg>
+  <pkg>MADAM</pkg>
   <pkg>MAMA</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
@@ -313,12 +316,14 @@
   <pkg>mmeta</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
+  <pkg>netmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>RcmdrPlugin.MA</pkg>
   <pkg>rmeta</pkg>
   <pkg>SAMURAI</pkg>
   <pkg>SCMA</pkg>
   <pkg>selectMeta</pkg>
+  <pkg>seqMeta</pkg>
   <pkg>skatMeta</pkg>
  </packagelist>
 
