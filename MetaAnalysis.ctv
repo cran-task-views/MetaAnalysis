@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-08-05</version>
+ <version>2013-09-13</version>
 
  <info>
 <p>
@@ -160,11 +160,17 @@
    </li>
    <li>
    <rforge>metaSEM</rforge> is available from R-Forge and
-   provides multivariate (and univariate) meta-analysis by
-   embedding it in the structural equation framework. It uses
-   OpenMx for the structural equation modelling. It provides
-   meta-regression. It also provides via a two-stage approach
+   provides multivariate (and univariate) meta-analysis and
+   meta-regression by embedding it in the structural equation framework
+   and using OpenMx for the structural equation modelling.
+   It can provide a three-level meta-analysis taking account of
+   clustering and allowing for level 2 and level 3 heterogeneity.
+   It also provides via a two-stage approach
    meta-analysis of correlation or covariance matrices.
+   </li>
+   <li>
+   <pkg>dosresmeta</pkg> concentrates on the situation where individual
+   studies have information on the dose-response relationship.
    </li>
    </ul>
 
@@ -290,6 +296,7 @@
   <pkg>copas</pkg>
   <pkg>compute.es</pkg>
   <pkg>CRTSize</pkg>       
+  <pkg>dosresmeta</pkg>
   <pkg>epiR</pkg>
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
