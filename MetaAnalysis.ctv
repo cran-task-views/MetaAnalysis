@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-09-13</version>
+ <version>2013-10-05</version>
 
  <info>
 <p>
@@ -147,9 +147,6 @@
 
    In the situation where the outcome is multivariate:
    <ul>
-   <li>
-   <pkg>mmeta</pkg> provides a method using Sarmanov beta prior distributions,
-   </li>
    <li>
    <pkg>mvmeta</pkg> provides a range of model fitting procedures
    and includes meta-regression,
@@ -320,7 +317,6 @@
   <pkg>MetaQC</pkg>
   <pkg>MetaSKAT</pkg>
   <pkg>metatest</pkg>
-  <pkg>mmeta</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
