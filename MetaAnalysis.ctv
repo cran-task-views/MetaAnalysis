@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-10-05</version>
+ <version>2013-11-25</version>
 
  <info>
 <p>
@@ -30,7 +30,7 @@
 </p>
 
 <h4>Univariate meta-analysis</h4>
-   <i>Preparing for meta-analysis</i>
+   <p><i>Preparing for meta-analysis</i></p>
    <ul>
    <li>The primary studies often use a range of statistics to present their
    results. Convenience functions to convert these onto a common
@@ -52,8 +52,7 @@
    </li>
    </ul>
 
-<i>Fitting the model</i>
-
+   <p><i>Fitting the model</i></p>
    <ul>
    <li>
     Four packages provide the inverse variance weighted, Mantel-Haenszel,
@@ -64,7 +63,9 @@
     In addition radial (Galbraith) plots are provided by <pkg>metafor</pkg>
     and L'Abbe plots by <pkg>meta</pkg> and <pkg>metafor</pkg>.
    </li>
-
+   <li>
+   For binary data <pkg>metafor</pkg> provides the binomial-normal model.
+   </li>
    <li>Packages which work with specific effect sizes may be more congenial
     to workers in some areas of science
     <pkg>MAc</pkg> and
@@ -111,6 +112,8 @@
    In addition <pkg>meta</pkg> and <pkg>metafor</pkg> provide
    both the non-parametric method suggested by Begg and Mazumdar
    and a range of regression tests modelled after the approach of Egger.
+   An exploratory technique for detecting an excess of statistically
+   significant studies is provided by <pkg>PubBias</pkg>
  </p>
 
 <i>Unobserved studies</i>
@@ -145,11 +148,16 @@
 
 <h4>Multivariate meta-analysis</h4>
 
-   In the situation where the outcome is multivariate:
+   <p>Standard methods outlined above assume that the effect sizes
+   are independent. This assumption may be violated in a number of ways
+   such as multiple treatments compared to the same control, multiple
+   endpoints or various forms of clustering.
+   In these situations where the outcome is multivariate:</p>
    <ul>
    <li>
-   <pkg>mvmeta</pkg> provides a range of model fitting procedures
-   and includes meta-regression,
+   <pkg>mvmeta</pkg> and <pkg>metafor</pkg>
+   provide a range of model fitting procedures
+   and include meta-regression,
    </li>
    <li>
    <pkg>mvtmeta</pkg> provides multivariate meta-analysis 
@@ -209,9 +217,9 @@
   </ul>
 
 <h4>Meta-regression</h4>
-    Where suitable moderator variables are available they may
+   <p>Where suitable moderator variables are available they may
     be included using meta-regression. All these packages are mentioned above, this
-    just draws that information together.
+    just draws that information together.</p>
    <ul>
    <li>
     <pkg>metafor</pkg> provides meta-regression (multiple
@@ -321,6 +329,7 @@
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
   <pkg>psychometric</pkg>
+  <pkg>PubBias</pkg>
   <pkg>RcmdrPlugin.MA</pkg>
   <pkg>rmeta</pkg>
   <pkg>SAMURAI</pkg>
