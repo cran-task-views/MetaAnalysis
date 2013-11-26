@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-11-25</version>
+ <version>2013-11-26</version>
 
  <info>
 <p>
@@ -65,6 +65,10 @@
    </li>
    <li>
    For binary data <pkg>metafor</pkg> provides the binomial-normal model.
+   </li>
+   <li>
+   For sparse binary data <pkg>exactmeta</pkg> provides an exact method which does not involve continuity
+   corrections
    </li>
    <li>Packages which work with specific effect sizes may be more congenial
     to workers in some areas of science
@@ -302,6 +306,7 @@
   <pkg>compute.es</pkg>
   <pkg>CRTSize</pkg>       
   <pkg>dosresmeta</pkg>
+  <pkg>exactmeta</pkg>
   <pkg>epiR</pkg>
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
