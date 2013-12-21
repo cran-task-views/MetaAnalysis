@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-11-26</version>
+ <version>2013-12-18</version>
 
  <info>
 <p>
@@ -168,6 +168,10 @@
    although not meta-regression,
    </li>
    <li>
+   <pkg>mmeta</pkg> provides multivariate meta-analysis using
+   Sarmanov beta prior distributions
+   </li>
+   <li>
    <rforge>metaSEM</rforge> is available from R-Forge and
    provides multivariate (and univariate) meta-analysis and
    meta-regression by embedding it in the structural equation framework
@@ -208,6 +212,10 @@
     <pkg>HSROC</pkg> provides HSROC with estimation in a Bayesian framework.
     Graphical methods are provided.
     The case of imperfect reference standards is catered for.
+   </li>
+   <li>
+   <pkg>Metatron</pkg> provides a method for the Reitsma model
+    incuding the case of an imperfect reference standard
    </li>
    <li>
     <pkg>metamisc</pkg> provides the method of Riley which estimates a common
@@ -330,6 +338,8 @@
   <pkg>MetaQC</pkg>
   <pkg>MetaSKAT</pkg>
   <pkg>metatest</pkg>
+  <pkg>Metatron</pkg>
+  <pkg>mmeta</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
