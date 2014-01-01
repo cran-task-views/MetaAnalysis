@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2013-12-18</version>
+ <version>2014-01-01</version>
 
  <info>
 <p>
@@ -273,7 +273,6 @@
       expressed dene detection,
    <pkg>metaMA</pkg> provides meta-analysis of p-values or moderated
     effect sizes to find differentially expressed genes,
-   <pkg>MetaPath</pkg> provides meta-analysis for Pathway Enrichment analysis,
    <pkg>MetaPCA</pkg> provides meta-analysis in the dimension reduction
     of genomic data,
    <pkg>MetaQC</pkg> provides objective quality control and
@@ -333,7 +332,6 @@
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
   <pkg>metamisc</pkg>
-  <pkg>MetaPath</pkg>
   <pkg>MetaPCA</pkg>
   <pkg>MetaQC</pkg>
   <pkg>MetaSKAT</pkg>
