@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2014-01-01</version>
+ <version>2014-02-07</version>
 
  <info>
 <p>
@@ -83,11 +83,13 @@
    </li>
    
    <li>
-   Bayesian approaches are contained in two packages.
+   Bayesian approaches are contained in various packages.
    <pkg>bspmma</pkg> which 
     provides two different models: a non-parametric and a semi-parametric.
     Graphical display of the results is provided.
    <pkg>metamisc</pkg> provides a method with priors suggested by Higgins.
+   <pkg>mmeta</pkg> provides meta-analysis using
+   beta-binomial prior distributions.
    </li>
    <li>
     Some packages concentrate on providing a specialised version of the core
@@ -117,7 +119,7 @@
    both the non-parametric method suggested by Begg and Mazumdar
    and a range of regression tests modelled after the approach of Egger.
    An exploratory technique for detecting an excess of statistically
-   significant studies is provided by <pkg>PubBias</pkg>
+   significant studies is provided by <pkg>PubBias</pkg>.
  </p>
 
 <i>Unobserved studies</i>
@@ -148,28 +150,37 @@
    <pkg>SAMURAI</pkg> performs a sensitivity analysis assuming the number of unobserved
      studies is known, perhaps from a trial registry, but not their outcome.
    </li>
+   <li>
+   <pkg>extfunnel</pkg> augments the funnel plot to assess the impact
+   of additional evidence.
+   </li>
    </ul>
 
 <h4>Multivariate meta-analysis</h4>
 
    <p>Standard methods outlined above assume that the effect sizes
-   are independent. This assumption may be violated in a number of ways
-   such as multiple treatments compared to the same control, multiple
-   endpoints or various forms of clustering.
+   are independent. This assumption may be violated in a number of ways:
+   within each primary study multiple treatments may
+   be compared to the same control, each primary study may report multiple
+   endpoints, or primary studies may be clustered for instance
+   because they come from
+   the same country or the same research team.
    In these situations where the outcome is multivariate:</p>
    <ul>
    <li>
-   <pkg>mvmeta</pkg> and <pkg>metafor</pkg>
-   provide a range of model fitting procedures
-   and include meta-regression,
+   <pkg>mvmeta</pkg> assumes the within study covariances
+   are known and as well as fixed effects provides a
+   variety of options for fitting random effects. <pkg>metafor</pkg>
+   provides fixed effects and likelihood
+   based random effects model fitting procedures.
+   Both these packages include meta-regression,
+   <pkg>metafor</pkg> also provides for clustered and
+   hierarchical models
    </li>
    <li>
    <pkg>mvtmeta</pkg> provides multivariate meta-analysis 
+   using the method of moments for random effects
    although not meta-regression,
-   </li>
-   <li>
-   <pkg>mmeta</pkg> provides multivariate meta-analysis using
-   Sarmanov beta prior distributions
    </li>
    <li>
    <rforge>metaSEM</rforge> is available from R-Forge and
@@ -184,6 +195,10 @@
    <li>
    <pkg>dosresmeta</pkg> concentrates on the situation where individual
    studies have information on the dose-response relationship.
+   </li>
+   <li>
+   <pkg>robumeta</pkg> provides robust variance estimation for
+   clustered and hierarchical estimates.
    </li>
    </ul>
 
@@ -257,8 +272,10 @@
 <h4>Network meta-analysis</h4>
    <p>Also known as multiple treatment comparison.</p>
 
-   <p>This is provided by <pkg>gemtc</pkg> which acts as a front-end to your
-   favourite MCMC package and by <pkg>netmeta</pkg> which works in a frequentist
+   <p>This is provided in a Bayesian framework by <pkg>gemtc</pkg>,
+   which acts as a front-end to your
+   favourite MCMC package, and <pkg>pcnetmeta</pkg>,
+   which uses JAGS. <pkg>netmeta</pkg>  works in a frequentist
    framework.</p>
 
 <h4>Genetics</h4>
@@ -313,8 +330,9 @@
   <pkg>compute.es</pkg>
   <pkg>CRTSize</pkg>       
   <pkg>dosresmeta</pkg>
-  <pkg>exactmeta</pkg>
   <pkg>epiR</pkg>
+  <pkg>exactmeta</pkg>
+  <pkg>extfunnel</pkg>
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
   <pkg>HSROC</pkg>
@@ -341,10 +359,12 @@
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
+  <pkg>pcnetmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
   <pkg>RcmdrPlugin.MA</pkg>
   <pkg>rmeta</pkg>
+  <pkg>robumeta</pkg>
   <pkg>SAMURAI</pkg>
   <pkg>SCMA</pkg>
   <pkg>selectMeta</pkg>
