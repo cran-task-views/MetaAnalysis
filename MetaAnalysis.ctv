@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2014-02-07</version>
+ <version>2014-04-03</version>
 
  <info>
 <p>
@@ -94,8 +94,7 @@
    <li>
     Some packages concentrate on providing a specialised version of the core
     meta-analysis function without providing the range of ancillary
-    functions. These are: <pkg>metagen</pkg> which provides
-     an improved method of obtaining confidence intervals,
+    functions. These are:
      <pkg>metaLik</pkg>
     which uses a more sophisticated approach to the likelihood,
     <pkg>metamisc</pkg> which as well as the method of moments provides two likelihood-based
@@ -103,24 +102,42 @@
     <pkg>metatest</pkg> which provides
      another improved method of obtaining confidence intervals.
    </li>
+   <li><pkg>metagen</pkg> provides a range of methods for
+   random effects models and also facilities
+   for extensive simulation studies of the
+   properties of those methods
+   </li>
    </ul>
+
+<i>Graphical methods</i>
+   <p>
+   In addition to the packages mentioned elsewhere
+   <pkg>Gmisc</pkg> provides forest plots.
+   </p>
 
 <i>Investigating heterogeneity</i>
    <p>
-    Confidence intervals for the heterogeneity parameter are provided in  <pkg>metafor</pkg>
-    and   <pkg>metagen</pkg>.
+    Confidence intervals for the heterogeneity parameter
+    are provided in  <pkg>metafor</pkg>
+    and <pkg>metagen</pkg>.
    </p>
 
 <i>Investigating small study bias</i>
- <p>  The issue of whether small studies give different results
+   <p>The issue of whether small studies give different results
    from large studies has been addressed by visual
    examination of  the funnel plots mentioned above.
-   In addition <pkg>meta</pkg> and <pkg>metafor</pkg> provide
+   In addition:
+   </p>
+   <ul>
+   <li> <pkg>meta</pkg> and <pkg>metafor</pkg> provide
    both the non-parametric method suggested by Begg and Mazumdar
    and a range of regression tests modelled after the approach of Egger.
+   </li>
+   <li>
    An exploratory technique for detecting an excess of statistically
    significant studies is provided by <pkg>PubBias</pkg>.
- </p>
+   </li>
+   </ul>
 
 <i>Unobserved studies</i>
    <p>
@@ -155,6 +172,14 @@
    of additional evidence.
    </li>
    </ul>
+
+<i>Meta-analysis of significance values</i>
+   <p>
+   <pkg>metap</pkg> provides some facilities for
+   meta-analysis of significance values.
+   Some of these methods are also provided in some
+   of the genetics packages mentioned below.
+   </p>
 
 <h4>Multivariate meta-analysis</h4>
 
@@ -276,7 +301,12 @@
    which acts as a front-end to your
    favourite MCMC package, and <pkg>pcnetmeta</pkg>,
    which uses JAGS. <pkg>netmeta</pkg>  works in a frequentist
-   framework.</p>
+   framework.
+   Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
+   provide network graphs and
+   <pkg>netmeta</pkg> provides a heatmap for displaying inconsistency
+   and heterogeneity
+   </p>
 
 <h4>Genetics</h4>
    <p>
@@ -335,6 +365,7 @@
   <pkg>extfunnel</pkg>
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
+  <pkg>Gmisc</pkg>
   <pkg>HSROC</pkg>
   <pkg>MAc</pkg>
   <pkg>MAd</pkg>
@@ -350,6 +381,7 @@
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
   <pkg>metamisc</pkg>
+  <pkg>metap</pkg>
   <pkg>MetaPCA</pkg>
   <pkg>MetaQC</pkg>
   <pkg>MetaSKAT</pkg>
@@ -379,3 +411,4 @@
  </links>
 
 </CRANTaskView>
+
