@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2014-04-03</version>
+ <version>2014-05-07</version>
 
  <info>
 <p>
@@ -60,15 +60,16 @@
     <pkg>meta</pkg>, <pkg>metafor</pkg>, and <pkg>rmeta</pkg>.
     The last three also provide cumulative meta-analysis.
     The same three provide the usual forest and funnel plots.
-    In addition radial (Galbraith) plots are provided by <pkg>metafor</pkg>
-    and L'Abbe plots by <pkg>meta</pkg> and <pkg>metafor</pkg>.
+    In addition radial (Galbraith) plots are provided by <pkg>metafor</pkg>,
+    L'Abbe plots by <pkg>meta</pkg> and <pkg>metafor</pkg>
+   and Baujat plots by <pkg>metafor</pkg>.
    </li>
    <li>
    For binary data <pkg>metafor</pkg> provides the binomial-normal model.
    </li>
    <li>
-   For sparse binary data <pkg>exactmeta</pkg> provides an exact method which does not involve continuity
-   corrections
+   For sparse binary data <pkg>exactmeta</pkg> provides an exact method which
+   does not involve continuity corrections
    </li>
    <li>Packages which work with specific effect sizes may be more congenial
     to workers in some areas of science
@@ -97,8 +98,8 @@
     functions. These are:
      <pkg>metaLik</pkg>
     which uses a more sophisticated approach to the likelihood,
-    <pkg>metamisc</pkg> which as well as the method of moments provides two likelihood-based
-    methods, and
+    <pkg>metamisc</pkg> which as well as the method of moments provides
+    two likelihood-based  methods, and
     <pkg>metatest</pkg> which provides
      another improved method of obtaining confidence intervals.
    </li>
@@ -146,8 +147,8 @@
    </p>
    <ul>
    <li>
-    Rosenthal's fail safe n is provided by <pkg>metafor</pkg> as well as two more recent methods
-    by Orwin and Rosenberg.
+    Rosenthal's fail safe n is provided by <pkg>metafor</pkg> as well as two
+    more recent methods  by Orwin and Rosenberg.
    </li>
    <li>
      Duval's trim and fill method is provided by <pkg>meta</pkg>
@@ -158,14 +159,14 @@
    </li>
    <li>
    <pkg>selectMeta</pkg> provides various selection models:
-     the parametric model of Iyengar
-     and Greenhouse, the non-parametric model of Dear and Begg, and
-      proposes a new non-parametric method imposing a monotonicity
-      constraint.
+    the parametric model of Iyengar and Greenhouse,
+    the non-parametric model of Dear and Begg, and
+    proposes a new non-parametric method imposing a monotonicity constraint.
    </li>
    <li>
-   <pkg>SAMURAI</pkg> performs a sensitivity analysis assuming the number of unobserved
-     studies is known, perhaps from a trial registry, but not their outcome.
+   <pkg>SAMURAI</pkg> performs a sensitivity analysis assuming
+     the number of unobserved studies is known,
+     perhaps from a trial registry, but not their outcome.
    </li>
    <li>
    <pkg>extfunnel</pkg> augments the funnel plot to assess the impact
@@ -243,9 +244,8 @@
    <li>
     <pkg>mada</pkg> provides various descriptive statistics
      and univariate methods (diagnostic odds ratio and Lehman
-     model)
-     as well as the bivariate method due to Reitsma.
-     Meta-regression is also provided.
+     model) as well as the bivariate method due to Reitsma.
+     In addition meta-regression is provided.
      A range of graphical methods is also available.
    </li>
    <li>
@@ -259,8 +259,7 @@
    </li>
    <li>
     <pkg>metamisc</pkg> provides the method of Riley which estimates a common
-    within and between correlation. Graphical output is also
-    provided.
+    within and between correlation. Graphical output is also provided.
    </li>
    <li>
    <pkg>bamdit</pkg> provides Bayesian meta-analysis with a bivariate
@@ -287,7 +286,7 @@
    </li>
    <li>
     <pkg>mvmeta</pkg> provides meta-regression for multivariate meta-analysis
-    as does    <rforge>metaSEM</rforge>.
+    as do <pkg>metafor</pkg> and <rforge>metaSEM</rforge>.
    </li>
    <li>
     <pkg>mada</pkg> provides for the meta-regression of diagnostic test studies.
@@ -295,7 +294,11 @@
    </ul>
 
 <h4>Network meta-analysis</h4>
-   <p>Also known as multiple treatment comparison.</p>
+   <p>Also known as multiple treatment comparison.
+   This is a very active area of research and development.
+   Note that some of the packages mentioned above under multivariate
+   meta-analysis can also be used for network meta-analysis with
+   appropriate setup.</p>
 
    <p>This is provided in a Bayesian framework by <pkg>gemtc</pkg>,
    which acts as a front-end to your
@@ -346,8 +349,11 @@
    Covariates can be included to provide meta-regression.
    </p>
    <p>
-    <pkg>RcmdrPlugin.MA</pkg>
-    provides an interface to the Rcmdr GUI.
+    <pkg>RcmdrPlugin.MA</pkg> and <pkg>RcmdrPlugin.EZR</pkg>
+    provide an interface via the Rcmdr GUI.
+   The former uses <pkg>metafor</pkg> and <pkg>MAd</pkg> and
+   the latter uses <pkg>meta</pkg> and <pkg>metatest</pkg>
+   to do the heavy lifting.
    </p>
 
  </info>
@@ -394,6 +400,7 @@
   <pkg>pcnetmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
+  <pkg>RcmdrPlugin.EZR</pkg>
   <pkg>RcmdrPlugin.MA</pkg>
   <pkg>rmeta</pkg>
   <pkg>robumeta</pkg>
