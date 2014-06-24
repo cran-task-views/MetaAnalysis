@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2014-05-07</version>
+ <version>2014-06-24</version>
 
  <info>
 <p>
@@ -155,7 +155,7 @@
      and <pkg>metafor</pkg>.
    </li>
    <li>
-    <pkg>copas</pkg> provides Copas's selection model.
+    <pkg>metasens</pkg> provides Copas's selection model.
    </li>
    <li>
    <pkg>selectMeta</pkg> provides various selection models:
@@ -362,7 +362,6 @@
   <pkg>bamdit</pkg>
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
-  <pkg>copas</pkg>
   <pkg>compute.es</pkg>
   <pkg>CRTSize</pkg>       
   <pkg>dosresmeta</pkg>
@@ -390,6 +389,7 @@
   <pkg>metap</pkg>
   <pkg>MetaPCA</pkg>
   <pkg>MetaQC</pkg>
+  <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
   <pkg>metatest</pkg>
   <pkg>Metatron</pkg>
