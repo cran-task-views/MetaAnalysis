@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2014-06-24</version>
+ <version>2014-07-03</version>
 
  <info>
 <p>
@@ -58,11 +58,6 @@
     Four packages provide the inverse variance weighted, Mantel-Haenszel,
     and Peto methods:  <pkg>epiR</pkg>,
     <pkg>meta</pkg>, <pkg>metafor</pkg>, and <pkg>rmeta</pkg>.
-    The last three also provide cumulative meta-analysis.
-    The same three provide the usual forest and funnel plots.
-    In addition radial (Galbraith) plots are provided by <pkg>metafor</pkg>,
-    L'Abbe plots by <pkg>meta</pkg> and <pkg>metafor</pkg>
-   and Baujat plots by <pkg>metafor</pkg>.
    </li>
    <li>
    For binary data <pkg>metafor</pkg> provides the binomial-normal model.
@@ -112,8 +107,31 @@
 
 <i>Graphical methods</i>
    <p>
-   In addition to the packages mentioned elsewhere
-   <pkg>Gmisc</pkg> provides forest plots.
+   An extensive range of graphical procedures is available:
+   <ul>
+   <li>
+   forest plots in <pkg>Gmisc</pkg>,
+   <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>,
+   </li>
+   <li>
+   funnel plots in
+   <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>,
+   an enhanced funnel plot to assess the impact of extra evidence in
+   <pkg>extfunnel</pkg>, and a funnel plot for limit meta-analysis in
+   <pkg>metasens</pkg>,
+   </li>
+   <li>
+   radial (Galbraith) plots in <pkg>metafor</pkg>,
+   </li>
+   <li>
+   L'Abbe plots in
+   <pkg>meta</pkg> and <pkg>metafor</pkg>,
+   </li>
+   <li>
+   Baujat plots in
+   <pkg>meta</pkg> and <pkg>metafor</pkg>
+   </li>
+   </ul>
    </p>
 
 <i>Investigating heterogeneity</i>
@@ -147,7 +165,9 @@
    </p>
    <ul>
    <li>
-    Rosenthal's fail safe n is provided by <pkg>metafor</pkg> as well as two
+    Rosenthal's fail safe n is provided by
+   <pkg>MAc</pkg> and <pkg>MAd</pkg>.
+    <pkg>metafor</pkg> provides it as well as two
     more recent methods  by Orwin and Rosenberg.
    </li>
    <li>
@@ -155,7 +175,9 @@
      and <pkg>metafor</pkg>.
    </li>
    <li>
-    <pkg>metasens</pkg> provides Copas's selection model.
+    <pkg>metasens</pkg> provides Copas's selection model and also
+   the method of limit meta-analysis (a regression based
+   approach for dealing with small study effects) due to Ruecker et al.
    </li>
    <li>
    <pkg>selectMeta</pkg> provides various selection models:
@@ -167,10 +189,6 @@
    <pkg>SAMURAI</pkg> performs a sensitivity analysis assuming
      the number of unobserved studies is known,
      perhaps from a trial registry, but not their outcome.
-   </li>
-   <li>
-   <pkg>extfunnel</pkg> augments the funnel plot to assess the impact
-   of additional evidence.
    </li>
    </ul>
 
@@ -277,7 +295,7 @@
     moderators are catered for). A range of model diagnostics is also
     provided. Various packages rely on <pkg>metafor</pkg> to
     provide meta-regression (<pkg>meta</pkg>, <pkg>MAc</pkg>,
-    and  <pkg>MAd</pkg>).
+    and  <pkg>MAd</pkg>) and all three of these provide bubble plots.
    </li>
    <li>
     <pkg>metagen</pkg>,
