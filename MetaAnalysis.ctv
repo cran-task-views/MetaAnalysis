@@ -108,6 +108,7 @@
 <i>Graphical methods</i>
    <p>
    An extensive range of graphical procedures is available:
+   </p>
    <ul>
    <li>
    forest plots in <pkg>Gmisc</pkg>,
