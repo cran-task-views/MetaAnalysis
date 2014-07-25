@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2014-07-03</version>
+ <version>2014-07-25</version>
 
  <info>
 <p>
@@ -363,11 +363,6 @@
     of sample size in cluster randomised trials.
    </p>
    <p>
-   <pkg>CAMAN</pkg> offers the possibility of using finite semiparametric mixtures as an
-    alternative to the random effects model where there is heterogeneity.
-   Covariates can be included to provide meta-regression.
-   </p>
-   <p>
     <pkg>RcmdrPlugin.MA</pkg> and <pkg>RcmdrPlugin.EZR</pkg>
     provide an interface via the Rcmdr GUI.
    The former uses <pkg>metafor</pkg> and <pkg>MAd</pkg> and
@@ -380,7 +375,6 @@
  <packagelist>
   <pkg>bamdit</pkg>
   <pkg>bspmma</pkg>
-  <pkg>CAMAN</pkg>
   <pkg>compute.es</pkg>
   <pkg>CRTSize</pkg>       
   <pkg>dosresmeta</pkg>
