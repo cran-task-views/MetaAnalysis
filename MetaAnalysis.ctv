@@ -183,7 +183,7 @@
    <li>
     <pkg>metasens</pkg> provides Copas's selection model and also
    the method of limit meta-analysis (a regression based
-   approach for dealing with small study effects) due to Ruecker et al.
+   approach for dealing with small study effects) due to Rücker et al.
    </li>
    <li>
    <pkg>selectMeta</pkg> provides various selection models:
