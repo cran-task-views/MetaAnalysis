@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2014-09-09</version>
+ <version>2014-09-19</version>
 
  <info>
 <p>
@@ -397,10 +397,8 @@ logistic regression from aggregate data or individual data.
    Covariates can be included to provide meta-regression.
    </p>
    <p>
-    <pkg>RcmdrPlugin.MA</pkg> and <pkg>RcmdrPlugin.EZR</pkg>
-    provide an interface via the Rcmdr GUI.
-   The former uses <pkg>metafor</pkg> and <pkg>MAd</pkg> and
-   the latter uses <pkg>meta</pkg> and <pkg>metatest</pkg>
+   <pkg>RcmdrPlugin.EZR</pkg> provides an interface via the Rcmdr GUI
+   using <pkg>meta</pkg> and <pkg>metatest</pkg>
    to do the heavy lifting.
    </p>
 
@@ -452,7 +450,6 @@ logistic regression from aggregate data or individual data.
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
   <pkg>RcmdrPlugin.EZR</pkg>
-  <pkg>RcmdrPlugin.MA</pkg>
   <pkg>rmeta</pkg>
   <pkg>robumeta</pkg>
   <pkg>SAMURAI</pkg>
