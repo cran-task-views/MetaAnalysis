@@ -3,7 +3,7 @@
  <name>MetaAnalysis</name>
  <topic>Meta-Analysis</topic>
  <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2014-09-19</version>
+ <version>2014-11-29</version>
 
  <info>
 <p>
@@ -399,7 +399,9 @@ logistic regression from aggregate data or individual data.
    <p>
    <pkg>RcmdrPlugin.EZR</pkg> provides an interface via the Rcmdr GUI
    using <pkg>meta</pkg> and <pkg>metatest</pkg>
-   to do the heavy lifting.
+   to do the heavy lifting and <pkg>MAVIS</pkg> provides a shiny
+   interface using <pkg>metafor</pkg>, <pkg>MAc</pkg> and
+   <pkg>MAd</pkg>.
    </p>
 
  </info>
@@ -425,6 +427,7 @@ logistic regression from aggregate data or individual data.
   <pkg>mada</pkg>
   <pkg>MADAM</pkg>
   <pkg>MAMA</pkg>
+  <pkg>MAVIS</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
   <pkg>metacor</pkg>
