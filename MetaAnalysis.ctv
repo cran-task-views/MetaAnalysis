@@ -1,11 +1,11 @@
 <CRANTaskView>
 
- <name>MetaAnalysis</name>
- <topic>Meta-Analysis</topic>
- <maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
- <version>2014-11-29</version>
+<name>MetaAnalysis</name>
+<topic>Meta-Analysis</topic>
+<maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
+<version>2015-01-14</version>
 
- <info>
+<info>
 <p>
     This task view covers packages which include facilities for meta-analysis
     of summary statistics from primary studies. The task view does not consider
@@ -65,7 +65,7 @@
    </li>
    <li>
    For sparse binary data <pkg>exactmeta</pkg> provides an exact method which
-   does not involve continuity corrections
+   does not involve continuity corrections.
    </li>
    <li>Packages which work with specific effect sizes may be more congenial
     to workers in some areas of science
@@ -113,30 +113,38 @@
 
 <i>Graphical methods</i>
    <p>
-   An extensive range of graphical procedures is available:
+   An extensive range of graphical procedures is available.
    </p>
    <ul>
    <li>
-   forest plots in <pkg>Gmisc</pkg>,
-   <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>,
+   Forest plots are provided in <pkg>forestplot</pkg>,
+   <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>.
+   Although the most basic plot can be produced by any of them
+   they each provide their own choice of enhancements.
    </li>
    <li>
-   funnel plots in
-   <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>,
-   an enhanced funnel plot to assess the impact of extra evidence in
-   <pkg>extfunnel</pkg>, and a funnel plot for limit meta-analysis in
+   Funnel plots are provided in
+   <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>.
+   In addition to the standard funnel plots
+   an enhanced funnel plot to assess the impact of extra evidence
+   is available in <pkg>extfunnel</pkg>, and a funnel plot
+   for limit meta-analysis in
    <pkg>metasens</pkg>,
    </li>
    <li>
-   radial (Galbraith) plots in <pkg>metafor</pkg>,
+   Radial (Galbraith) plots are provided in <pkg>metafor</pkg>,
    </li>
    <li>
-   L'Abbe plots in
+   L'Abbe plots are provided in
    <pkg>meta</pkg> and <pkg>metafor</pkg>,
    </li>
    <li>
-   Baujat plots in
+   Baujat plots are provided in
    <pkg>meta</pkg> and <pkg>metafor</pkg>
+   </li>
+   <li>
+   An extensive series of plots of diagnostic statistics is
+   provided in <pkg>metafor</pkg>.
    </li>
    </ul>
 
@@ -298,8 +306,8 @@
    <ul>
    <li>
     <pkg>metafor</pkg> provides meta-regression (multiple
-    moderators are catered for). A range of model diagnostics is also
-    provided. Various packages rely on <pkg>metafor</pkg> to
+    moderators are catered for).
+    Various packages rely on <pkg>metafor</pkg> to
     provide meta-regression (<pkg>meta</pkg>, <pkg>MAc</pkg>,
     and  <pkg>MAd</pkg>) and all three of these provide bubble plots.
    </li>
@@ -349,8 +357,8 @@ logistic regression from aggregate data or individual data.
    appropriate setup.</p>
 
    <p>This is provided in a Bayesian framework by <pkg>gemtc</pkg>,
-   which acts as a front-end to your
-   favourite MCMC package, and <pkg>pcnetmeta</pkg>,
+   which acts as a front-end to BUGS
+   or JAGS, and <pkg>pcnetmeta</pkg>,
    which uses JAGS. <pkg>netmeta</pkg>  works in a frequentist
    framework.
    Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
@@ -419,7 +427,7 @@ logistic regression from aggregate data or individual data.
   <pkg>extfunnel</pkg>
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
-  <pkg>Gmisc</pkg>
+  <pkg>forestplot</pkg>
   <pkg>HSROC</pkg>
    <pkg>ipdmeta</pkg>
   <pkg>MAc</pkg>
