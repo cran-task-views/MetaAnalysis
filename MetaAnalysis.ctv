@@ -2,8 +2,8 @@
 
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
-<maintainer email = "info@aghmed.fsnet.co.uk">Michael Dewey</maintainer>
-<version>2015-01-14</version>
+<maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
+<version>2015-04-09</version>
 
 <info>
 <p>
@@ -297,6 +297,9 @@
    <pkg>bamdit</pkg> provides Bayesian meta-analysis with a bivariate
     random effects model (using JAGS to implement the MCMC method).
    </li>
+   <li>
+   <pkg>CopulaREMADA</pkg> uses a copula based mixed model
+   </li>
   </ul>
 
 <h4>Meta-regression</h4>
@@ -370,6 +373,8 @@ logistic regression from aggregate data or individual data.
 <h4>Genetics</h4>
    <p>
     There are a number of packages specialising in genetic data:
+   <pkg>EasyStrata</pkg> for startified GWAS meta-analysis
+      with graphics,
    <pkg>gap</pkg> combines p-values,
    <pkg>MADAM</pkg> combines p-values using Fisher's method,
    <pkg>MAMA</pkg> provides meta-analysis of microarray data,
@@ -383,6 +388,10 @@ logistic regression from aggregate data or individual data.
     of genomic data,
    <pkg>MetaQC</pkg> provides objective quality control and
     inclusion/exclusion criteria for genomic meta-analysis,
+   <pkg>metaRNASeq</pkg> meta-analysis from multiple RNA
+      sequencing experiments,
+   <pkg>MultiMeta</pkg> for meta-analysis of multivariate GWAS
+      results with graphics, designed to accept GEMMA format,
    <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>, and
    <pkg>skatMeta</pkg> provide meta-analysis for the SKAT test.
    </p>
@@ -397,7 +406,9 @@ logistic regression from aggregate data or individual data.
    <p>
     <pkg>CRTSize</pkg>
     provides meta-analysis as part of a package primarily dedicated to the determination
-    of sample size in cluster randomised trials.
+    of sample size in cluster randomised trials in
+     particular by simulating adding a new study to the
+     meta-analysis.
    </p>
    <p>
    <pkg>CAMAN</pkg> offers the possibility of using finite semiparametric mixtures as an
@@ -419,8 +430,10 @@ logistic regression from aggregate data or individual data.
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
   <pkg>compute.es</pkg>
+  <pkg>CopulaREMADA</pkg>
   <pkg>CRTSize</pkg>       
   <pkg>dosresmeta</pkg>
+  <pkg>EasyStrata</pkg>
    <pkg>ecoreg</pkg>
   <pkg>epiR</pkg>
   <pkg>exactmeta</pkg>
@@ -449,11 +462,13 @@ logistic regression from aggregate data or individual data.
   <pkg>MetaPCA</pkg>
   <pkg>metaplus</pkg>
   <pkg>MetaQC</pkg>
+  <pkg>metaRNASeq</pkg>
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
   <pkg>metatest</pkg>
   <pkg>Metatron</pkg>
   <pkg>mmeta</pkg>
+  <pkg>MultiMeta</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
