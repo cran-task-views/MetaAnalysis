@@ -3,7 +3,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2015-04-09</version>
+<version>2015-06-24</version>
 
 <info>
 <p>
@@ -241,7 +241,7 @@
    although not meta-regression,
    </li>
    <li>
-   <rforge>metaSEM</rforge> is available from R-Forge and
+   <pkg>metaSEM</pkg> is available from R-Forge and
    provides multivariate (and univariate) meta-analysis and
    meta-regression by embedding it in the structural equation framework
    and using OpenMx for the structural equation modelling.
@@ -316,12 +316,12 @@
    </li>
    <li>
     <pkg>metagen</pkg>,
-    <pkg>metaLik</pkg>,    <rforge>metaSEM</rforge>, and
+    <pkg>metaLik</pkg>, <pkg>metaSEM</pkg>, and
       <pkg>metatest</pkg> also provide meta-regression.
    </li>
    <li>
     <pkg>mvmeta</pkg> provides meta-regression for multivariate meta-analysis
-    as do <pkg>metafor</pkg> and <rforge>metaSEM</rforge>.
+    as do <pkg>metafor</pkg> and <pkg>metaSEM</pkg>.
    </li>
    <li>
     <pkg>mada</pkg> provides for the meta-regression of diagnostic test studies.
@@ -463,6 +463,7 @@ logistic regression from aggregate data or individual data.
   <pkg>metaplus</pkg>
   <pkg>MetaQC</pkg>
   <pkg>metaRNASeq</pkg>
+  <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
   <pkg>metatest</pkg>
@@ -488,7 +489,6 @@ logistic regression from aggregate data or individual data.
  <links>
   <view>Genetics</view>
   <view>ClinicalTrials</view>
-  <rforge>metaSEM</rforge>
  </links>
 
 </CRANTaskView>
