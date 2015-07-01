@@ -3,7 +3,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2015-06-24</version>
+<version>2015-07-01</version>
 
 <info>
 <p>
@@ -376,7 +376,6 @@ logistic regression from aggregate data or individual data.
    <pkg>EasyStrata</pkg> for startified GWAS meta-analysis
       with graphics,
    <pkg>gap</pkg> combines p-values,
-   <pkg>MADAM</pkg> combines p-values using Fisher's method,
    <pkg>MAMA</pkg> provides meta-analysis of microarray data,
    <pkg>MetABEL</pkg> provides meta-analysis of genome wide SNP association
       results,
@@ -446,7 +445,6 @@ logistic regression from aggregate data or individual data.
   <pkg>MAc</pkg>
   <pkg>MAd</pkg>
   <pkg>mada</pkg>
-  <pkg>MADAM</pkg>
   <pkg>MAMA</pkg>
   <pkg>MAVIS</pkg>
   <pkg priority="core">meta</pkg>
