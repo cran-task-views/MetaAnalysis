@@ -3,424 +3,510 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2015-07-01</version>
+<version>2015-07-07</version>
 
 <info>
 <p>
-    This task view covers packages which include facilities for meta-analysis
-    of summary statistics from primary studies. The task view does not consider
-    the meta-analysis of individual participant data (IPD) which can be handled by
-    any of the standard linear modelling functions but does include some
-    packages which offer special facilities for IPD.
+   This task view covers packages which include
+   facilities for meta-analysis
+   of summary statistics from primary studies.
+   The task view does not consider
+   the meta-analysis of individual participant data (IPD)
+   which can be handled by
+   any of the standard linear modelling functions
+   but does include some
+   packages which offer special facilities for IPD.
 </p>
 
 <p>
-   The standard meta-analysis model is a form of weighted least squares and so
-   any of the wide range of R packages providing weighted least squares would
-   in principle be able to fit the model. The advantage of using a specialised package is
-   that (a) it takes care of the small tweaks necessary (b) it provides a range
-   of ancillary functions for displaying and investigating the model.
-   Where the model is referred to below it is this  model which is meant.
+  The standard meta-analysis model is a form of
+  weighted least squares and so
+  any of the wide range of R packages providing
+  weighted least squares would
+  in principle be able to fit the model.
+  The advantage of using a specialised package is
+  that (a) it takes care of the small tweaks necessary
+  (b) it provides a range
+  of ancillary functions for displaying
+  and investigating the model.
+  Where the model is referred to below it is this
+  model which is meant.
 </p>
 
 <p>
-   Where summary statistics are not available a meta-analysis of significance
-   levels is possible. This is not completely unconnected with the problem
-   of adjustment for multiple comparisons but the packages below which offer this,
-   chiefly in the context of genetic data, also offer additional functionality.
+  Where summary statistics are not available
+  a meta-analysis of significance
+  levels is possible.
+  This is not completely unconnected with the problem
+  of adjustment for multiple comparisons but
+  the packages below which offer this,
+  chiefly in the context of genetic data,
+  also offer additional functionality.
 </p>
 
 <h4>Univariate meta-analysis</h4>
-   <p><i>Preparing for meta-analysis</i></p>
-   <ul>
-   <li>The primary studies often use a range of statistics to present their
-   results. Convenience functions to convert these onto a common
-   metric are presented by:
-   <pkg>compute.es</pkg> which converts from various statistics to
+  <p><i>Preparing for meta-analysis</i></p>
+  <ul>
+  <li>The primary studies often use a range of
+    statistics to present their
+    results.
+    Convenience functions to convert these onto a common
+    metric are presented by:
+    <pkg>compute.es</pkg> which converts from
+    various statistics to
     d, g, r, z and the log odds ratio,
-   <pkg>MAc</pkg> which converts to correlation coefficients,
-   <pkg>MAd</pkg> which converts to mean differences,
-   and
-   <pkg>metafor</pkg> which converts to effect sizes an extensive set of measures
-    for comparative studies (such as binary data, person years, mean differences and
-    ratios and so on), for studies of association (a wide range of correlation types), for non-comparative
-    studies (proportions, incidence rates, and mean change). It also provides for a measure 
+    <pkg>MAc</pkg> which converts to correlation coefficients,
+    <pkg>MAd</pkg> which converts to mean differences,
+    and
+    <pkg>metafor</pkg> which converts to effect sizes
+    an extensive set of measures
+    for comparative studies (such as binary data,
+    person years, mean differences and
+    ratios and so on), for studies of association
+    (a wide range of correlation types), for non-comparative
+    studies (proportions, incidence rates, and mean change).
+    It also provides for a measure 
     used in psychometrics (Cronbach's alpha).
-   </li>
-   <li>
+  </li>
+  <li>
     <pkg>meta</pkg> provides functions to read and work
     with files output by RevMan 4 and 5.
-   </li>
-   </ul>
+  </li>
+  <li>
+    <pkg>metagear</pkg> provides an extensive range of
+    facilities to support the systematic review process,
+    ease data extraction, and generate effect sizes.
+  </li>
+  </ul>
 
-   <p><i>Fitting the model</i></p>
-   <ul>
-   <li>
-    Four packages provide the inverse variance weighted, Mantel-Haenszel,
+  <p><i>Fitting the model</i></p>
+  <ul>
+  <li>
+    Four packages provide the inverse variance weighted,
+    Mantel-Haenszel,
     and Peto methods:  <pkg>epiR</pkg>,
     <pkg>meta</pkg>, <pkg>metafor</pkg>, and <pkg>rmeta</pkg>.
-   </li>
-   <li>
-   For binary data <pkg>metafor</pkg> provides the binomial-normal model.
-   </li>
-   <li>
-   For sparse binary data <pkg>exactmeta</pkg> provides an exact method which
-   does not involve continuity corrections.
-   </li>
-   <li>Packages which work with specific effect sizes may be more congenial
+  </li>
+  <li>
+    For binary data <pkg>metafor</pkg> provides
+    the binomial-normal model.
+  </li>
+  <li>
+    For sparse binary data <pkg>exactmeta</pkg>
+    provides an exact method which
+    does not involve continuity corrections.
+  </li>
+  <li>Packages which work with specific effect sizes
+    may be more congenial
     to workers in some areas of science
     <pkg>MAc</pkg> and
     <pkg>metacor</pkg>
-    which provide meta-analysis of correlation coefficients and 
-    <pkg>MAd</pkg> which provides meta-analysis of mean differences.
-    <pkg>MAc</pkg> and <pkg>MAd</pkg> provide a range of graphics.
+    which provide meta-analysis of correlation
+    coefficients and 
+    <pkg>MAd</pkg> which provides meta-analysis
+    of mean differences.
+    <pkg>MAc</pkg> and <pkg>MAd</pkg> provide
+    a range of graphics.
     <pkg>psychometric</pkg>
-    provides an extensive range of functions for the meta-analysis of 
-    psychometric studies.
-   </li>
-   
-   <li>
-   Bayesian approaches are contained in various packages.
-   <pkg>bspmma</pkg> which 
-    provides two different models: a non-parametric and a semi-parametric.
+    provides an extensive range of functions
+    for the meta-analysis of psychometric studies.
+  </li>
+  <li>
+    Bayesian approaches are contained in various packages.
+    <pkg>bspmma</pkg> which 
+    provides two different models:
+    a non-parametric and a semi-parametric.
     Graphical display of the results is provided.
-   <pkg>metamisc</pkg> provides a method with priors suggested by Higgins.
-   <pkg>mmeta</pkg> provides meta-analysis using
-   beta-binomial prior distributions.
-   </li>
-   <li>
-    Some packages concentrate on providing a specialised version of the core
-    meta-analysis function without providing the range of ancillary
+    <pkg>metamisc</pkg> provides a method
+    with priors suggested by Higgins.
+    <pkg>mmeta</pkg> provides meta-analysis using
+    beta-binomial prior distributions.
+  </li>
+  <li>
+    Some packages concentrate on providing
+    a specialised version of the core
+    meta-analysis function without providing
+    the range of ancillary
     functions. These are:
-     <pkg>metaLik</pkg>
-    which uses a more sophisticated approach to the likelihood,
-    <pkg>metamisc</pkg> which as well as the method of moments provides
+    <pkg>metaLik</pkg>
+    which uses a more sophisticated approach
+    to the likelihood,
+    <pkg>metamisc</pkg> which as well as the
+    method of moments provides
     two likelihood-based  methods, and
     <pkg>metatest</pkg> which provides
-     another improved method of obtaining confidence intervals.
-   </li>
-   <li><pkg>metagen</pkg> provides a range of methods for
-   random effects models and also facilities
-   for extensive simulation studies of the
-   properties of those methods.
-   </li>
-   <li>
-   <pkg>metaplus</pkg> fits random effects models relaxing the usual
-   assumption that the random effects have a normal
-   distribution. Also provides some diagnostics.
-   </li>
-   </ul>
+    another improved method of obtaining confidence intervals.
+  </li>
+  <li><pkg>metagen</pkg> provides a range of methods for
+    random effects models and also facilities
+    for extensive simulation studies of the
+    properties of those methods.
+  </li>
+  <li>
+    <pkg>metaplus</pkg> fits random effects
+    models relaxing the usual
+    assumption that the random effects have a normal
+    distribution. Also provides some diagnostics.
+  </li>
+  </ul>
 
 <i>Graphical methods</i>
-   <p>
-   An extensive range of graphical procedures is available.
-   </p>
-   <ul>
-   <li>
-   Forest plots are provided in <pkg>forestplot</pkg>,
-   <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>.
-   Although the most basic plot can be produced by any of them
-   they each provide their own choice of enhancements.
-   </li>
-   <li>
-   Funnel plots are provided in
-   <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>.
-   In addition to the standard funnel plots
-   an enhanced funnel plot to assess the impact of extra evidence
-   is available in <pkg>extfunnel</pkg>, and a funnel plot
-   for limit meta-analysis in
-   <pkg>metasens</pkg>,
-   </li>
-   <li>
-   Radial (Galbraith) plots are provided in <pkg>metafor</pkg>,
-   </li>
-   <li>
-   L'Abbe plots are provided in
-   <pkg>meta</pkg> and <pkg>metafor</pkg>,
-   </li>
-   <li>
-   Baujat plots are provided in
-   <pkg>meta</pkg> and <pkg>metafor</pkg>
-   </li>
-   <li>
-   An extensive series of plots of diagnostic statistics is
-   provided in <pkg>metafor</pkg>.
-   </li>
-   </ul>
+  <p>
+    An extensive range of graphical procedures is available.
+  </p>
+  <ul>
+  <li>
+    Forest plots are provided in <pkg>forestplot</pkg>,
+    <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>.
+    Although the most basic plot can be produced
+    by any of them
+    they each provide their own choice of enhancements.
+  </li>
+  <li>
+    Funnel plots are provided in
+    <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>.
+    In addition to the standard funnel plots
+    an enhanced funnel plot to assess the
+    impact of extra evidence
+    is available in <pkg>extfunnel</pkg>, and a funnel plot
+    for limit meta-analysis in
+    <pkg>metasens</pkg>,
+  </li>
+  <li>
+    Radial (Galbraith) plots are provided in
+    <pkg>metafor</pkg>,
+  </li>
+  <li>
+    L'Abbe plots are provided in
+    <pkg>meta</pkg> and <pkg>metafor</pkg>,
+  </li>
+  <li>
+    Baujat plots are provided in
+    <pkg>meta</pkg> and <pkg>metafor</pkg>
+  </li>
+  <li>
+    An extensive series of plots of diagnostic statistics is
+    provided in <pkg>metafor</pkg>.
+  </li>
+  </ul>
 
 <i>Investigating heterogeneity</i>
-   <p>
+  <p>
     Confidence intervals for the heterogeneity parameter
-    are provided in  <pkg>metafor</pkg>
+    are provided in <pkg>metafor</pkg>
     and <pkg>metagen</pkg>.
-   </p>
+  </p>
 
 <i>Investigating small study bias</i>
-   <p>The issue of whether small studies give different results
-   from large studies has been addressed by visual
-   examination of  the funnel plots mentioned above.
-   In addition:
-   </p>
-   <ul>
-   <li> <pkg>meta</pkg> and <pkg>metafor</pkg> provide
-   both the non-parametric method suggested by Begg and Mazumdar
-   and a range of regression tests modelled after the approach of Egger.
-   </li>
-   <li>
-   An exploratory technique for detecting an excess of statistically
-   significant studies is provided by <pkg>PubBias</pkg>.
-   </li>
-   </ul>
+  <p>The issue of whether small studies give different results
+    from large studies has been addressed by visual
+    examination of  the funnel plots mentioned above.
+    In addition:
+  </p>
+  <ul>
+  <li> <pkg>meta</pkg> and <pkg>metafor</pkg> provide
+    both the non-parametric method suggested
+    by Begg and Mazumdar
+    and a range of regression tests modelled
+    after the approach of Egger.
+  </li>
+  <li>
+    An exploratory technique for detecting
+    an excess of statistically
+    significant studies is provided by <pkg>PubBias</pkg>.
+  </li>
+  </ul>
 
 <i>Unobserved studies</i>
-   <p>
+  <p>
     A recurrent issue in meta-analysis has been
     the problem of unobserved studies.
-   </p>
-   <ul>
-   <li>
+  </p>
+  <ul>
+  <li>
     Rosenthal's fail safe n is provided by
-   <pkg>MAc</pkg> and <pkg>MAd</pkg>.
+    <pkg>MAc</pkg> and <pkg>MAd</pkg>.
     <pkg>metafor</pkg> provides it as well as two
     more recent methods  by Orwin and Rosenberg.
-   </li>
-   <li>
-     Duval's trim and fill method is provided by <pkg>meta</pkg>
-     and <pkg>metafor</pkg>.
-   </li>
-   <li>
-    <pkg>metasens</pkg> provides Copas's selection model and also
-   the method of limit meta-analysis (a regression based
-   approach for dealing with small study effects) due to Rücker et al.
-   </li>
-   <li>
-   <pkg>selectMeta</pkg> provides various selection models:
+  </li>
+  <li>
+    Duval's trim and fill method is provided
+    by <pkg>meta</pkg> and <pkg>metafor</pkg>.
+  </li>
+  <li>
+    <pkg>metasens</pkg> provides Copas's selection
+    model and also
+    the method of limit meta-analysis (a regression based
+    approach for dealing with small study effects)
+    due to Rücker et al.
+  </li>
+  <li>
+    <pkg>selectMeta</pkg> provides various selection models:
     the parametric model of Iyengar and Greenhouse,
     the non-parametric model of Dear and Begg, and
-    proposes a new non-parametric method imposing a monotonicity constraint.
-   </li>
-   <li>
-   <pkg>SAMURAI</pkg> performs a sensitivity analysis assuming
-     the number of unobserved studies is known,
-     perhaps from a trial registry, but not their outcome.
-   </li>
-   </ul>
+    proposes a new non-parametric method imposing a 
+    monotonicity constraint.
+  </li>
+  <li>
+    <pkg>SAMURAI</pkg> performs a sensitivity
+    analysis assuming
+    the number of unobserved studies is known,
+    perhaps from a trial registry, but not their outcome.
+  </li>
+  </ul>
 
 <i>Meta-analysis of significance values</i>
-   <p>
-   <pkg>metap</pkg> provides some facilities for
-   meta-analysis of significance values.
-   Some of these methods are also provided in some
-   of the genetics packages mentioned below.
-   </p>
+  <p>
+    <pkg>metap</pkg> provides some facilities for
+    meta-analysis of significance values.
+    Some of these methods are also provided in some
+    of the genetics packages mentioned below.
+  </p>
 
 <h4>Multivariate meta-analysis</h4>
 
-   <p>Standard methods outlined above assume that the effect sizes
-   are independent. This assumption may be violated in a number of ways:
-   within each primary study multiple treatments may
-   be compared to the same control, each primary study may report multiple
-   endpoints, or primary studies may be clustered for instance
-   because they come from
-   the same country or the same research team.
-   In these situations where the outcome is multivariate:</p>
-   <ul>
-   <li>
-   <pkg>mvmeta</pkg> assumes the within study covariances
-   are known and as well as fixed effects provides a
-   variety of options for fitting random effects. <pkg>metafor</pkg>
-   provides fixed effects and likelihood
-   based random effects model fitting procedures.
-   Both these packages include meta-regression,
-   <pkg>metafor</pkg> also provides for clustered and
-   hierarchical models
-   </li>
-   <li>
-   <pkg>mvtmeta</pkg> provides multivariate meta-analysis 
-   using the method of moments for random effects
-   although not meta-regression,
-   </li>
-   <li>
-   <pkg>metaSEM</pkg> is available from R-Forge and
-   provides multivariate (and univariate) meta-analysis and
-   meta-regression by embedding it in the structural equation framework
-   and using OpenMx for the structural equation modelling.
-   It can provide a three-level meta-analysis taking account of
-   clustering and allowing for level 2 and level 3 heterogeneity.
-   It also provides via a two-stage approach
-   meta-analysis of correlation or covariance matrices.
-   </li>
-   <li>
-   <pkg>dosresmeta</pkg> concentrates on the situation where individual
-   studies have information on the dose-response relationship.
-   </li>
-   <li>
-   <pkg>robumeta</pkg> provides robust variance estimation for
-   clustered and hierarchical estimates.
-   </li>
-   </ul>
+  <p>Standard methods outlined above assume that
+    the effect sizes are independent.
+    This assumption may be violated in a number of ways:
+    within each primary study multiple treatments may
+    be compared to the same control,
+    each primary study may report multiple
+    endpoints, or primary studies may be clustered
+    for instance because they come from
+    the same country or the same research team.
+    In these situations where the outcome is multivariate:
+  </p>
+  <ul>
+  <li>
+    <pkg>mvmeta</pkg> assumes the within study covariances
+    are known and as well as fixed effects provides a
+    variety of options for fitting random effects.
+    <pkg>metafor</pkg>
+    provides fixed effects and likelihood
+    based random effects model fitting procedures.
+    Both these packages include meta-regression,
+    <pkg>metafor</pkg> also provides for clustered and
+    hierarchical models
+  </li>
+  <li>
+    <pkg>mvtmeta</pkg> provides multivariate meta-analysis 
+    using the method of moments for random effects
+    although not meta-regression,
+  </li>
+  <li>
+    <pkg>metaSEM</pkg> provides multivariate
+    (and univariate) meta-analysis and
+    meta-regression by embedding it in the
+    structural equation framework
+    and using OpenMx for the structural equation modelling.
+    It can provide a three-level meta-analysis
+    taking account of clustering and allowing for
+    level 2 and level 3 heterogeneity.
+    It also provides via a two-stage approach
+    meta-analysis of correlation or covariance matrices.
+  </li>
+  <li>
+    <pkg>dosresmeta</pkg> concentrates on the situation
+    where individual studies have information on
+    the dose-response relationship.
+  </li>
+  <li>
+    <pkg>robumeta</pkg> provides robust variance
+    estimation for clustered and hierarchical estimates.
+  </li>
+  </ul>
 
 <h4>Meta-analysis of studies of diagnostic tests</h4>
   <p>
-    A special case of multivariate meta-analysis is the case of summarising
-    studies of diagnostic tests. This gives rise to a bivariate, binary
-    meta-analysis with the within-study correlation assumed zero
-    although the between-study correlation is estimated. This is an
-    active area of research and a variety of methods are available
+    A special case of multivariate meta-analysis
+    is the case of summarising
+    studies of diagnostic tests.
+    This gives rise to a bivariate, binary
+    meta-analysis with the within-study correlation
+    assumed zero
+    although the between-study correlation is estimated.
+    This is an active area of research and a variety
+    of methods are available
     including what is referred to here called Reitsma's
     method, and the heirarchical summary receiver operating
     characteristic (HSROC) method.
-    In many situations these are equivalent.</p>
+    In many situations these are equivalent.
+  </p>
 
-   <ul>
-   <li>
+  <ul>
+  <li>
     <pkg>mada</pkg> provides various descriptive statistics
      and univariate methods (diagnostic odds ratio and Lehman
      model) as well as the bivariate method due to Reitsma.
      In addition meta-regression is provided.
      A range of graphical methods is also available.
-   </li>
-   <li>
-    <pkg>HSROC</pkg> provides HSROC with estimation in a Bayesian framework.
+  </li>
+  <li>
+    <pkg>HSROC</pkg> provides HSROC with estimation
+    in a Bayesian framework.
     Graphical methods are provided.
     The case of imperfect reference standards is catered for.
-   </li>
-   <li>
-   <pkg>Metatron</pkg> provides a method for the Reitsma model
+  </li>
+  <li>
+    <pkg>Metatron</pkg> provides a method for
+    the Reitsma model
     incuding the case of an imperfect reference standard
-   </li>
-   <li>
-    <pkg>metamisc</pkg> provides the method of Riley which estimates a common
-    within and between correlation. Graphical output is also provided.
-   </li>
-   <li>
-   <pkg>bamdit</pkg> provides Bayesian meta-analysis with a bivariate
-    random effects model (using JAGS to implement the MCMC method).
-   </li>
-   <li>
-   <pkg>CopulaREMADA</pkg> uses a copula based mixed model
-   </li>
+  </li>
+  <li>
+    <pkg>metamisc</pkg> provides the method
+    of Riley which estimates a common
+    within and between correlation.
+    Graphical output is also provided.
+  </li>
+  <li>
+    <pkg>bamdit</pkg> provides Bayesian meta-analysis
+    with a bivariate random effects model
+    (using JAGS to implement the MCMC method).
+  </li>
+  <li>
+    <pkg>CopulaREMADA</pkg> uses a copula based mixed model
+  </li>
   </ul>
 
 <h4>Meta-regression</h4>
-   <p>Where suitable moderator variables are available they may
-    be included using meta-regression. All these packages are mentioned above, this
-    just draws that information together.</p>
-   <ul>
-   <li>
+  <p>Where suitable moderator variables are
+    available they may be included using meta-regression.
+    All these packages are mentioned above, this
+    just draws that information together.
+  </p>
+  <ul>
+  <li>
     <pkg>metafor</pkg> provides meta-regression (multiple
     moderators are catered for).
     Various packages rely on <pkg>metafor</pkg> to
     provide meta-regression (<pkg>meta</pkg>, <pkg>MAc</pkg>,
-    and  <pkg>MAd</pkg>) and all three of these provide bubble plots.
-   </li>
-   <li>
+    and  <pkg>MAd</pkg>) and all three of
+    these provide bubble plots.
+  </li>
+  <li>
     <pkg>metagen</pkg>,
     <pkg>metaLik</pkg>, <pkg>metaSEM</pkg>, and
-      <pkg>metatest</pkg> also provide meta-regression.
-   </li>
-   <li>
-    <pkg>mvmeta</pkg> provides meta-regression for multivariate meta-analysis
+    <pkg>metatest</pkg> also provide meta-regression.
+  </li>
+  <li>
+    <pkg>mvmeta</pkg> provides meta-regression
+    for multivariate meta-analysis
     as do <pkg>metafor</pkg> and <pkg>metaSEM</pkg>.
-   </li>
-   <li>
-    <pkg>mada</pkg> provides for the meta-regression of diagnostic test studies.
-   </li>
-   </ul>
+  </li>
+  <li>
+    <pkg>mada</pkg> provides for the
+    meta-regression of diagnostic test studies.
+  </li>
+  </ul>
 
 <h4>Individual participant data (IPD)</h4>
 
-<p>
-Where all studies can provide indiviual participant data
-then software for analysis of multi--centre trials
-or multi-centre cohort studies should prove adequate
-and is outside the scope of this task view.
-Other packages which provide facilities
-related to IPD are:
-</p>
-<ul>
-<li>
-<pkg>ipdmeta</pkg> which uses information on aggregate
-summary statistics and
-a covariate of interest to assess whether a full IPD analysis
-would have more power.
-</li>
-<li>
-<pkg>ecoreg</pkg> which is designed for ecological studies
-enables estimation of an individual level
-logistic regression from aggregate data or individual data.
-</li>
-</ul>
+  <p>
+    Where all studies can provide indiviual participant data
+    then software for analysis of multi--centre trials
+    or multi-centre cohort studies should prove adequate
+    and is outside the scope of this task view.
+    Other packages which provide facilities
+    related to IPD are:
+  </p>
+  <ul>
+  <li>
+    <pkg>ipdmeta</pkg> which uses information on aggregate
+    summary statistics and a covariate of interest
+    to assess whether a full IPD analysis
+    would have more power.
+  </li>
+  <li>
+    <pkg>ecoreg</pkg> which is designed for ecological studies
+    enables estimation of an individual level
+    logistic regression from aggregate data or
+    individual data.
+   </li>
+   </ul>
 
 <h4>Network meta-analysis</h4>
-   <p>Also known as multiple treatment comparison.
-   This is a very active area of research and development.
-   Note that some of the packages mentioned above under multivariate
-   meta-analysis can also be used for network meta-analysis with
-   appropriate setup.</p>
+  <p>Also known as multiple treatment comparison.
+    This is a very active area of research and development.
+    Note that some of the packages mentioned above
+    under multivariate meta-analysis can also be
+    used for network meta-analysis with
+   appropriate setup.
+  </p>
 
-   <p>This is provided in a Bayesian framework by <pkg>gemtc</pkg>,
-   which acts as a front-end to BUGS
-   or JAGS, and <pkg>pcnetmeta</pkg>,
-   which uses JAGS. <pkg>netmeta</pkg>  works in a frequentist
-   framework.
-   Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
-   provide network graphs and
-   <pkg>netmeta</pkg> provides a heatmap for displaying inconsistency
-   and heterogeneity
-   </p>
+  <p>This is provided in a Bayesian framework by
+    <pkg>gemtc</pkg>,
+    which acts as a front-end to BUGS
+    or JAGS, and <pkg>pcnetmeta</pkg>,
+    which uses JAGS.
+    <pkg>netmeta</pkg>  works in a frequentist framework.
+    Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
+    provide network graphs and
+    <pkg>netmeta</pkg> provides a heatmap for
+    displaying inconsistency and heterogeneity
+  </p>
 
 <h4>Genetics</h4>
-   <p>
-    There are a number of packages specialising in genetic data:
-   <pkg>EasyStrata</pkg> for startified GWAS meta-analysis
+  <p>
+    There are a number of packages specialising
+    in genetic data:
+    <pkg>EasyStrata</pkg> for startified GWAS meta-analysis
       with graphics,
-   <pkg>gap</pkg> combines p-values,
-   <pkg>MAMA</pkg> provides meta-analysis of microarray data,
-   <pkg>MetABEL</pkg> provides meta-analysis of genome wide SNP association
-      results,
-   <pkg>MetaDE</pkg> provides microarray meta-analysis of for differentially
-      expressed dene detection,
-   <pkg>metaMA</pkg> provides meta-analysis of p-values or moderated
-    effect sizes to find differentially expressed genes,
-   <pkg>MetaPCA</pkg> provides meta-analysis in the dimension reduction
-    of genomic data,
-   <pkg>MetaQC</pkg> provides objective quality control and
-    inclusion/exclusion criteria for genomic meta-analysis,
-   <pkg>metaRNASeq</pkg> meta-analysis from multiple RNA
+    <pkg>gap</pkg> combines p-values,
+    <pkg>MAMA</pkg> provides meta-analysis of microarray data,
+    <pkg>MetABEL</pkg> provides meta-analysis of
+      genome wide SNP association results,
+    <pkg>MetaDE</pkg> provides microarray meta-analysis
+      of differentially expressed dene detection,
+    <pkg>metaMA</pkg> provides meta-analysis of
+      p-values or moderated
+     effect sizes to find differentially expressed genes,
+    <pkg>MetaPCA</pkg> provides meta-analysis in
+      the dimension reduction of genomic data,
+    <pkg>MetaQC</pkg> provides objective quality control and
+      inclusion/exclusion criteria for genomic meta-analysis,
+    <pkg>metaRNASeq</pkg> meta-analysis from multiple RNA
       sequencing experiments,
-   <pkg>MultiMeta</pkg> for meta-analysis of multivariate GWAS
+    <pkg>MultiMeta</pkg> for meta-analysis
+      of multivariate GWAS
       results with graphics, designed to accept GEMMA format,
-   <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>, and
-   <pkg>skatMeta</pkg> provide meta-analysis for the SKAT test.
-   </p>
+    <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>, and
+    <pkg>skatMeta</pkg> provide meta-analysis
+      for the SKAT test.
+  </p>
 <h4>Others</h4>
 
-   <p>
-    <pkg>SCMA</pkg>
-    provides single case meta-analysis. It is part of a suite of packages
+  <p>
+    <pkg>SCMA</pkg> provides single case meta-analysis.
+    It is part of a suite of packages
     dedicated to single-case designs.
-   </p>
+  </p>
 
-   <p>
+  <p>
     <pkg>CRTSize</pkg>
-    provides meta-analysis as part of a package primarily dedicated to the determination
+    provides meta-analysis as part of a package
+    primarily dedicated to the determination
     of sample size in cluster randomised trials in
-     particular by simulating adding a new study to the
-     meta-analysis.
-   </p>
-   <p>
-   <pkg>CAMAN</pkg> offers the possibility of using finite semiparametric mixtures as an
-    alternative to the random effects model where there is heterogeneity.
-   Covariates can be included to provide meta-regression.
-   </p>
-   <p>
-   <pkg>RcmdrPlugin.EZR</pkg> provides an interface via the Rcmdr GUI
-   using <pkg>meta</pkg> and <pkg>metatest</pkg>
-   to do the heavy lifting and <pkg>MAVIS</pkg> provides a shiny
-   interface using <pkg>metafor</pkg>, <pkg>MAc</pkg> and
-   <pkg>MAd</pkg>.
-   </p>
+    particular by simulating adding a new study to the
+    meta-analysis.
+  </p>
+  <p>
+    <pkg>CAMAN</pkg> offers the possibility of
+    using finite semiparametric mixtures as an
+    alternative to the random effects model
+    where there is heterogeneity.
+    Covariates can be included to provide meta-regression.
+  </p>
+  <p>
+    <pkg>RcmdrPlugin.EZR</pkg> provides an interface
+    via the Rcmdr GUI
+    using <pkg>meta</pkg> and <pkg>metatest</pkg>
+    to do the heavy lifting,
+    <pkg>RcmdrPlugin.RMTCJags</pkg> provides an interface
+    for network meta-analysis using BUGS code,
+    and <pkg>MAVIS</pkg> provides a shiny
+    interface using <pkg>metafor</pkg>, <pkg>MAc</pkg> and
+    <pkg>MAd</pkg>.
+  </p>
 
  </info>
 
@@ -452,6 +538,7 @@ logistic regression from aggregate data or individual data.
   <pkg>metacor</pkg>
   <pkg>MetaDE</pkg>
   <pkg priority="core">metafor</pkg>
+  <pkg>metagear</pkg>
   <pkg>metagen</pkg>
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
@@ -475,6 +562,7 @@ logistic regression from aggregate data or individual data.
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
   <pkg>RcmdrPlugin.EZR</pkg>
+  <pkg>RcmdrPlugin.RMTCJags</pkg>
   <pkg>rmeta</pkg>
   <pkg>robumeta</pkg>
   <pkg>SAMURAI</pkg>
