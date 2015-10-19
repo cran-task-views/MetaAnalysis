@@ -211,6 +211,10 @@
     after the approach of Egger.
   </li>
   <li>
+  <pkg>xmeta</pkg> provides a method in the context of
+  multivariate meta-analysis.
+  </li>
+  <li>
     An exploratory technique for detecting
     an excess of statistically
     significant studies is provided by <pkg>PubBias</pkg>.
@@ -238,7 +242,7 @@
     model and also
     the method of limit meta-analysis (a regression based
     approach for dealing with small study effects)
-    due to Rücker et al.
+    due to R&amp;uuml;cker et al.
   </li>
   <li>
     <pkg>selectMeta</pkg> provides various selection models:
@@ -306,6 +310,11 @@
     meta-analysis of correlation or covariance matrices.
   </li>
   <li>
+    <pkg>xmeta</pkg>
+      provides various functions for multivariate meta-analysis
+      and also for detecting publication bias.
+  </li>
+  <li>
     <pkg>dosresmeta</pkg> concentrates on the situation
     where individual studies have information on
     the dose-response relationship.
@@ -364,6 +373,12 @@
     (using JAGS to implement the MCMC method).
   </li>
   <li>
+    <pkg>meta4diag</pkg>
+      provides Bayesian inference analysis for bivariate meta-analysis
+      of diagnostic test studies and an extensive range of
+      graphical methods.
+  </li>
+  <li>
     <pkg>CopulaREMADA</pkg> uses a copula based mixed model
   </li>
   </ul>
@@ -402,7 +417,7 @@
 <h4>Individual participant data (IPD)</h4>
 
   <p>
-    Where all studies can provide indiviual participant data
+    Where all studies can provide individual participant data
     then software for analysis of multi--centre trials
     or multi-centre cohort studies should prove adequate
     and is outside the scope of this task view.
@@ -451,6 +466,8 @@
     in genetic data:
     <pkg>EasyStrata</pkg> for startified GWAS meta-analysis
       with graphics,
+    <pkg>etma</pkg>
+      proposes a new statistical method to detect epistasis,
     <pkg>gap</pkg> combines p-values,
     <pkg>MAMA</pkg> provides meta-analysis of microarray data,
     <pkg>MetABEL</pkg> provides meta-analysis of
@@ -460,6 +477,8 @@
     <pkg>metaMA</pkg> provides meta-analysis of
       p-values or moderated
      effect sizes to find differentially expressed genes,
+    <pkg>MetaPath</pkg>
+     performs meta-analysis for pathway enrichment, 
     <pkg>MetaPCA</pkg> provides meta-analysis in
       the dimension reduction of genomic data,
     <pkg>MetaQC</pkg> provides objective quality control and
@@ -481,6 +500,11 @@
     dedicated to single-case designs.
   </p>
 
+  <p>
+    <pkg>joint.Cox</pkg> provides facilities for
+	the meta-analysis of studies of joint time-to-event
+	and disease progression.
+  </p>
   <p>
     <pkg>CRTSize</pkg>
     provides meta-analysis as part of a package
@@ -521,13 +545,15 @@
   <pkg>EasyStrata</pkg>
    <pkg>ecoreg</pkg>
   <pkg>epiR</pkg>
+  <pkg>etma</pkg>
   <pkg>exactmeta</pkg>
   <pkg>extfunnel</pkg>
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
   <pkg>forestplot</pkg>
   <pkg>HSROC</pkg>
-   <pkg>ipdmeta</pkg>
+  <pkg>ipdmeta</pkg>
+  <pkg>joint.Cox</pkg>
   <pkg>MAc</pkg>
   <pkg>MAd</pkg>
   <pkg>mada</pkg>
@@ -535,6 +561,7 @@
   <pkg>MAVIS</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
+  <pkg>meta4diag</pkg>
   <pkg>metacor</pkg>
   <pkg>MetaDE</pkg>
   <pkg priority="core">metafor</pkg>
@@ -544,6 +571,7 @@
   <pkg>metaMA</pkg>
   <pkg>metamisc</pkg>
   <pkg>metap</pkg>
+  <pkg>MetaPath</pkg>
   <pkg>MetaPCA</pkg>
   <pkg>metaplus</pkg>
   <pkg>MetaQC</pkg>
@@ -570,6 +598,7 @@
   <pkg>selectMeta</pkg>
   <pkg>seqMeta</pkg>
   <pkg>skatMeta</pkg>
+  <pkg>xmeta</pkg>
  </packagelist>
 
  <links>
