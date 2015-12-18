@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2015-10-19</version>
+<version>2015-12-18</version>
 
 <info>
 <p>
@@ -122,6 +122,13 @@
     with priors suggested by Higgins.
     <pkg>mmeta</pkg> provides meta-analysis using
     beta-binomial prior distributions.
+   A Bayesian approach is also provided by <pkg>bmeta</pkg> which
+   provides forest plots via
+   <pkg>forestplot</pkg>
+   and diagnostic graphical output.
+   <pkg>bayesmeta</pkg> also provides a Bayesian approach
+   with forest plots via <pkg>metafor</pkg>
+   and diagnostic graphical output.
   </li>
   <li>
     Some packages concentrate on providing
@@ -243,7 +250,7 @@
     model and also
     the method of limit meta-analysis (a regression based
     approach for dealing with small study effects)
-    due to Rücker et al.
+    due to R??cker et al.
   </li>
   <li>
     <pkg>selectMeta</pkg> provides various selection models:
@@ -257,6 +264,12 @@
     analysis assuming
     the number of unobserved studies is known,
     perhaps from a trial registry, but not their outcome.
+  </li>
+  <li>
+   The <pkg>metansue</pkg> package allows the inclusion
+   by multiple imputation
+   of studies known only to have a non-significant
+   result
   </li>
   </ul>
 
@@ -400,7 +413,7 @@
     these provide bubble plots.
   </li>
   <li>
-    <pkg>metagen</pkg>,
+    <pkg>bmeta</pkg>, <pkg>metagen</pkg>,
     <pkg>metaLik</pkg>, <pkg>metaSEM</pkg>, and
     <pkg>metatest</pkg> also provide meta-regression.
   </li>
@@ -537,6 +550,8 @@
 
  <packagelist>
   <pkg>bamdit</pkg>
+ <pkg>bayesmeta</pkg>
+ <pkg>bmeta</pkg>
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
   <pkg>compute.es</pkg>
@@ -562,6 +577,7 @@
   <pkg>MAVIS</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
+ <pkg>metansue</pkg>
   <pkg>meta4diag</pkg>
   <pkg>metacor</pkg>
   <pkg>MetaDE</pkg>
