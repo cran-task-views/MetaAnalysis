@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2016-05-13</version>
+<version>2016-10-01</version>
 
 <info>
 <p>
@@ -525,9 +525,8 @@
     <pkg>MultiMeta</pkg> for meta-analysis
       of multivariate GWAS
       results with graphics, designed to accept GEMMA format,
-    <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>, and
-    <pkg>skatMeta</pkg> provide meta-analysis
-      for the SKAT test.
+    <pkg>MetaSKAT</pkg> and <pkg>seqMeta</pkg>
+      provide meta-analysis for the SKAT test.
   </p>
 <h4>Others</h4>
 
@@ -640,7 +639,6 @@
   <pkg>SCMA</pkg>
   <pkg>selectMeta</pkg>
   <pkg>seqMeta</pkg>
-  <pkg>skatMeta</pkg>
   <pkg>weightr</pkg>
   <pkg>xmeta</pkg>
  </packagelist>
