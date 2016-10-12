@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2016-10-01</version>
+<version>2016-10-12</version>
 
 <info>
 <p>
@@ -68,6 +68,14 @@
     studies (proportions, incidence rates, and mean change).
     It also provides for a measure 
     used in psychometrics (Cronbach's alpha).
+   <pkg>esc</pkg> provides
+   a range of effect size calculations with partial overlap
+   with <pkg>metafor</pkg> but with some extras, noticeably
+   for converting test statistics, also includes a
+   convenience function for collating
+   its output for input to another
+   package like <pkg>metafor</pkg>
+   or producing a CSV file.
   </li>
   <li>
     <pkg>meta</pkg> provides functions to read and work
@@ -158,7 +166,8 @@
     <pkg>metaplus</pkg> fits random effects
     models relaxing the usual
     assumption that the random effects have a normal
-    distribution. Also provides some diagnostics.
+    distribution by providing t or a mixture
+    of normals.
   </li>
   </ul>
 
@@ -186,7 +195,7 @@
   </li>
   <li>
     Radial (Galbraith) plots are provided in
-    <pkg>metafor</pkg>,
+    <pkg>meta</pkg> and <pkg>metafor</pkg>,
   </li>
   <li>
     L'Abbe plots are provided in
@@ -196,11 +205,19 @@
     Baujat plots are provided in
     <pkg>meta</pkg> and <pkg>metafor</pkg>
   </li>
+   <li>
+   <pkg>metaplotr</pkg>
+   provides a crosshair plot
+   </li>
   <li>
-    An extensive series of plots of diagnostic statistics is
-    provided in <pkg>metafor</pkg>.
+   <pkg>MetaAnalyser</pkg> provides an interactive
+   visualisation of the results of a meta-analysis.
   </li>
   </ul>
+<p>
+</p>
+
+
 
 <i>Investigating heterogeneity</i>
   <ul>
@@ -221,6 +238,18 @@
   </li>
   </ul>
 
+<i>Model criticism</i>
+<p>
+  <ul>
+  <li>
+    An extensive series of plots of diagnostic statistics is
+    provided in <pkg>metafor</pkg>,
+  </li>
+  <li>
+    <pkg>metaplus</pkg> provides outlier diagnostics.
+  </li>
+  </ul>
+</p>
 
 <i>Investigating small study bias</i>
   <p>The issue of whether small studies give different results
@@ -408,6 +437,7 @@
     <pkg>bamdit</pkg> provides Bayesian meta-analysis
     with a bivariate random effects model
     (using JAGS to implement the MCMC method).
+    Graphical methods are provided.
   </li>
   <li>
     <pkg>meta4diag</pkg>
@@ -511,6 +541,8 @@
       genome wide SNP association results,
     <pkg>MetaDE</pkg> provides microarray meta-analysis
       of differentially expressed dene detection,
+   <pkg>MetaIntegrator</pkg>
+   provides an extensive set of functions for genetic studies,
     <pkg>metaMA</pkg> provides meta-analysis of
       p-values or moderated
      effect sizes to find differentially expressed genes,
@@ -525,8 +557,7 @@
     <pkg>MultiMeta</pkg> for meta-analysis
       of multivariate GWAS
       results with graphics, designed to accept GEMMA format,
-    <pkg>MetaSKAT</pkg> and <pkg>seqMeta</pkg>
-      provide meta-analysis for the SKAT test.
+    <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>.
   </p>
 <h4>Others</h4>
 
@@ -604,17 +635,20 @@
   <pkg>MetABEL</pkg>
  <pkg>metansue</pkg>
   <pkg>meta4diag</pkg>
+ <pkg>MetaAnalyser</pkg>
   <pkg>metacor</pkg>
   <pkg>MetaDE</pkg>
   <pkg priority="core">metafor</pkg>
   <pkg>metagear</pkg>
   <pkg>metagen</pkg>
+ <pkg>MetaIntegrator</pkg>
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
   <pkg>metamisc</pkg>
   <pkg>metap</pkg>
   <pkg>MetaPath</pkg>
   <pkg>MetaPCA</pkg>
+ <pkg>metaplotr</pkg>
   <pkg>metaplus</pkg>
   <pkg>MetaQC</pkg>
   <pkg>metaRNASeq</pkg>
@@ -641,7 +675,8 @@
   <pkg>seqMeta</pkg>
   <pkg>weightr</pkg>
   <pkg>xmeta</pkg>
- </packagelist>
+  <pkg>esc</pkg>
+</packagelist>
 
  <links>
   <view>Genetics</view>
