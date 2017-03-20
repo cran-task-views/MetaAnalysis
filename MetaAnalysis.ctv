@@ -90,11 +90,11 @@
   <li>
    <pkg>metavcov</pkg> computes the variance-covariance
    matrix for multivariate meta-analysis.
-   </li>
-  <p>
+  </li>
+  <li>
     <pkg>metafuse</pkg> uses a fused lasso to merge
     covariate estimates across a number of independent datasets.
-   </p>
+  </li>
   </ul>
 
   <p><i>Fitting the model</i></p>
