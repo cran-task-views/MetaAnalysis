@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2016-10-12</version>
+<version>2017-03-20</version>
 
 <info>
 <p>
@@ -82,10 +82,19 @@
     with files output by RevMan 4 and 5.
   </li>
   <li>
-    <pkg>metagear</pkg> provides an extensive range of
-    facilities to support the systematic review process,
-    ease data extraction, and generate effect sizes.
+    <pkg>metagear</pkg> provides many tools for the
+    systematic review process including screening articles,
+    downloading the articles, generating a PRISMA diagram,
+    and some tools for effect sizes.
   </li>
+  <li>
+   <pkg>metavcov</pkg> computes the variance-covariance
+   matrix for multivariate meta-analysis.
+   </li>
+  <p>
+    <pkg>metafuse</pkg> uses a fused lasso to merge
+    covariate estimates across a number of independent datasets.
+   </p>
   </ul>
 
   <p><i>Fitting the model</i></p>
@@ -213,6 +222,11 @@
    <pkg>MetaAnalyser</pkg> provides an interactive
    visualisation of the results of a meta-analysis.
   </li>
+  <li>
+   <pkg>metaviz</pkg> provides rainforestplots, an
+   enhanced version of forest plots. It accepts
+   input from <pkg>metafor</pkg>.
+  </li>
   </ul>
 
 
@@ -318,6 +332,25 @@
   facilities for using the weight function model
   of Vevea and Hedges.
   </li>
+  </ul>
+
+ <i>Other study designs</i>
+  <ul>
+  <li>
+    <pkg>SCMA</pkg> provides single case meta-analysis.
+    It is part of a suite of packages
+    dedicated to single-case designs.
+  </li>
+
+  <li>
+    <pkg>joint.Cox</pkg> provides facilities for
+	the meta-analysis of studies of joint time-to-event
+	and disease progression.
+  </li>
+  <li>
+   <pkg>metamisc</pkg> provides for meta-analysis of prognostic studies
+   using the c statistic or the O/E ratio
+</li>
   </ul>
 
 <i>Meta-analysis of significance values</i>
@@ -499,6 +532,10 @@
     logistic regression from aggregate data or
     individual data.
    </li>
+   <li>
+    <pkg>surrosurv</pkg> evaluates failure time surrogates
+    in the context of IPD meta-analysis
+   </li>
    </ul>
 
 <h4>Network meta-analysis</h4>
@@ -526,6 +563,9 @@
   <p>
     There are a number of packages specialising
     in genetic data:
+   <pkg>CPBayes</pkg>
+   uses a Bayesian approach to study cross-pheotype genetic
+   associations,
     <pkg>EasyStrata</pkg> for startified GWAS meta-analysis
       with graphics,
     <pkg>etma</pkg>
@@ -552,21 +592,12 @@
     <pkg>MultiMeta</pkg> for meta-analysis
       of multivariate GWAS
       results with graphics, designed to accept GEMMA format,
-    <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>.
+   <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>,
+   provide meta-analysis
+      for the SKAT test.
   </p>
 <h4>Others</h4>
 
-  <p>
-    <pkg>SCMA</pkg> provides single case meta-analysis.
-    It is part of a suite of packages
-    dedicated to single-case designs.
-  </p>
-
-  <p>
-    <pkg>joint.Cox</pkg> provides facilities for
-	the meta-analysis of studies of joint time-to-event
-	and disease progression.
-  </p>
   <p>
     <pkg>CRTSize</pkg>
     provides meta-analysis as part of a package
@@ -594,6 +625,8 @@
     <pkg>MAd</pkg>.
   </p>
 
+
+
  </info>
 
  <packagelist>
@@ -605,6 +638,7 @@
   <pkg>CAMAN</pkg>
   <pkg>compute.es</pkg>
   <pkg>CopulaREMADA</pkg>
+   <pkg>CPBayes</pkg>
   <pkg>CRTSize</pkg>       
   <pkg>dosresmeta</pkg>
   <pkg>EasyStrata</pkg>
@@ -634,6 +668,7 @@
   <pkg>metacor</pkg>
   <pkg>MetaDE</pkg>
   <pkg priority="core">metafor</pkg>
+   <pkg>metafuse</pkg>
   <pkg>metagear</pkg>
   <pkg>metagen</pkg>
  <pkg>MetaIntegrator</pkg>
@@ -652,6 +687,8 @@
   <pkg>MetaSKAT</pkg>
   <pkg>metatest</pkg>
   <pkg>Metatron</pkg>
+   <pkg>metavcov</pkg>
+   <pkg>metaviz</pkg>
   <pkg>mmeta</pkg>
   <pkg>MultiMeta</pkg>
   <pkg>mvmeta</pkg>
@@ -668,6 +705,7 @@
   <pkg>SCMA</pkg>
   <pkg>selectMeta</pkg>
   <pkg>seqMeta</pkg>
+   <pkg>surrosurv</pkg>
   <pkg>weightr</pkg>
   <pkg>xmeta</pkg>
   <pkg>esc</pkg>
