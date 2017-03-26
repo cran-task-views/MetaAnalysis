@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2017-03-20</version>
+<version>2017-03-26</version>
 
 <info>
 <p>
@@ -571,7 +571,6 @@
     <pkg>etma</pkg>
       proposes a new statistical method to detect epistasis,
     <pkg>gap</pkg> combines p-values,
-    <pkg>MAMA</pkg> provides meta-analysis of microarray data,
     <pkg>MetABEL</pkg> provides meta-analysis of
       genome wide SNP association results,
     <pkg>MetaDE</pkg> provides microarray meta-analysis
@@ -658,7 +657,6 @@
   <pkg>MAc</pkg>
   <pkg>MAd</pkg>
   <pkg>mada</pkg>
-  <pkg>MAMA</pkg>
   <pkg>MAVIS</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
