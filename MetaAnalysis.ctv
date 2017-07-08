@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2017-03-26</version>
+<version>2017-07-08</version>
 
 <info>
 <p>
@@ -76,6 +76,10 @@
    its output for input to another
    package like <pkg>metafor</pkg>
    or producing a CSV file.
+   <pkg>effsize</pkg>
+   contains functions to compute effect sizes mean difference (Cohen???s
+   d and Hedges g), dominance matrices (Cliff???s Delta)
+   and stochastic superiority (Vargha-Delaney A).
   </li>
   <li>
     <pkg>meta</pkg> provides functions to read and work
@@ -89,7 +93,9 @@
   </li>
   <li>
    <pkg>metavcov</pkg> computes the variance-covariance
-   matrix for multivariate meta-analysis.
+   matrix for multivariate meta-analysis
+   when correlations between outcomes can be
+   provided but not between treatment effects
   </li>
   <li>
     <pkg>metafuse</pkg> uses a fused lasso to merge
@@ -178,6 +184,16 @@
     distribution by providing t or a mixture
     of normals.
   </li>
+   <li>
+   <pkg>ratesci</pkg>
+   fits random effects models to binary data using
+   a variety of methods for confidence intervals.
+   </li>
+  <li>
+  <pkg>RandMeta</pkg>
+   estimates exact confidence intervals in random effects
+   models using an efficient algorithm.
+   </li>
   </ul>
 
 <i>Graphical methods</i>
@@ -186,21 +202,25 @@
   </p>
   <ul>
   <li>
-    Forest plots are provided in <pkg>forestplot</pkg>,
+    Forest plots are provided in <pkg>forestmodel</pkg>
+    (using ggplot2), <pkg>forestplot</pkg>,
     <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>.
     Although the most basic plot can be produced
     by any of them
     they each provide their own choice of enhancements.
   </li>
+
   <li>
     Funnel plots are provided in
-    <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>.
+    <pkg>meta</pkg>, <pkg>metafor</pkg>, <pkg>psychometric</pkg>
+    and <pkg>rmeta</pkg>.
     In addition to the standard funnel plots
     an enhanced funnel plot to assess the
     impact of extra evidence
-    is available in <pkg>extfunnel</pkg>, and a funnel plot
+    is available in <pkg>extfunnel</pkg>, a funnel plot
     for limit meta-analysis in
-    <pkg>metasens</pkg>,
+    <pkg>metasens</pkg>, and <pkg>metaviz</pkg> provides
+    funnelt plots in the context of visual inference.
   </li>
   <li>
     Radial (Galbraith) plots are provided in
@@ -258,6 +278,11 @@
   <li>
     <pkg>metaplus</pkg> provides outlier diagnostics.
   </li>
+  <li>
+   <pkg>ConfoundedMeta</pkg> conducts a sensitivity analysis
+   to estimate the proportion of studies with
+   true effect sizes above a threshold.
+   </li>
   </ul>
 
 <i>Investigating small study bias</i>
@@ -305,7 +330,7 @@
     model and also
     the method of limit meta-analysis (a regression based
     approach for dealing with small study effects)
-    due to R??cker et al.
+    due to Rücker et al.
   </li>
   <li>
     <pkg>selectMeta</pkg> provides various selection models:
@@ -341,7 +366,6 @@
     It is part of a suite of packages
     dedicated to single-case designs.
   </li>
-
   <li>
     <pkg>joint.Cox</pkg> provides facilities for
 	the meta-analysis of studies of joint time-to-event
@@ -349,7 +373,7 @@
   </li>
   <li>
    <pkg>metamisc</pkg> provides for meta-analysis of prognostic studies
-   using the c statistic or the O/E ratio
+   using the c statistic or the O/E ratio. Some plots are provided.
 </li>
   </ul>
 
@@ -552,11 +576,13 @@
     which acts as a front-end to BUGS
     or JAGS, and <pkg>pcnetmeta</pkg>,
     which uses JAGS.
+   <pkg>nmaINLA</pkg> uses integrated nested Laplace approximations
+   as an alternative to MCMC.It provides a number of data-sets.
     <pkg>netmeta</pkg>  works in a frequentist framework.
     Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
     provide network graphs and
     <pkg>netmeta</pkg> provides a heatmap for
-    displaying inconsistency and heterogeneity
+    displaying inconsistency and heterogeneity.
   </p>
 
 <h4>Genetics</h4>
@@ -571,6 +597,7 @@
     <pkg>etma</pkg>
       proposes a new statistical method to detect epistasis,
     <pkg>gap</pkg> combines p-values,
+   <pkg>getmstatistic</pkg> quantifies systematic heterogeneity,
     <pkg>MetABEL</pkg> provides meta-analysis of
       genome wide SNP association results,
     <pkg>MetaDE</pkg> provides microarray meta-analysis
@@ -636,19 +663,23 @@
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
   <pkg>compute.es</pkg>
+   <pkg>ConfoundedMeta</pkg>
   <pkg>CopulaREMADA</pkg>
    <pkg>CPBayes</pkg>
   <pkg>CRTSize</pkg>       
   <pkg>dosresmeta</pkg>
   <pkg>EasyStrata</pkg>
    <pkg>ecoreg</pkg>
+   <pkg>effsize</pkg>
   <pkg>epiR</pkg>
   <pkg>etma</pkg>
   <pkg>exactmeta</pkg>
   <pkg>extfunnel</pkg>
+   <pkg>forestmodel</pkg>
   <pkg>forestplot</pkg>
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
+   <pkg>getmstatistic</pkg>
   <pkg>gmeta</pkg>
   <pkg>hetmeta</pkg>
   <pkg>HSROC</pkg>
@@ -692,9 +723,12 @@
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
+   <pkg>nmaINLA</pkg>
   <pkg>pcnetmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
+   <pkg>RandMeta</pkg>
+   <pkg>ratesci</pkg>
   <pkg>RcmdrPlugin.EZR</pkg>
   <pkg>RcmdrPlugin.RMTCJags</pkg>
   <pkg>rmeta</pkg>
