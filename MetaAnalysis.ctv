@@ -77,8 +77,8 @@
    package like <pkg>metafor</pkg>
    or producing a CSV file.
    <pkg>effsize</pkg>
-   contains functions to compute effect sizes mean difference (Cohen???s
-   d and Hedges g), dominance matrices (Cliff???s Delta)
+   contains functions to compute effect sizes mean difference (Cohen's
+   d and Hedges g), dominance matrices (Cliff's Delta)
    and stochastic superiority (Vargha-Delaney A).
   </li>
   <li>
