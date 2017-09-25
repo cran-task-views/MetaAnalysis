@@ -220,7 +220,7 @@
     is available in <pkg>extfunnel</pkg>, a funnel plot
     for limit meta-analysis in
     <pkg>metasens</pkg>, and <pkg>metaviz</pkg> provides
-    funnelt plots in the context of visual inference.
+    funnel plots in the context of visual inference.
   </li>
   <li>
     Radial (Galbraith) plots are provided in
@@ -455,7 +455,7 @@
     This is an active area of research and a variety
     of methods are available
     including what is referred to here called Reitsma's
-    method, and the heirarchical summary receiver operating
+    method, and the hierarchical summary receiver operating
     characteristic (HSROC) method.
     In many situations these are equivalent.
   </p>
@@ -477,7 +477,7 @@
   <li>
     <pkg>Metatron</pkg> provides a method for
     the Reitsma model
-    incuding the case of an imperfect reference standard
+    including the case of an imperfect reference standard
   </li>
   <li>
     <pkg>metamisc</pkg> provides the method
@@ -590,7 +590,7 @@
     There are a number of packages specialising
     in genetic data:
    <pkg>CPBayes</pkg>
-   uses a Bayesian approach to study cross-pheotype genetic
+   uses a Bayesian approach to study cross-phenotype genetic
    associations,
     <pkg>EasyStrata</pkg> for startified GWAS meta-analysis
       with graphics,
