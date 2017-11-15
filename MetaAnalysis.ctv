@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2017-07-08</version>
+<version>2017-11-14</version>
 
 <info>
 <p>
@@ -77,9 +77,12 @@
    package like <pkg>metafor</pkg>
    or producing a CSV file.
    <pkg>effsize</pkg>
-   contains functions to compute effect sizes mean difference (Cohen's
-   d and Hedges g), dominance matrices (Cliff's Delta)
+   contains functions to compute effect sizes mean difference (Cohen???s
+   d and Hedges g), dominance matrices (Cliff???s Delta)
    and stochastic superiority (Vargha-Delaney A).
+   <pkg>psychmeta</pkg> provides extensive facilties for
+   converting effect sizes and for correcting for a variety
+   of restrictions and measurment errors.
   </li>
   <li>
     <pkg>meta</pkg> provides functions to read and work
@@ -95,7 +98,10 @@
    <pkg>metavcov</pkg> computes the variance-covariance
    matrix for multivariate meta-analysis
    when correlations between outcomes can be
-   provided but not between treatment effects
+   provided but not between treatment effects,
+  <pkg>clubSandwich</pkg>
+  imputes
+  variance-covariance matrix for multivariate meta-analysis
   </li>
   <li>
     <pkg>metafuse</pkg> uses a fused lasso to merge
@@ -136,6 +142,10 @@
     for the meta-analysis of psychometric studies.
   </li>
   <li>
+  <pkg>psychmeta</pkg> implements the Hunter-Schmidt method
+  including corrections for reliability and range-restriction issues
+  </li>
+  <li>
     Bayesian approaches are contained in various packages.
     <pkg>bspmma</pkg> which 
     provides two different models:
@@ -170,7 +180,11 @@
     method of moments provides
     two likelihood-based  methods, and
     <pkg>metatest</pkg> which provides
-    another improved method of obtaining confidence intervals.
+    another improved method of obtaining confidence intervals,
+    <pkg>metaBMA</pkg>
+    Bayesian using model averaging, a variety of priors
+    are provided and it is possible for the user to define
+    new ones.
   </li>
   <li><pkg>metagen</pkg> provides a range of methods for
     random effects models and also facilities
@@ -194,6 +208,15 @@
    estimates exact confidence intervals in random effects
    models using an efficient algorithm.
    </li>
+  <li>
+  <pkg>rma.exact</pkg>
+   estimates exact confidence intervals in random effects
+   normal-normal models and also provides plots of them.
+   </li>
+   <li>
+   <pkg>clubSandwich</pkg>
+   gives cluster-robust variance estimates
+   </li>
   </ul>
 
 <i>Graphical methods</i>
@@ -204,7 +227,8 @@
   <li>
     Forest plots are provided in <pkg>forestmodel</pkg>
     (using ggplot2), <pkg>forestplot</pkg>,
-    <pkg>meta</pkg>, <pkg>metafor</pkg> and <pkg>rmeta</pkg>.
+    <pkg>meta</pkg>, <pkg>metafor</pkg>,
+    <pkg>psychmeta</pkg>, and <pkg>rmeta</pkg>.
     Although the most basic plot can be produced
     by any of them
     they each provide their own choice of enhancements.
@@ -220,7 +244,7 @@
     is available in <pkg>extfunnel</pkg>, a funnel plot
     for limit meta-analysis in
     <pkg>metasens</pkg>, and <pkg>metaviz</pkg> provides
-    funnel plots in the context of visual inference.
+    funnelt plots in the context of visual inference.
   </li>
   <li>
     Radial (Galbraith) plots are provided in
@@ -254,8 +278,8 @@
   <ul>
   <li>
     Confidence intervals for the heterogeneity parameter
-    are provided in <pkg>metafor</pkg>
-    and <pkg>metagen</pkg>.
+    are provided in <pkg>metafor</pkg>,
+    <pkg>metagen</pkg>, and <pkg>psychmeta</pkg>.
   </li>
   <li>
   <pkg>altmeta</pkg>
@@ -267,6 +291,10 @@
   <pkg>hetmeta</pkg>
   calculates some extra measures of heterogeneity.
   </li>
+  <li>
+  <pkg>metaforest</pkg> investigates heterogeneity using randod forests.
+  Note that it has nothing to do with forest plots.
+  </li>
   </ul>
 
 <i>Model criticism</i>
@@ -277,6 +305,9 @@
   </li>
   <li>
     <pkg>metaplus</pkg> provides outlier diagnostics.
+  </li>
+  <li>
+  <pkg>psychmeta</pkg> provides leave-one-out methods
   </li>
   <li>
    <pkg>ConfoundedMeta</pkg> conducts a sensitivity analysis
@@ -330,7 +361,7 @@
     model and also
     the method of limit meta-analysis (a regression based
     approach for dealing with small study effects)
-    due to Rücker et al.
+    due to R&#252;cker et al.
   </li>
   <li>
     <pkg>selectMeta</pkg> provides various selection models:
@@ -379,9 +410,19 @@
 
 <i>Meta-analysis of significance values</i>
   <p>
+  <ul>
+  <li>
     <pkg>metap</pkg> provides some facilities for
     meta-analysis of significance values.
-    Some of these methods are also provided in some
+  </li>
+  <li>
+    <pkg>TFisher</pkg> provides Fisher's method using thresholding for
+    the p-values
+   </li>
+   </ul>
+   </p>
+   <p>
+    Some methods are also provided in some
     of the genetics packages mentioned below.
   </p>
 
@@ -441,6 +482,12 @@
     <pkg>robumeta</pkg> provides robust variance
     estimation for clustered and hierarchical estimates.
   </li>
+   <li>
+   <pkg>CIAAWconsensus</pkg>
+   has a function for multivariate m-a in the context
+   of atomic weights and estimating
+   isotope ratios
+   </li>
   </ul>
 
 <h4>Meta-analysis of studies of diagnostic tests</h4>
@@ -455,7 +502,7 @@
     This is an active area of research and a variety
     of methods are available
     including what is referred to here called Reitsma's
-    method, and the hierarchical summary receiver operating
+    method, and the heirarchical summary receiver operating
     characteristic (HSROC) method.
     In many situations these are equivalent.
   </p>
@@ -477,7 +524,7 @@
   <li>
     <pkg>Metatron</pkg> provides a method for
     the Reitsma model
-    including the case of an imperfect reference standard
+    incuding the case of an imperfect reference standard
   </li>
   <li>
     <pkg>metamisc</pkg> provides the method
@@ -516,6 +563,7 @@
     provide meta-regression (<pkg>meta</pkg>, <pkg>MAc</pkg>,
     and  <pkg>MAd</pkg>) and all three of
     these provide bubble plots.
+    <pkg>psychmeta</pkg> also uses <pkg>metafor</pkg>.
   </li>
   <li>
     <pkg>bmeta</pkg>, <pkg>metagen</pkg>,
@@ -526,6 +574,10 @@
     <pkg>mvmeta</pkg> provides meta-regression
     for multivariate meta-analysis
     as do <pkg>metafor</pkg> and <pkg>metaSEM</pkg>.
+  </li>
+  <li>
+  <pkg>metacart</pkg> integrates regression and classification trees
+  into the meta-analysis framework for moderator selection
   </li>
   <li>
     <pkg>mada</pkg> provides for the
@@ -590,7 +642,7 @@
     There are a number of packages specialising
     in genetic data:
    <pkg>CPBayes</pkg>
-   uses a Bayesian approach to study cross-phenotype genetic
+   uses a Bayesian approach to study cross-pheotype genetic
    associations,
     <pkg>EasyStrata</pkg> for startified GWAS meta-analysis
       with graphics,
@@ -615,6 +667,8 @@
       inclusion/exclusion criteria for genomic meta-analysis,
     <pkg>metaRNASeq</pkg> meta-analysis from multiple RNA
       sequencing experiments,
+      <pkg>MetaSubtract</pkg> uses leave-one-out methods to
+      validate meta-GWAS results,
     <pkg>MultiMeta</pkg> for meta-analysis
       of multivariate GWAS
       results with graphics, designed to accept GEMMA format,
@@ -646,9 +700,9 @@
     to do the heavy lifting,
     <pkg>RcmdrPlugin.RMTCJags</pkg> provides an interface
     for network meta-analysis using BUGS code,
-    and <pkg>MAVIS</pkg> provides a shiny
-    interface using <pkg>metafor</pkg>, <pkg>MAc</pkg> and
-    <pkg>MAd</pkg>.
+    and <pkg>MAVIS</pkg> provides a Shiny
+    interface using <pkg>metafor</pkg>, <pkg>MAc</pkg>,
+    <pkg>MAd</pkg>, and <pkg>weightr</pkg>.
   </p>
 
 
@@ -662,6 +716,8 @@
  <pkg>bmeta</pkg>
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
+  <pkg>CIAAWconsensus</pkg>
+   <pkg>clubSandwich</pkg>
   <pkg>compute.es</pkg>
    <pkg>ConfoundedMeta</pkg>
   <pkg>CopulaREMADA</pkg>
@@ -691,6 +747,9 @@
   <pkg>MAVIS</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
+  <pkg>metaBMA</pkg>
+    <pkg>metacart</pkg>
+   <pkg>metaforest</pkg>
  <pkg>metansue</pkg>
   <pkg>meta4diag</pkg>
  <pkg>MetaAnalyser</pkg>
@@ -714,6 +773,7 @@
   <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
+   <pkg>MetaSubtract</pkg>
   <pkg>metatest</pkg>
   <pkg>Metatron</pkg>
    <pkg>metavcov</pkg>
@@ -725,12 +785,14 @@
   <pkg>netmeta</pkg>
    <pkg>nmaINLA</pkg>
   <pkg>pcnetmeta</pkg>
+   <pkg>psychmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
    <pkg>RandMeta</pkg>
    <pkg>ratesci</pkg>
   <pkg>RcmdrPlugin.EZR</pkg>
   <pkg>RcmdrPlugin.RMTCJags</pkg>
+   <pkg>rma.exact</pkg>
   <pkg>rmeta</pkg>
   <pkg>robumeta</pkg>
   <pkg>SAMURAI</pkg>
@@ -738,6 +800,7 @@
   <pkg>selectMeta</pkg>
   <pkg>seqMeta</pkg>
    <pkg>surrosurv</pkg>
+    <pkg>TFisher</pkg>
   <pkg>weightr</pkg>
   <pkg>xmeta</pkg>
   <pkg>esc</pkg>
