@@ -409,7 +409,6 @@
   </ul>
 
 <i>Meta-analysis of significance values</i>
-  <p>
   <ul>
   <li>
     <pkg>metap</pkg> provides some facilities for
@@ -420,7 +419,6 @@
     the p-values
    </li>
    </ul>
-   </p>
    <p>
     Some methods are also provided in some
     of the genetics packages mentioned below.
