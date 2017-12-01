@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2017-11-14</version>
+<version>2017-12-01</version>
 
 <info>
 <p>
@@ -514,12 +514,6 @@
      A range of graphical methods is also available.
   </li>
   <li>
-    <pkg>HSROC</pkg> provides HSROC with estimation
-    in a Bayesian framework.
-    Graphical methods are provided.
-    The case of imperfect reference standards is catered for.
-  </li>
-  <li>
     <pkg>Metatron</pkg> provides a method for
     the Reitsma model
     incuding the case of an imperfect reference standard
@@ -736,7 +730,6 @@
    <pkg>getmstatistic</pkg>
   <pkg>gmeta</pkg>
   <pkg>hetmeta</pkg>
-  <pkg>HSROC</pkg>
   <pkg>ipdmeta</pkg>
   <pkg>joint.Cox</pkg>
   <pkg>MAc</pkg>
