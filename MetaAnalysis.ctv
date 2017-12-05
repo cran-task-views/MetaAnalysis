@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2017-12-01</version>
+<version>2017-12-05</version>
 
 <info>
 <p>
@@ -77,12 +77,12 @@
    package like <pkg>metafor</pkg>
    or producing a CSV file.
    <pkg>effsize</pkg>
-   contains functions to compute effect sizes mean difference (Cohen???s
-   d and Hedges g), dominance matrices (Cliff???s Delta)
+   contains functions to compute effect sizes mean difference (Cohen's
+   d and Hedges g), dominance matrices (Cliff's Delta)
    and stochastic superiority (Vargha-Delaney A).
    <pkg>psychmeta</pkg> provides extensive facilties for
    converting effect sizes and for correcting for a variety
-   of restrictions and measurment errors.
+   of restrictions and measurement errors.
   </li>
   <li>
     <pkg>meta</pkg> provides functions to read and work
@@ -98,7 +98,7 @@
    <pkg>metavcov</pkg> computes the variance-covariance
    matrix for multivariate meta-analysis
    when correlations between outcomes can be
-   provided but not between treatment effects,
+   provided but not between treatment effects, and
   <pkg>clubSandwich</pkg>
   imputes
   variance-covariance matrix for multivariate meta-analysis
@@ -128,7 +128,7 @@
   </li>
   <li>Packages which work with specific effect sizes
     may be more congenial
-    to workers in some areas of science
+    to workers in some areas of science and include
     <pkg>MAc</pkg> and
     <pkg>metacor</pkg>
     which provide meta-analysis of correlation
@@ -181,8 +181,8 @@
     two likelihood-based  methods, and
     <pkg>metatest</pkg> which provides
     another improved method of obtaining confidence intervals,
-    <pkg>metaBMA</pkg>
-    Bayesian using model averaging, a variety of priors
+    <pkg>metaBMA</pkg> has a
+    Bayesian approach using model averaging, a variety of priors
     are provided and it is possible for the user to define
     new ones.
   </li>
@@ -215,7 +215,7 @@
    </li>
    <li>
    <pkg>clubSandwich</pkg>
-   gives cluster-robust variance estimates
+   gives cluster-robust variance estimates.
    </li>
   </ul>
 
@@ -244,19 +244,19 @@
     is available in <pkg>extfunnel</pkg>, a funnel plot
     for limit meta-analysis in
     <pkg>metasens</pkg>, and <pkg>metaviz</pkg> provides
-    funnelt plots in the context of visual inference.
+    funnel plots in the context of visual inference.
   </li>
   <li>
     Radial (Galbraith) plots are provided in
-    <pkg>meta</pkg> and <pkg>metafor</pkg>,
+    <pkg>meta</pkg> and <pkg>metafor</pkg>.
   </li>
   <li>
     L'Abbe plots are provided in
-    <pkg>meta</pkg> and <pkg>metafor</pkg>,
+    <pkg>meta</pkg> and <pkg>metafor</pkg>.
   </li>
   <li>
     Baujat plots are provided in
-    <pkg>meta</pkg> and <pkg>metafor</pkg>
+    <pkg>meta</pkg> and <pkg>metafor</pkg>.
   </li>
    <li>
    <pkg>metaplotr</pkg>
@@ -292,7 +292,7 @@
   calculates some extra measures of heterogeneity.
   </li>
   <li>
-  <pkg>metaforest</pkg> investigates heterogeneity using randod forests.
+  <pkg>metaforest</pkg> investigates heterogeneity using random forests.
   Note that it has nothing to do with forest plots.
   </li>
   </ul>
@@ -301,13 +301,13 @@
   <ul>
   <li>
     An extensive series of plots of diagnostic statistics is
-    provided in <pkg>metafor</pkg>,
+    provided in <pkg>metafor</pkg>.
   </li>
   <li>
     <pkg>metaplus</pkg> provides outlier diagnostics.
   </li>
   <li>
-  <pkg>psychmeta</pkg> provides leave-one-out methods
+  <pkg>psychmeta</pkg> provides leave-one-out methods.
   </li>
   <li>
    <pkg>ConfoundedMeta</pkg> conducts a sensitivity analysis
@@ -416,7 +416,7 @@
   </li>
   <li>
     <pkg>TFisher</pkg> provides Fisher's method using thresholding for
-    the p-values
+    the p-values.
    </li>
    </ul>
    <p>
@@ -440,14 +440,14 @@
   <ul>
   <li>
     <pkg>mvmeta</pkg> assumes the within study covariances
-    are known and as well as fixed effects provides a
+    are known and provides a
     variety of options for fitting random effects.
     <pkg>metafor</pkg>
     provides fixed effects and likelihood
     based random effects model fitting procedures.
     Both these packages include meta-regression,
     <pkg>metafor</pkg> also provides for clustered and
-    hierarchical models
+    hierarchical models.
   </li>
   <li>
     <pkg>mvtmeta</pkg> provides multivariate meta-analysis 
@@ -484,7 +484,7 @@
    <pkg>CIAAWconsensus</pkg>
    has a function for multivariate m-a in the context
    of atomic weights and estimating
-   isotope ratios
+   isotope ratios.
    </li>
   </ul>
 
@@ -499,8 +499,8 @@
     although the between-study correlation is estimated.
     This is an active area of research and a variety
     of methods are available
-    including what is referred to here called Reitsma's
-    method, and the heirarchical summary receiver operating
+    including what is referred to here as Reitsma's
+    method, and the hierarchical summary receiver operating
     characteristic (HSROC) method.
     In many situations these are equivalent.
   </p>
@@ -516,7 +516,7 @@
   <li>
     <pkg>Metatron</pkg> provides a method for
     the Reitsma model
-    incuding the case of an imperfect reference standard
+    incuding the case of an imperfect reference standard.
   </li>
   <li>
     <pkg>metamisc</pkg> provides the method
@@ -569,7 +569,7 @@
   </li>
   <li>
   <pkg>metacart</pkg> integrates regression and classification trees
-  into the meta-analysis framework for moderator selection
+  into the meta-analysis framework for moderator selection.
   </li>
   <li>
     <pkg>mada</pkg> provides for the
@@ -581,7 +581,7 @@
 
   <p>
     Where all studies can provide individual participant data
-    then software for analysis of multi--centre trials
+    then software for analysis of multi-centre trials
     or multi-centre cohort studies should prove adequate
     and is outside the scope of this task view.
     Other packages which provide facilities
@@ -621,7 +621,8 @@
     or JAGS, and <pkg>pcnetmeta</pkg>,
     which uses JAGS.
    <pkg>nmaINLA</pkg> uses integrated nested Laplace approximations
-   as an alternative to MCMC.It provides a number of data-sets.
+   as an alternative to MCMC.
+   It provides a number of data-sets.
     <pkg>netmeta</pkg>  works in a frequentist framework.
     Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
     provide network graphs and
@@ -634,9 +635,9 @@
     There are a number of packages specialising
     in genetic data:
    <pkg>CPBayes</pkg>
-   uses a Bayesian approach to study cross-pheotype genetic
+   uses a Bayesian approach to study cross-phenotype genetic
    associations,
-    <pkg>EasyStrata</pkg> for startified GWAS meta-analysis
+    <pkg>EasyStrata</pkg> for stratified GWAS meta-analysis
       with graphics,
     <pkg>etma</pkg>
       proposes a new statistical method to detect epistasis,
@@ -645,7 +646,7 @@
     <pkg>MetABEL</pkg> provides meta-analysis of
       genome wide SNP association results,
     <pkg>MetaDE</pkg> provides microarray meta-analysis
-      of differentially expressed dene detection,
+      of differentially expressed gene detection,
    <pkg>MetaIntegrator</pkg>
    provides an extensive set of functions for genetic studies,
     <pkg>metaMA</pkg> provides meta-analysis of
