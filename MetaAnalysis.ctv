@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2017-12-05</version>
+<version>2018-01-24</version>
 
 <info>
 <p>
@@ -645,8 +645,6 @@
    <pkg>getmstatistic</pkg> quantifies systematic heterogeneity,
     <pkg>MetABEL</pkg> provides meta-analysis of
       genome wide SNP association results,
-    <pkg>MetaDE</pkg> provides microarray meta-analysis
-      of differentially expressed gene detection,
    <pkg>MetaIntegrator</pkg>
    provides an extensive set of functions for genetic studies,
     <pkg>metaMA</pkg> provides meta-analysis of
@@ -746,7 +744,6 @@
   <pkg>meta4diag</pkg>
  <pkg>MetaAnalyser</pkg>
   <pkg>metacor</pkg>
-  <pkg>MetaDE</pkg>
   <pkg priority="core">metafor</pkg>
    <pkg>metafuse</pkg>
   <pkg>metagear</pkg>
