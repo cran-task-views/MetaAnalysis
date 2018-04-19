@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2018-01-24</version>
+<version>2018-04-19</version>
 
 <info>
 <p>
@@ -93,6 +93,9 @@
     systematic review process including screening articles,
     downloading the articles, generating a PRISMA diagram,
     and some tools for effect sizes.
+    <pkg>revtools</pkg>
+    provides tools for downloading from bibliographic
+    databases and uses machine learning methods to process them.
   </li>
   <li>
    <pkg>metavcov</pkg> computes the variance-covariance
@@ -159,9 +162,9 @@
    provides forest plots via
    <pkg>forestplot</pkg>
    and diagnostic graphical output.
-   <pkg>bayesmeta</pkg> also provides a Bayesian approach
-   with forest plots via <pkg>metafor</pkg>
-   and diagnostic graphical output.
+    <pkg>bayesmeta</pkg> includes shrinkage estimates, posterior
+    predictive p-values and forest plots via either <pkg>metafor</pkg>
+    or <pkg>forestplot</pkg>. Diagnostic graphical output is available.
   </li>
   <li>
     Some packages concentrate on providing
@@ -216,6 +219,16 @@
    <li>
    <pkg>clubSandwich</pkg>
    gives cluster-robust variance estimates.
+   </li>
+   <li>
+   <pkg>pimeta</pkg>
+   implements prediction intervals for random effects meta-analysis.
+   </li>
+   <li>
+   <pkg>RBesT</pkg>
+   generates a meta-analytic prior for future studies.
+   Forest plots are available as well as diagnostic plots.
+   It uses Stan as its engine.
    </li>
   </ul>
 
@@ -338,6 +351,9 @@
     an excess of statistically
     significant studies is provided by <pkg>PubBias</pkg>.
   </li>
+   <li>
+   <pkg>metamisc</pkg> provides funnel plots and tests for asymmetry.
+   </li>
   </ul>
 
 <i>Unobserved studies</i>
@@ -413,6 +429,10 @@
   <li>
     <pkg>metap</pkg> provides some facilities for
     meta-analysis of significance values.
+  </li>
+   <li>
+   <pkg>aggregation</pkg>
+   provides a smaller subset of methods.
   </li>
   <li>
     <pkg>TFisher</pkg> provides Fisher's method using thresholding for
@@ -539,6 +559,12 @@
   <li>
     <pkg>CopulaREMADA</pkg> uses a copula based mixed model
   </li>
+   <li>
+   <pkg>diagmeta</pkg>
+   considers the case where the primary studies provide
+   analysis using multiple cut-offs.
+   Graphical methods are also provided.
+  </li>
   </ul>
 
 <h4>Meta-regression</h4>
@@ -628,6 +654,10 @@
     provide network graphs and
     <pkg>netmeta</pkg> provides a heatmap for
     displaying inconsistency and heterogeneity.
+    <pkg>nmathresh</pkg>
+   provides decision-invariant bias adjustment
+   thresholds and intervals the
+   smallest changes to the data that would result in a change of decision.
   </p>
 
 <h4>Genetics</h4>
@@ -643,6 +673,9 @@
       proposes a new statistical method to detect epistasis,
     <pkg>gap</pkg> combines p-values,
    <pkg>getmstatistic</pkg> quantifies systematic heterogeneity,
+   <pkg>MendelianRandomization</pkg>
+   provides several methods for performing Mendelian randomisation
+   analyses with summarised data,
     <pkg>MetABEL</pkg> provides meta-analysis of
       genome wide SNP association results,
    <pkg>MetaIntegrator</pkg>
@@ -667,6 +700,30 @@
    provide meta-analysis
       for the SKAT test.
   </p>
+
+<h4>Interfaces</h4>
+  <p>
+    <pkg>RcmdrPlugin.EZR</pkg> provides an interface
+    via the Rcmdr GUI
+    using <pkg>meta</pkg> and <pkg>metatest</pkg>
+    to do the heavy lifting,
+    <pkg>RcmdrPlugin.RMTCJags</pkg> provides an interface
+    for network meta-analysis using BUGS code,
+    and <pkg>MAVIS</pkg> provides a Shiny
+    interface using <pkg>metafor</pkg>, <pkg>MAc</pkg>,
+    <pkg>MAd</pkg>, and <pkg>weightr</pkg>.
+  </p>
+
+<h4>Simulation</h4>
+
+<p>
+Extensive facilities for simulation are provided in
+<pkg>metagen</pkg> including the ability to make use
+of parallel processing.
+<pkg>psychmeta</pkg> provides
+facilities for simulation of psychometric data-sets.
+</p>
+
 <h4>Others</h4>
 
   <p>
@@ -684,23 +741,17 @@
     where there is heterogeneity.
     Covariates can be included to provide meta-regression.
   </p>
-  <p>
-    <pkg>RcmdrPlugin.EZR</pkg> provides an interface
-    via the Rcmdr GUI
-    using <pkg>meta</pkg> and <pkg>metatest</pkg>
-    to do the heavy lifting,
-    <pkg>RcmdrPlugin.RMTCJags</pkg> provides an interface
-    for network meta-analysis using BUGS code,
-    and <pkg>MAVIS</pkg> provides a Shiny
-    interface using <pkg>metafor</pkg>, <pkg>MAc</pkg>,
-    <pkg>MAd</pkg>, and <pkg>weightr</pkg>.
-  </p>
-
+   <p>
+   <pkg>joineRmeta</pkg>
+   provides functions for meta-analysis of a single longitudinal and
+   a single time-to-event outcome from multiple studies using joint models
+   </p>
 
 
  </info>
 
  <packagelist>
+<pkg>aggregation</pkg>
   <pkg>altmeta</pkg>
  <pkg>bamdit</pkg>
  <pkg>bayesmeta</pkg>
@@ -714,6 +765,7 @@
   <pkg>CopulaREMADA</pkg>
    <pkg>CPBayes</pkg>
   <pkg>CRTSize</pkg>       
+<pkg>diagmeta</pkg>
   <pkg>dosresmeta</pkg>
   <pkg>EasyStrata</pkg>
    <pkg>ecoreg</pkg>
@@ -730,16 +782,19 @@
   <pkg>gmeta</pkg>
   <pkg>hetmeta</pkg>
   <pkg>ipdmeta</pkg>
+   <pkg>joineRmeta</pkg>
   <pkg>joint.Cox</pkg>
   <pkg>MAc</pkg>
   <pkg>MAd</pkg>
   <pkg>mada</pkg>
   <pkg>MAVIS</pkg>
+<pkg>MendelianRandomization</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
   <pkg>metaBMA</pkg>
     <pkg>metacart</pkg>
    <pkg>metaforest</pkg>
+<pkg>metagen</pkg>
  <pkg>metansue</pkg>
   <pkg>meta4diag</pkg>
  <pkg>MetaAnalyser</pkg>
@@ -764,6 +819,7 @@
   <pkg>MetaSKAT</pkg>
    <pkg>MetaSubtract</pkg>
   <pkg>metatest</pkg>
+<pkg>nmathresh</pkg>
   <pkg>Metatron</pkg>
    <pkg>metavcov</pkg>
    <pkg>metaviz</pkg>
@@ -774,13 +830,16 @@
   <pkg>netmeta</pkg>
    <pkg>nmaINLA</pkg>
   <pkg>pcnetmeta</pkg>
+<pkg>pimeta</pkg>
    <pkg>psychmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
    <pkg>RandMeta</pkg>
    <pkg>ratesci</pkg>
+<pkg>RBesT</pkg>
   <pkg>RcmdrPlugin.EZR</pkg>
   <pkg>RcmdrPlugin.RMTCJags</pkg>
+<pkg>revtools</pkg>
    <pkg>rma.exact</pkg>
   <pkg>rmeta</pkg>
   <pkg>robumeta</pkg>
