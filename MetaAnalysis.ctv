@@ -689,8 +689,6 @@
       inclusion/exclusion criteria for genomic meta-analysis,
     <pkg>metaRNASeq</pkg> meta-analysis from multiple RNA
       sequencing experiments,
-      <pkg>MetaSubtract</pkg> uses leave-one-out methods to
-      validate meta-GWAS results,
     <pkg>MultiMeta</pkg> for meta-analysis
       of multivariate GWAS
       results with graphics, designed to accept GEMMA format,
@@ -814,7 +812,6 @@ facilities for simulation of psychometric data-sets.
   <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
-   <pkg>MetaSubtract</pkg>
   <pkg>metatest</pkg>
 <pkg>nmathresh</pkg>
   <pkg>Metatron</pkg>
