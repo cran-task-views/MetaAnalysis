@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2018-05-10</version>
+<version>2018-10-04</version>
 
 <info>
 <p>
@@ -626,10 +626,6 @@
     logistic regression from aggregate data or
     individual data.
    </li>
-   <li>
-    <pkg>surrosurv</pkg> evaluates failure time surrogates
-    in the context of IPD meta-analysis
-   </li>
    </ul>
 
 <h4>Network meta-analysis</h4>
@@ -747,65 +743,65 @@ facilities for simulation of psychometric data-sets.
  </info>
 
  <packagelist>
-<pkg>aggregation</pkg>
+  <pkg>aggregation</pkg>
   <pkg>altmeta</pkg>
- <pkg>bamdit</pkg>
- <pkg>bayesmeta</pkg>
- <pkg>bmeta</pkg>
+  <pkg>bamdit</pkg>
+  <pkg>bayesmeta</pkg>
+  <pkg>bmeta</pkg>
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
   <pkg>CIAAWconsensus</pkg>
-   <pkg>clubSandwich</pkg>
+  <pkg>clubSandwich</pkg>
   <pkg>compute.es</pkg>
-   <pkg>ConfoundedMeta</pkg>
+  <pkg>ConfoundedMeta</pkg>
   <pkg>CopulaREMADA</pkg>
-   <pkg>CPBayes</pkg>
+  <pkg>CPBayes</pkg>
   <pkg>CRTSize</pkg>       
-<pkg>diagmeta</pkg>
+  <pkg>diagmeta</pkg>
   <pkg>dosresmeta</pkg>
-   <pkg>ecoreg</pkg>
-   <pkg>effsize</pkg>
+  <pkg>ecoreg</pkg>
+  <pkg>effsize</pkg>
   <pkg>epiR</pkg>
   <pkg>etma</pkg>
   <pkg>exactmeta</pkg>
   <pkg>extfunnel</pkg>
-   <pkg>forestmodel</pkg>
+  <pkg>forestmodel</pkg>
   <pkg>forestplot</pkg>
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
-   <pkg>getmstatistic</pkg>
+  <pkg>getmstatistic</pkg>
   <pkg>gmeta</pkg>
   <pkg>hetmeta</pkg>
   <pkg>ipdmeta</pkg>
-   <pkg>joineRmeta</pkg>
+  <pkg>joineRmeta</pkg>
   <pkg>joint.Cox</pkg>
   <pkg>MAc</pkg>
   <pkg>MAd</pkg>
   <pkg>mada</pkg>
   <pkg>MAVIS</pkg>
-<pkg>MendelianRandomization</pkg>
+  <pkg>MendelianRandomization</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
   <pkg>metaBMA</pkg>
-    <pkg>metacart</pkg>
-   <pkg>metaforest</pkg>
-<pkg>metagen</pkg>
- <pkg>metansue</pkg>
+  <pkg>metacart</pkg>
+  <pkg>metaforest</pkg>
+  <pkg>metagen</pkg>
+  <pkg>metansue</pkg>
   <pkg>meta4diag</pkg>
- <pkg>MetaAnalyser</pkg>
+  <pkg>MetaAnalyser</pkg>
   <pkg>metacor</pkg>
   <pkg priority="core">metafor</pkg>
-   <pkg>metafuse</pkg>
+  <pkg>metafuse</pkg>
   <pkg>metagear</pkg>
   <pkg>metagen</pkg>
- <pkg>MetaIntegrator</pkg>
+  <pkg>MetaIntegrator</pkg>
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
   <pkg>metamisc</pkg>
   <pkg>metap</pkg>
   <pkg>MetaPath</pkg>
   <pkg>MetaPCA</pkg>
- <pkg>metaplotr</pkg>
+  <pkg>metaplotr</pkg>
   <pkg>metaplus</pkg>
   <pkg>MetaQC</pkg>
   <pkg>metaRNASeq</pkg>
@@ -813,40 +809,39 @@ facilities for simulation of psychometric data-sets.
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
   <pkg>metatest</pkg>
-<pkg>nmathresh</pkg>
+  <pkg>nmathresh</pkg>
   <pkg>Metatron</pkg>
-   <pkg>metavcov</pkg>
-   <pkg>metaviz</pkg>
+  <pkg>metavcov</pkg>
+  <pkg>metaviz</pkg>
   <pkg>mmeta</pkg>
   <pkg>MultiMeta</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
-   <pkg>nmaINLA</pkg>
+  <pkg>nmaINLA</pkg>
   <pkg>pcnetmeta</pkg>
-<pkg>pimeta</pkg>
-   <pkg>psychmeta</pkg>
+  <pkg>pimeta</pkg>
+  <pkg>psychmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
-   <pkg>RandMeta</pkg>
-   <pkg>ratesci</pkg>
-<pkg>RBesT</pkg>
+  <pkg>RandMeta</pkg>
+  <pkg>ratesci</pkg>
+  <pkg>RBesT</pkg>
   <pkg>RcmdrPlugin.EZR</pkg>
   <pkg>RcmdrPlugin.RMTCJags</pkg>
-<pkg>revtools</pkg>
-   <pkg>rma.exact</pkg>
+  <pkg>revtools</pkg>
+  <pkg>rma.exact</pkg>
   <pkg>rmeta</pkg>
   <pkg>robumeta</pkg>
   <pkg>SAMURAI</pkg>
   <pkg>SCMA</pkg>
   <pkg>selectMeta</pkg>
   <pkg>seqMeta</pkg>
-   <pkg>surrosurv</pkg>
-    <pkg>TFisher</pkg>
+  <pkg>TFisher</pkg>
   <pkg>weightr</pkg>
   <pkg>xmeta</pkg>
   <pkg>esc</pkg>
-</packagelist>
+ </packagelist>
 
  <links>
   <view>Genetics</view>
