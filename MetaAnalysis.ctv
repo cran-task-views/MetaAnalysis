@@ -165,6 +165,9 @@
     <pkg>bayesmeta</pkg> includes shrinkage estimates, posterior
     predictive p-values and forest plots via either <pkg>metafor</pkg>
     or <pkg>forestplot</pkg>. Diagnostic graphical output is available.
+    <pkg>MetaStan</pkg>
+    Includes binomial-normal hierarchical models and can use weakly
+    informative priors for the heterogeneity and treatment effect parameters.
   </li>
   <li>
     Some packages concentrate on providing
@@ -226,8 +229,10 @@
    </li>
    <li>
    <pkg>RBesT</pkg>
-   generates a meta-analytic prior for future studies.
-   Forest plots are available as well as diagnostic plots.
+   generates meta-analytic mixture priors for
+   future studies. Forest plots as diagnostics and evaluation of future trial
+   designs through operating characteristics or
+   probability of success are available as well.
    It uses Stan as its engine.
    </li>
   </ul>
@@ -354,7 +359,13 @@
    <li>
    <pkg>metamisc</pkg> provides funnel plots and tests for asymmetry.
    </li>
-  </ul>
+   <li>
+   <pkg>puniform</pkg>
+   provides methods using only the statistically significant studies,
+   methods for the special case of replication studies
+   and sample size determinations.
+   </li>
+   </ul>
 
 <i>Unobserved studies</i>
   <p>
@@ -422,6 +433,11 @@
    <pkg>metamisc</pkg> provides for meta-analysis of prognostic studies
    using the c statistic or the O/E ratio. Some plots are provided.
 </li>
+   <li>
+   <pkg>dfmeta</pkg>
+   provides meta-analysis of Phase I dose-finding
+   clinical trials
+   </li>
   </ul>
 
 <i>Meta-analysis of significance values</i>
@@ -685,12 +701,17 @@
       inclusion/exclusion criteria for genomic meta-analysis,
     <pkg>metaRNASeq</pkg> meta-analysis from multiple RNA
       sequencing experiments,
+      <pkg>MetaSubtract</pkg> uses leave-one-out methods to
+      validate meta-GWAS results,
     <pkg>MultiMeta</pkg> for meta-analysis
       of multivariate GWAS
       results with graphics, designed to accept GEMMA format,
    <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>,
    provide meta-analysis
-      for the SKAT test.
+      for the SKAT test,
+      <pkg>ofGEM</pkg>
+      provides a method for identifying gene-environment interactions
+      using meta-filtering.
   </p>
 
 <h4>Interfaces</h4>
@@ -758,6 +779,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>CPBayes</pkg>
   <pkg>CRTSize</pkg>       
   <pkg>diagmeta</pkg>
+  <pkg>dfmeta</pkg>
   <pkg>dosresmeta</pkg>
   <pkg>ecoreg</pkg>
   <pkg>effsize</pkg>
@@ -808,6 +830,8 @@ facilities for simulation of psychometric data-sets.
   <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
+  <pkg>MetaStan</pkg>
+  <pkg>MetaSubtract</pkg>
   <pkg>metatest</pkg>
   <pkg>nmathresh</pkg>
   <pkg>Metatron</pkg>
@@ -819,12 +843,15 @@ facilities for simulation of psychometric data-sets.
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
   <pkg>nmaINLA</pkg>
+  <pkg>ofGEM</pkg>
   <pkg>pcnetmeta</pkg>
   <pkg>pimeta</pkg>
   <pkg>psychmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
+  <pkg>puniform</pkg>
   <pkg>RandMeta</pkg>
+  <pkg>RBesT</pkg>
   <pkg>ratesci</pkg>
   <pkg>RBesT</pkg>
   <pkg>RcmdrPlugin.EZR</pkg>
