@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2018-10-04</version>
+<version>2018-11-10</version>
 
 <info>
 <p>
@@ -165,9 +165,6 @@
     <pkg>bayesmeta</pkg> includes shrinkage estimates, posterior
     predictive p-values and forest plots via either <pkg>metafor</pkg>
     or <pkg>forestplot</pkg>. Diagnostic graphical output is available.
-    <pkg>MetaStan</pkg>
-    Includes binomial-normal hierarchical models and can use weakly
-    informative priors for the heterogeneity and treatment effect parameters.
   </li>
   <li>
     Some packages concentrate on providing
@@ -830,7 +827,6 @@ facilities for simulation of psychometric data-sets.
   <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
-  <pkg>MetaStan</pkg>
   <pkg>MetaSubtract</pkg>
   <pkg>metatest</pkg>
   <pkg>nmathresh</pkg>
