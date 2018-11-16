@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2018-11-10</version>
+<version>2018-11-16</version>
 
 <info>
 <p>
@@ -165,6 +165,9 @@
     <pkg>bayesmeta</pkg> includes shrinkage estimates, posterior
     predictive p-values and forest plots via either <pkg>metafor</pkg>
     or <pkg>forestplot</pkg>. Diagnostic graphical output is available.
+    <pkg>MetaStan</pkg>
+    Includes binomial-normal hierarchical models and can use weakly
+    informative priors for the heterogeneity and treatment effect parameters.
   </li>
   <li>
     Some packages concentrate on providing
@@ -232,7 +235,14 @@
    probability of success are available as well.
    It uses Stan as its engine.
    </li>
-  </ul>
+   <li>
+   <pkg>metamedian</pkg>
+   implements several methods to meta-analyze one-group or two-group
+   studies that report the median of the outcome. These methods estimate the
+   pooled median in the one-group context and the pooled raw difference of
+   medians across groups in the two-group context
+   </li>
+   </ul>
 
 <i>Graphical methods</i>
   <p>
@@ -817,6 +827,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
   <pkg>metamisc</pkg>
+  <pkg>metamedian</pkg>
   <pkg>metap</pkg>
   <pkg>MetaPath</pkg>
   <pkg>MetaPCA</pkg>
@@ -827,6 +838,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
+  <pkg>MetaStan</pkg>
   <pkg>MetaSubtract</pkg>
   <pkg>metatest</pkg>
   <pkg>nmathresh</pkg>
