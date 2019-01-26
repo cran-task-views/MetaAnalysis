@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2018-11-16</version>
+<version>2019-01-26</version>
 
 <info>
 <p>
@@ -704,8 +704,6 @@
      performs meta-analysis for pathway enrichment, 
     <pkg>MetaPCA</pkg> provides meta-analysis in
       the dimension reduction of genomic data,
-    <pkg>MetaQC</pkg> provides objective quality control and
-      inclusion/exclusion criteria for genomic meta-analysis,
     <pkg>metaRNASeq</pkg> meta-analysis from multiple RNA
       sequencing experiments,
       <pkg>MetaSubtract</pkg> uses leave-one-out methods to
@@ -833,7 +831,6 @@ facilities for simulation of psychometric data-sets.
   <pkg>MetaPCA</pkg>
   <pkg>metaplotr</pkg>
   <pkg>metaplus</pkg>
-  <pkg>MetaQC</pkg>
   <pkg>metaRNASeq</pkg>
   <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
