@@ -228,14 +228,6 @@
    implements prediction intervals for random effects meta-analysis.
    </li>
    <li>
-   <pkg>RBesT</pkg>
-   generates meta-analytic mixture priors for
-   future studies. Forest plots as diagnostics and evaluation of future trial
-   designs through operating characteristics or
-   probability of success are available as well.
-   It uses Stan as its engine.
-   </li>
-   <li>
    <pkg>metamedian</pkg>
    implements several methods to meta-analyze one-group or two-group
    studies that report the median of the outcome. These methods estimate the
@@ -856,9 +848,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>PubBias</pkg>
   <pkg>puniform</pkg>
   <pkg>RandMeta</pkg>
-  <pkg>RBesT</pkg>
   <pkg>ratesci</pkg>
-  <pkg>RBesT</pkg>
   <pkg>RcmdrPlugin.EZR</pkg>
   <pkg>RcmdrPlugin.RMTCJags</pkg>
   <pkg>revtools</pkg>
