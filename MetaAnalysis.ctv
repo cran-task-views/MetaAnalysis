@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2019-01-26</version>
+<version>2019-04-23</version>
 
 <info>
 <p>
@@ -609,10 +609,6 @@
     as do <pkg>metafor</pkg> and <pkg>metaSEM</pkg>.
   </li>
   <li>
-  <pkg>metacart</pkg> integrates regression and classification trees
-  into the meta-analysis framework for moderator selection.
-  </li>
-  <li>
     <pkg>mada</pkg> provides for the
     meta-regression of diagnostic test studies.
   </li>
@@ -802,7 +798,6 @@ facilities for simulation of psychometric data-sets.
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
   <pkg>metaBMA</pkg>
-  <pkg>metacart</pkg>
   <pkg>metaforest</pkg>
   <pkg>metagen</pkg>
   <pkg>metansue</pkg>
