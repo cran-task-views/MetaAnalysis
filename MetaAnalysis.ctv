@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2019-04-23</version>
+<version>2019-05-06</version>
 
 <info>
 <p>
@@ -83,6 +83,16 @@
    <pkg>psychmeta</pkg> provides extensive facilties for
    converting effect sizes and for correcting for a variety
    of restrictions and measurement errors.
+   <pkg>metansue</pkg>
+   provides some methods for converting to effect sizes
+   <pkg>es.dif</pkg>
+   from raw data computes
+   Cohen's d, Hedges' d, biased/unbiased c (an effect size between a mean and a constant)
+   and e (an effect size between means without assuming the variance equality).
+   <pkg>MOTE</pkg>
+   provides a variety of conversions based on Cohen's d.
+   <pkg>estmeansd</pkg>
+   converts between quantiles and means and standard deviations.
   </li>
   <li>
     <pkg>meta</pkg> provides functions to read and work
@@ -234,6 +244,11 @@
    pooled median in the one-group context and the pooled raw difference of
    medians across groups in the two-group context
    </li>
+   <li>
+   <pkg>MetaUtility</pkg>
+   proposes a metric for estimating the proportion of effects
+   above a cut-off of scientific importance
+   </li>
    </ul>
 
 <i>Graphical methods</i>
@@ -245,16 +260,16 @@
     Forest plots are provided in <pkg>forestmodel</pkg>
     (using ggplot2), <pkg>forestplot</pkg>,
     <pkg>meta</pkg>, <pkg>metafor</pkg>,
-    <pkg>psychmeta</pkg>, and <pkg>rmeta</pkg>.
+    <pkg>metansue</pkg>, <pkg>psychmeta</pkg>, and <pkg>rmeta</pkg>.
     Although the most basic plot can be produced
     by any of them
     they each provide their own choice of enhancements.
   </li>
-
   <li>
     Funnel plots are provided in
-    <pkg>meta</pkg>, <pkg>metafor</pkg>, <pkg>psychometric</pkg>
-    and <pkg>rmeta</pkg>.
+    <pkg>meta</pkg>, <pkg>metafor</pkg>,
+    <pkg>metansue</pkg>, <pkg>psychometric</pkg>
+    <pkg>rmeta</pkg> and <pkg>weightr</pkg>.
     In addition to the standard funnel plots
     an enhanced funnel plot to assess the
     impact of extra evidence
@@ -437,6 +452,12 @@
    provides meta-analysis of Phase I dose-finding
    clinical trials
    </li>
+   <li>
+   <pkg>metaRMST</pkg>
+   implements meta-analysis of trials with difference in
+   restricted mean survival times
+   </li>
+
   </ul>
 
 <i>Meta-analysis of significance values</i>
@@ -600,7 +621,7 @@
   </li>
   <li>
     <pkg>bmeta</pkg>, <pkg>metagen</pkg>,
-    <pkg>metaLik</pkg>, <pkg>metaSEM</pkg>, and
+    <pkg>metaLik</pkg>, <pkg>metansue</pkg>, <pkg>metaSEM</pkg>, and
     <pkg>metatest</pkg> also provide meta-regression.
   </li>
   <li>
@@ -704,7 +725,9 @@
       for the SKAT test,
       <pkg>ofGEM</pkg>
       provides a method for identifying gene-environment interactions
-      using meta-filtering.
+      using meta-filtering,
+      <pkg>RobustRankAggreg</pkg>
+      provides methods for aggregating lists of genes.
   </p>
 
 <h4>Interfaces</h4>
@@ -777,6 +800,8 @@ facilities for simulation of psychometric data-sets.
   <pkg>ecoreg</pkg>
   <pkg>effsize</pkg>
   <pkg>epiR</pkg>
+  <pkg>estmeansd</pkg>
+  <pkg>es.dif</pkg>
   <pkg>etma</pkg>
   <pkg>exactmeta</pkg>
   <pkg>extfunnel</pkg>
@@ -818,6 +843,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>MetaPCA</pkg>
   <pkg>metaplotr</pkg>
   <pkg>metaplus</pkg>
+  <pkg>metaRMST</pkg>
   <pkg>metaRNASeq</pkg>
   <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
@@ -827,9 +853,11 @@ facilities for simulation of psychometric data-sets.
   <pkg>metatest</pkg>
   <pkg>nmathresh</pkg>
   <pkg>Metatron</pkg>
+  <pkg>MetaUtility</pkg>
   <pkg>metavcov</pkg>
   <pkg>metaviz</pkg>
   <pkg>mmeta</pkg>
+  <pkg>MOTE</pkg>
   <pkg>MultiMeta</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
@@ -850,6 +878,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>rma.exact</pkg>
   <pkg>rmeta</pkg>
   <pkg>robumeta</pkg>
+  <pkg>RobustRankAggreg</pkg>
   <pkg>SAMURAI</pkg>
   <pkg>SCMA</pkg>
   <pkg>selectMeta</pkg>
