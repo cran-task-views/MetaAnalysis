@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2019-05-31</version>
+<version>2019-09-17</version>
 
 <info>
 <p>
@@ -93,6 +93,9 @@
    provides a variety of conversions based on Cohen's d.
    <pkg>estmeansd</pkg>
    converts between quantiles and means and standard deviations.
+   <pkg>SingleCaseES</pkg>
+   provides basic effect sizes for single-case
+   designs, both parametric and non-overlap.
   </li>
   <li>
     <pkg>meta</pkg> provides functions to read and work
@@ -153,6 +156,9 @@
     <pkg>psychometric</pkg>
     provides an extensive range of functions
     for the meta-analysis of psychometric studies.
+    <pkg>mixmeta</pkg>
+    provides an integrated interface to standard meta-analysis
+    and extensions like multivariate and dose-response.
   </li>
   <li>
   <pkg>psychmeta</pkg> implements the Hunter-Schmidt method
@@ -248,6 +254,10 @@
    <pkg>MetaUtility</pkg>
    proposes a metric for estimating the proportion of effects
    above a cut-off of scientific importance
+   </li>
+   <li>
+   <pkg>metasens</pkg>
+   provides imputation methods for missing binary data.
    </li>
    </ul>
 
@@ -470,6 +480,15 @@
     <pkg>TFisher</pkg> provides Fisher's method using thresholding for
     the p-values.
    </li>
+   <li>
+    <pkg>harmonicmeanp</pkg>
+    uses the method of harmonic mean of p-values which
+    is robust to correlation between the p-values.
+   </li>
+   <li>
+    <pkg>metapro</pkg>
+    provides a subset of methods and also a new method, ordmeta.
+</li>
    </ul>
    <p>
     Some methods are also provided in some
@@ -527,6 +546,10 @@
     <pkg>dosresmeta</pkg> concentrates on the situation
     where individual studies have information on
     the dose-response relationship.
+   <pkg>MBNMAdose</pkg>
+    provides a Bayesian analysis using
+    network meta-analysis of dose response
+    studies.
   </li>
   <li>
     <pkg>robumeta</pkg> provides robust variance
@@ -682,6 +705,10 @@
    provides decision-invariant bias adjustment
    thresholds and intervals the
    smallest changes to the data that would result in a change of decision.
+</p>
+   <p>
+   <pkg>nmadb</pkg>
+   provides access to a database of network meta-analyses
   </p>
 
 <h4>Genetics</h4>
@@ -807,6 +834,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>gemtc</pkg>
   <pkg>getmstatistic</pkg>
   <pkg>gmeta</pkg>
+  <pkg>harmonicmeanp</pkg>
   <pkg>ipdmeta</pkg>
   <pkg>joineRmeta</pkg>
   <pkg>joint.Cox</pkg>
@@ -814,6 +842,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>MAd</pkg>
   <pkg>mada</pkg>
   <pkg>MAVIS</pkg>
+  <pkg>MBNMAdose</pkg>
   <pkg>MendelianRandomization</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
@@ -838,6 +867,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>MetaPCA</pkg>
   <pkg>metaplotr</pkg>
   <pkg>metaplus</pkg>
+  <pkg>metapro</pkg>
   <pkg>metaRMST</pkg>
   <pkg>metaRNASeq</pkg>
   <pkg>metaSEM</pkg>
@@ -851,6 +881,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>MetaUtility</pkg>
   <pkg>metavcov</pkg>
   <pkg>metaviz</pkg>
+  <pkg>mixmeta</pkg>
   <pkg>mmeta</pkg>
   <pkg>MOTE</pkg>
   <pkg>MultiMeta</pkg>
@@ -858,6 +889,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
   <pkg>nmaINLA</pkg>
+  <pkg>nmadb</pkg>
   <pkg>ofGEM</pkg>
   <pkg>pcnetmeta</pkg>
   <pkg>pimeta</pkg>
@@ -878,6 +910,7 @@ facilities for simulation of psychometric data-sets.
   <pkg>SCMA</pkg>
   <pkg>selectMeta</pkg>
   <pkg>seqMeta</pkg>
+  <pkg>SingleCaseES</pkg>
   <pkg>TFisher</pkg>
   <pkg>weightr</pkg>
   <pkg>xmeta</pkg>
