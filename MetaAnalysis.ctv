@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2019-09-17</version>
+<version>2019-11-27</version>
 
 <info>
 <p>
@@ -15,7 +15,7 @@
    the meta-analysis of individual participant data (IPD)
    which can be handled by
    any of the standard linear modelling functions
-   but does include some
+   but it does include some
    packages which offer special facilities for IPD.
 </p>
 
@@ -80,6 +80,8 @@
    contains functions to compute effect sizes mean difference (Cohen's
    d and Hedges g), dominance matrices (Cliff's Delta)
    and stochastic superiority (Vargha-Delaney A).
+   <pkg>effectsize</pkg>
+   provides a number of effect sizes and converts between them.
    <pkg>psychmeta</pkg> provides extensive facilties for
    converting effect sizes and for correcting for a variety
    of restrictions and measurement errors.
@@ -93,6 +95,9 @@
    provides a variety of conversions based on Cohen's d.
    <pkg>estmeansd</pkg>
    converts between quantiles and means and standard deviations.
+   <pkg>metaBLUE</pkg>
+   estimates means and standard deviations from
+   various order statistics.
    <pkg>SingleCaseES</pkg>
    provides basic effect sizes for single-case
    designs, both parametric and non-overlap.
@@ -174,16 +179,25 @@
     with priors suggested by Higgins.
     <pkg>mmeta</pkg> provides meta-analysis using
     beta-binomial prior distributions.
-   A Bayesian approach is also provided by <pkg>bmeta</pkg> which
-   provides forest plots via
-   <pkg>forestplot</pkg>
-   and diagnostic graphical output.
+    A Bayesian approach is also provided by <pkg>bmeta</pkg> which
+    provides forest plots via
+    <pkg>forestplot</pkg>
+    and diagnostic graphical output.
     <pkg>bayesmeta</pkg> includes shrinkage estimates, posterior
     predictive p-values and forest plots via either <pkg>metafor</pkg>
     or <pkg>forestplot</pkg>. Diagnostic graphical output is available.
     <pkg>MetaStan</pkg>
-    Includes binomial-normal hierarchical models and can use weakly
+    includes binomial-normal hierarchical models and can use weakly
     informative priors for the heterogeneity and treatment effect parameters.
+   <pkg>baggr</pkg>
+   provides facilities using Stan for hierarchical
+   Bayesian models, graphical facilities are provided.
+   <pkg>BayesCombo</pkg>
+   provides facilities using a
+   Bayesian approach and has graphical facilities.
+   <pkg>RBesT</pkg>
+   uses Bayesian synthesis to generate priors from various
+   sources.
   </li>
   <li>
     Some packages concentrate on providing
@@ -191,18 +205,16 @@
     meta-analysis function without providing
     the range of ancillary
     functions. These are:
-   <pkg>gmeta</pkg>
-   which subsumes a very wide variety of models under the method
-   of confidence distributions and
-   also provides a graphical display,
+    <pkg>gmeta</pkg>
+    which subsumes a very wide variety of models under the method
+    of confidence distributions and
+    also provides a graphical display,
     <pkg>metaLik</pkg>
-    which uses a more sophisticated approach
-    to the likelihood,
-    <pkg>metamisc</pkg> which as well as the
-    method of moments provides
+    which uses a more sophisticated approach to the likelihood,
+    <pkg>metamisc</pkg> which as well as the method of moments provides
     two likelihood-based  methods, and
     <pkg>metatest</pkg> which provides
-    another improved method of obtaining confidence intervals,
+    another improved method of obtaining confidence intervals.
     <pkg>metaBMA</pkg> has a
     Bayesian approach using model averaging, a variety of priors
     are provided and it is possible for the user to define
@@ -333,6 +345,10 @@
   <pkg>metaforest</pkg> investigates heterogeneity using random forests.
   Note that it has nothing to do with forest plots.
   </li>
+   <li>
+   <pkg>mc.heterogeneity</pkg>
+   implements a Monte Carlo based test for heterogeneity.
+   </li>
   </ul>
 
 <i>Model criticism</i>
@@ -351,6 +367,11 @@
    <pkg>ConfoundedMeta</pkg> conducts a sensitivity analysis
    to estimate the proportion of studies with
    true effect sizes above a threshold.
+   </li>
+   <li>
+   <pkg>EValue</pkg>
+   provides sensitivity analysis of the effect of
+   unmeasured confounders
    </li>
   </ul>
 
@@ -384,6 +405,11 @@
    provides methods using only the statistically significant studies,
    methods for the special case of replication studies
    and sample size determinations.
+   </li>
+   <li>
+   <pkg>PublicationBias</pkg>
+   performs sensitivity analysis of the number of unpublished
+   studies needed to have a specified influence.
    </li>
    </ul>
 
@@ -585,8 +611,8 @@
     <pkg>mada</pkg> provides various descriptive statistics
      and univariate methods (diagnostic odds ratio and Lehman
      model) as well as the bivariate method due to Reitsma.
-     In addition meta-regression is provided.
-     A range of graphical methods is also available.
+     Meta-regression is provided.
+     Graphical facilities are also available.
   </li>
   <li>
     <pkg>Metatron</pkg> provides a method for
@@ -620,6 +646,16 @@
    analysis using multiple cut-offs.
    Graphical methods are also provided.
   </li>
+   <li>
+    <pkg>HSROC</pkg> provides HSROC with estimation
+    in a Bayesian framework. Graphical facilities are provided.
+    The case of imperfect reference standards is catered for.
+   </li>
+   <li>
+   <pkg>CopulaDTA</pkg>
+   uses the beta-binomial model to yield marginal mean sensitivity
+   and specificity. Graphical facilities are available.
+   </li>
   </ul>
 
 <h4>Meta-regression</h4>
@@ -652,6 +688,20 @@
     <pkg>mada</pkg> provides for the
     meta-regression of diagnostic test studies.
   </li>
+   <li>
+   <pkg>GENMETA</pkg>
+   uses generalised meta-analysis to handle the situation
+   where the studies do not all use the same regressors
+   </li>
+   <li>
+   <pkg>jarbes</pkg>
+   uses the Bayesian approach of hierarchical meta-regression
+   </li>
+   <li>
+   <pkg>metacart</pkg>
+   uses classification and regression trees to identify
+   interactions between moderators
+   </li>
   </ul>
 
 <h4>Individual participant data (IPD)</h4>
@@ -705,7 +755,9 @@
    provides decision-invariant bias adjustment
    thresholds and intervals the
    smallest changes to the data that would result in a change of decision.
-</p>
+   <pkg>NMAoutlier</pkg>
+   detects outliers in NMA using forward search
+   </p>
    <p>
    <pkg>nmadb</pkg>
    provides access to a database of network meta-analyses
@@ -715,6 +767,9 @@
   <p>
     There are a number of packages specialising
     in genetic data:
+   <pkg>catmap</pkg>
+   combines case-control and family study data,
+   graphical facilities are provided,
    <pkg>CPBayes</pkg>
    uses a Bayesian approach to study cross-phenotype genetic
    associations,
@@ -722,6 +777,12 @@
       proposes a new statistical method to detect epistasis,
     <pkg>gap</pkg> combines p-values,
    <pkg>getmstatistic</pkg> quantifies systematic heterogeneity,
+   <pkg>GMCM</pkg>
+   uses a Gaussian mixture copula model for high-throughput
+   experiments,
+   <pkg>MBNMAtime</pkg>
+   provides methods for analysis of repeated measures
+   network meta-analysis,
    <pkg>MendelianRandomization</pkg>
    provides several methods for performing Mendelian randomisation
    analyses with summarised data,
@@ -754,17 +815,23 @@
   </p>
 
 <h4>Interfaces</h4>
-  <p>
-    <pkg>RcmdrPlugin.EZR</pkg> provides an interface
-    via the Rcmdr GUI
-    using <pkg>meta</pkg> and <pkg>metatest</pkg>
-    to do the heavy lifting,
-    <pkg>RcmdrPlugin.RMTCJags</pkg> provides an interface
-    for network meta-analysis using BUGS code,
-    and <pkg>MAVIS</pkg> provides a Shiny
+<ul>
+<li>
+   Plug-ins for Rcmdr are provided by:
+    <pkg>RcmdrPlugin.EZR</pkg> which uses
+    <pkg>meta</pkg> and <pkg>metatest</pkg>,
+   <pkg>RcmdrPlugin.MA</pkg>
+   which uses <pkg>MAd</pkg>
+   and <pkg>metafor</pkg>,
+   and <pkg>RcmdrPlugin.RMTCJags</pkg>
+    for network meta-analysis using BUGS code.
+    </li>
+    <li>
+    <pkg>MAVIS</pkg> provides a Shiny
     interface using <pkg>metafor</pkg>, <pkg>MAc</pkg>,
     <pkg>MAd</pkg>, and <pkg>weightr</pkg>.
-  </p>
+  </li>
+</ul>
 
 <h4>Simulation</h4>
 
@@ -799,21 +866,35 @@ facilities for simulation of psychometric data-sets.
    a single time-to-event outcome from multiple studies using joint models
    </p>
 
+<p>
+<pkg>KenSyn</pkg>
+provides data-sets to accompany a French language book
+on meta-analysis in the agricultural sciences.
+</p>
+<p>
+<pkg>PRISMAstatement</pkg>
+generates a flowchart conforming to the PRISMA statement.
+</p>
+
 
  </info>
 
  <packagelist>
   <pkg>aggregation</pkg>
   <pkg>altmeta</pkg>
+<pkg>baggr</pkg>
   <pkg>bamdit</pkg>
+<pkg>BayesCombo</pkg>
   <pkg>bayesmeta</pkg>
   <pkg>bmeta</pkg>
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
+<pkg>catmap</pkg>
   <pkg>CIAAWconsensus</pkg>
   <pkg>clubSandwich</pkg>
   <pkg>compute.es</pkg>
   <pkg>ConfoundedMeta</pkg>
+  <pkg>CopulaDTA</pkg>
   <pkg>CopulaREMADA</pkg>
   <pkg>CPBayes</pkg>
   <pkg>CRTSize</pkg>       
@@ -821,11 +902,14 @@ facilities for simulation of psychometric data-sets.
   <pkg>dfmeta</pkg>
   <pkg>dosresmeta</pkg>
   <pkg>ecoreg</pkg>
+<pkg>effectsize</pkg>
   <pkg>effsize</pkg>
   <pkg>epiR</pkg>
+  <pkg>esc</pkg>
   <pkg>estmeansd</pkg>
   <pkg>es.dif</pkg>
   <pkg>etma</pkg>
+<pkg>EValue</pkg>
   <pkg>exactmeta</pkg>
   <pkg>extfunnel</pkg>
   <pkg>forestmodel</pkg>
@@ -833,20 +917,29 @@ facilities for simulation of psychometric data-sets.
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
   <pkg>getmstatistic</pkg>
+<pkg>GMCM</pkg>
+<pkg>GENMETA</pkg>
   <pkg>gmeta</pkg>
   <pkg>harmonicmeanp</pkg>
+  <pkg>HSROC</pkg>
   <pkg>ipdmeta</pkg>
+<pkg>jarbes</pkg>
   <pkg>joineRmeta</pkg>
   <pkg>joint.Cox</pkg>
+<pkg>KenSyn</pkg>
   <pkg>MAc</pkg>
   <pkg>MAd</pkg>
   <pkg>mada</pkg>
   <pkg>MAVIS</pkg>
   <pkg>MBNMAdose</pkg>
+<pkg>MBNMAtime</pkg>
+<pkg>mc.heterogeneity</pkg>
   <pkg>MendelianRandomization</pkg>
   <pkg priority="core">meta</pkg>
   <pkg>MetABEL</pkg>
+<pkg>metaBLUE</pkg>
   <pkg>metaBMA</pkg>
+<pkg>metacart</pkg>
   <pkg>metaforest</pkg>
   <pkg>metagen</pkg>
   <pkg>metansue</pkg>
@@ -876,7 +969,6 @@ facilities for simulation of psychometric data-sets.
   <pkg>MetaStan</pkg>
   <pkg>MetaSubtract</pkg>
   <pkg>metatest</pkg>
-  <pkg>nmathresh</pkg>
   <pkg>Metatron</pkg>
   <pkg>MetaUtility</pkg>
   <pkg>metavcov</pkg>
@@ -888,18 +980,24 @@ facilities for simulation of psychometric data-sets.
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
-  <pkg>nmaINLA</pkg>
   <pkg>nmadb</pkg>
+  <pkg>nmaINLA</pkg>
+<pkg>NMAoutlier</pkg>
+<pkg>nmathresh</pkg>
   <pkg>ofGEM</pkg>
   <pkg>pcnetmeta</pkg>
   <pkg>pimeta</pkg>
+<pkg>PRISMAstatement</pkg>
   <pkg>psychmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
+  <pkg>PublicationBias</pkg>
   <pkg>puniform</pkg>
   <pkg>RandMeta</pkg>
   <pkg>ratesci</pkg>
+<pkg>RBesT</pkg>
   <pkg>RcmdrPlugin.EZR</pkg>
+<pkg>RcmdrPlugin.MA</pkg>
   <pkg>RcmdrPlugin.RMTCJags</pkg>
   <pkg>revtools</pkg>
   <pkg>rma.exact</pkg>
@@ -914,7 +1012,6 @@ facilities for simulation of psychometric data-sets.
   <pkg>TFisher</pkg>
   <pkg>weightr</pkg>
   <pkg>xmeta</pkg>
-  <pkg>esc</pkg>
  </packagelist>
 
  <links>
