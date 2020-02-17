@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2019-11-27</version>
+<version>2020-02-17</version>
 
 <info>
 <p>
@@ -788,8 +788,6 @@
    analyses with summarised data,
     <pkg>MetABEL</pkg> provides meta-analysis of
       genome wide SNP association results,
-   <pkg>MetaIntegrator</pkg>
-   provides an extensive set of functions for genetic studies,
     <pkg>metaMA</pkg> provides meta-analysis of
       p-values or moderated
      effect sizes to find differentially expressed genes,
@@ -950,7 +948,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>metafuse</pkg>
   <pkg>metagear</pkg>
   <pkg>metagen</pkg>
-  <pkg>MetaIntegrator</pkg>
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
   <pkg>metamisc</pkg>
