@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-02-17</version>
+<version>2020-02-20</version>
 
 <info>
 <p>
@@ -743,8 +743,6 @@
     which acts as a front-end to BUGS
     or JAGS, and <pkg>pcnetmeta</pkg>,
     which uses JAGS.
-   <pkg>nmaINLA</pkg> uses integrated nested Laplace approximations
-   as an alternative to MCMC.
    It provides a number of data-sets.
     <pkg>netmeta</pkg>  works in a frequentist framework.
     Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
@@ -978,7 +976,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
   <pkg>nmadb</pkg>
-  <pkg>nmaINLA</pkg>
 <pkg>NMAoutlier</pkg>
 <pkg>nmathresh</pkg>
   <pkg>ofGEM</pkg>
