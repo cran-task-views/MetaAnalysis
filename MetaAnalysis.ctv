@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-02-20</version>
+<version>2020-02-25</version>
 
 <info>
 <p>
@@ -205,10 +205,6 @@
     meta-analysis function without providing
     the range of ancillary
     functions. These are:
-    <pkg>gmeta</pkg>
-    which subsumes a very wide variety of models under the method
-    of confidence distributions and
-    also provides a graphical display,
     <pkg>metaLik</pkg>
     which uses a more sophisticated approach to the likelihood,
     <pkg>metamisc</pkg> which as well as the method of moments provides
@@ -915,7 +911,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>getmstatistic</pkg>
 <pkg>GMCM</pkg>
 <pkg>GENMETA</pkg>
-  <pkg>gmeta</pkg>
   <pkg>harmonicmeanp</pkg>
   <pkg>HSROC</pkg>
   <pkg>ipdmeta</pkg>
