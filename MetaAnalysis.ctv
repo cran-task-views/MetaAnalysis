@@ -249,7 +249,9 @@
    </li>
    <li>
    <pkg>pimeta</pkg>
-   implements prediction intervals for random effects meta-analysis.
+   provides a range of methods for prediction interval
+   estimation from random effects models and ahs graphical
+   facilities.
    </li>
    <li>
    <pkg>metamedian</pkg>
@@ -266,6 +268,17 @@
    <li>
    <pkg>metasens</pkg>
    provides imputation methods for missing binary data.
+   </li>
+   <li>
+   <pkg>metagam</pkg>
+   provides a framework for meta-analysis of generalised
+   additive models including the case where individual paticipant
+   data cannot be shared across locations.
+   </li>
+   <li>
+   <pkg>metawho</pkg>
+   implements a method for combining within study
+   interactions
    </li>
    </ul>
 
@@ -457,6 +470,11 @@
   facilities for using the weight function model
   of Vevea and Hedges.
   </li>
+   <li>
+   <pkg>publipha</pkg>
+   estimates models accounting for publication
+   bias or p-hacking using a Bayesian framework
+   </li>
   </ul>
 
  <i>Other study designs</i>
@@ -498,6 +516,12 @@
    <pkg>aggregation</pkg>
    provides a smaller subset of methods.
   </li>
+   <li>
+   <pkg>poolr</pkg>
+   provides an extensive range of methods for
+   processing p-values which are not independent
+   (which includes independent methods).
+   </li>
   <li>
     <pkg>TFisher</pkg> provides Fisher's method using thresholding for
     the p-values.
@@ -652,6 +676,12 @@
    uses the beta-binomial model to yield marginal mean sensitivity
    and specificity. Graphical facilities are available.
    </li>
+   <li>
+   <pkg>NMADiagT</pkg>
+   provides network meta-analysis of diagnostic tests
+   in a Bayesian framework using Stan as the engine,
+   graphical output is provided.
+   </li>
   </ul>
 
 <h4>Meta-regression</h4>
@@ -750,7 +780,11 @@
    thresholds and intervals the
    smallest changes to the data that would result in a change of decision.
    <pkg>NMAoutlier</pkg>
-   detects outliers in NMA using forward search
+   detects outliers in NMA using forward search,
+   <pkg>NMADiagT</pkg>
+   provides network meta-analysis of diagnostic tests
+   in a Bayesian framework using Stan as the engine,
+   graphical output is provided.
    </p>
    <p>
    <pkg>nmadb</pkg>
@@ -782,6 +816,8 @@
    analyses with summarised data,
     <pkg>MetABEL</pkg> provides meta-analysis of
       genome wide SNP association results,
+   <pkg>MetaIntegrator</pkg>
+   provides meta-analysis of gene expression data,
     <pkg>metaMA</pkg> provides meta-analysis of
       p-values or moderated
      effect sizes to find differentially expressed genes,
@@ -793,17 +829,19 @@
       sequencing experiments,
       <pkg>MetaSubtract</pkg> uses leave-one-out methods to
       validate meta-GWAS results,
-    <pkg>MultiMeta</pkg> for meta-analysis
-      of multivariate GWAS
-      results with graphics, designed to accept GEMMA format,
    <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>,
    provide meta-analysis
       for the SKAT test,
+    <pkg>MultiMeta</pkg> for meta-analysis
+      of multivariate GWAS
+      results with graphics, designed to accept GEMMA format,
       <pkg>ofGEM</pkg>
       provides a method for identifying gene-environment interactions
       using meta-filtering,
       <pkg>RobustRankAggreg</pkg>
-      provides methods for aggregating lists of genes.
+      provides methods for aggregating lists of genes,
+   <pkg>SPAtest</pkg>
+   combines association results.
   </p>
 
 <h4>Interfaces</h4>
@@ -821,7 +859,9 @@
     <li>
     <pkg>MAVIS</pkg> provides a Shiny
     interface using <pkg>metafor</pkg>, <pkg>MAc</pkg>,
-    <pkg>MAd</pkg>, and <pkg>weightr</pkg>.
+    <pkg>MAd</pkg>, and <pkg>weightr</pkg>,
+    <pkg>miniMeta</pkg>
+    provides a Shiny interface to <pkg>meta</pkg>.
   </li>
 </ul>
 
@@ -932,7 +972,9 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>metaBMA</pkg>
 <pkg>metacart</pkg>
   <pkg>metaforest</pkg>
+<pkg>metagam</pkg>
   <pkg>metagen</pkg>
+<pkg>MetaIntegrator</pkg>
   <pkg>metansue</pkg>
   <pkg>meta4diag</pkg>
   <pkg>MetaAnalyser</pkg>
@@ -963,6 +1005,8 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>MetaUtility</pkg>
   <pkg>metavcov</pkg>
   <pkg>metaviz</pkg>
+<pkg>metawho</pkg>
+<pkg>miniMeta</pkg>
   <pkg>mixmeta</pkg>
   <pkg>mmeta</pkg>
   <pkg>MOTE</pkg>
@@ -971,15 +1015,18 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
   <pkg>nmadb</pkg>
+<pkg>NMADiagT</pkg>
 <pkg>NMAoutlier</pkg>
 <pkg>nmathresh</pkg>
   <pkg>ofGEM</pkg>
   <pkg>pcnetmeta</pkg>
   <pkg>pimeta</pkg>
+<pkg>poolr</pkg>
 <pkg>PRISMAstatement</pkg>
   <pkg>psychmeta</pkg>
   <pkg>psychometric</pkg>
   <pkg>PubBias</pkg>
+<pkg>publipha</pkg>
   <pkg>PublicationBias</pkg>
   <pkg>puniform</pkg>
   <pkg>RandMeta</pkg>
@@ -998,6 +1045,7 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>selectMeta</pkg>
   <pkg>seqMeta</pkg>
   <pkg>SingleCaseES</pkg>
+<pkg>SPAtest</pkg>
   <pkg>TFisher</pkg>
   <pkg>weightr</pkg>
   <pkg>xmeta</pkg>
