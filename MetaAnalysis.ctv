@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-02-25</version>
+<version>2020-04-05</version>
 
 <info>
 <p>
@@ -186,9 +186,6 @@
     <pkg>bayesmeta</pkg> includes shrinkage estimates, posterior
     predictive p-values and forest plots via either <pkg>metafor</pkg>
     or <pkg>forestplot</pkg>. Diagnostic graphical output is available.
-    <pkg>MetaStan</pkg>
-    includes binomial-normal hierarchical models and can use weakly
-    informative priors for the heterogeneity and treatment effect parameters.
    <pkg>baggr</pkg>
    provides facilities using Stan for hierarchical
    Bayesian models, graphical facilities are provided.
@@ -998,7 +995,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
-  <pkg>MetaStan</pkg>
   <pkg>MetaSubtract</pkg>
   <pkg>metatest</pkg>
   <pkg>Metatron</pkg>
