@@ -81,7 +81,8 @@
    d and Hedges g), dominance matrices (Cliff's Delta)
    and stochastic superiority (Vargha-Delaney A).
    <pkg>effectsize</pkg>
-   provides a number of effect sizes and converts between them.
+   provides a large number of different
+   effect sizes and converts between them.
    <pkg>psychmeta</pkg> provides extensive facilties for
    converting effect sizes and for correcting for a variety
    of restrictions and measurement errors.
@@ -127,6 +128,10 @@
   <li>
     <pkg>metafuse</pkg> uses a fused lasso to merge
     covariate estimates across a number of independent datasets.
+  </li>
+  <li>
+  <pkg>metapower</pkg>
+  provides power analysis for meta-analysis and meta-regression
   </li>
   </ul>
 
@@ -186,6 +191,9 @@
     <pkg>bayesmeta</pkg> includes shrinkage estimates, posterior
     predictive p-values and forest plots via either <pkg>metafor</pkg>
     or <pkg>forestplot</pkg>. Diagnostic graphical output is available.
+    <pkg>MetaStan</pkg>
+    includes binomial-normal hierarchical models and can use weakly
+    informative priors for the heterogeneity and treatment effect parameters.
    <pkg>baggr</pkg>
    provides facilities using Stan for hierarchical
    Bayesian models, graphical facilities are provided.
@@ -277,6 +285,10 @@
    implements a method for combining within study
    interactions
    </li>
+   <li>
+   <pkg>metarep</pkg>
+   provides replicability analyses after a conventional analysis
+   </li>
    </ul>
 
 <i>Graphical methods</i>
@@ -292,6 +304,7 @@
     Although the most basic plot can be produced
     by any of them
     they each provide their own choice of enhancements.
+    <pkg>metaviz</pkg> provides a range of enhancements.
   </li>
   <li>
     Funnel plots are provided in
@@ -304,7 +317,9 @@
     is available in <pkg>extfunnel</pkg>, a funnel plot
     for limit meta-analysis in
     <pkg>metasens</pkg>, and <pkg>metaviz</pkg> provides
-    funnel plots in the context of visual inference.
+    an extensive range of enhanced
+    funnel plots and also facilities for their use
+    in the context of visual inference.
   </li>
   <li>
     Radial (Galbraith) plots are provided in
@@ -504,39 +519,51 @@
   </ul>
 
 <i>Meta-analysis of significance values</i>
-  <ul>
-  <li>
-    <pkg>metap</pkg> provides some facilities for
-    meta-analysis of significance values.
-  </li>
+
+<ul>
    <li>
-   <pkg>aggregation</pkg>
-   provides a smaller subset of methods.
-  </li>
-   <li>
-   <pkg>poolr</pkg>
-   provides an extensive range of methods for
-   processing p-values which are not independent
-   (which includes independent methods).
-   </li>
-  <li>
-    <pkg>TFisher</pkg> provides Fisher's method using thresholding for
-    the p-values.
+   Fisher's method and Lancaster's are available in
+   <pkg>aggregation</pkg>, <pkg>metap</pkg>, <pkg>metapro</pkg>
+   and <pkg>poolr</pkg>.
    </li>
    <li>
-    <pkg>harmonicmeanp</pkg>
-    uses the method of harmonic mean of p-values which
-    is robust to correlation between the p-values.
+   Stouffer's method, Tippett's and Wilkinson's are available
+   in <pkg>metap</pkg> and <pkg>poolr</pkg>.
    </li>
    <li>
-    <pkg>metapro</pkg>
-    provides a subset of methods and also a new method, ordmeta.
-</li>
-   </ul>
+   Edgington's method, inverse-t, logit, mean of p, and
+   mean of z are all available in <pkg>metap</pkg>.
+   </li>
+</ul>
+<p>
+   In all cases <pkg>poolr</pkg> considers correlated p-values in
+   addition to independent. The others above do not.
+</p>
+<ul>
+   <li>
+   <pkg>TFisher</pkg> provides Fisher's method using both hard
+   and soft thresholding for
+   the p-values. There is a wrapper in <pkg>metap</pkg> for
+   the hard threshold case.
+   </li>
+   <li>
+   <pkg>harmonicmeanp</pkg>
+   uses the method of harmonic mean of p-values which
+   is robust to correlation between the p-values.
+   </li>
+   <li>
+   <pkg>metapro</pkg>
+    provides a new method, ordmeta.
+    </li>
+    <li>
+    <pkg>metap</pkg> provides simple graphics.
+   </li>
+</ul>
    <p>
     Some methods are also provided in some
     of the genetics packages mentioned below.
   </p>
+ 
 
 <h4>Multivariate meta-analysis</h4>
 
@@ -767,6 +794,9 @@
     or JAGS, and <pkg>pcnetmeta</pkg>,
     which uses JAGS.
    It provides a number of data-sets.
+   <pkg>nmaINLA</pkg> uses integrated nested Laplace approximations
+   as an alternative to MCMC.
+   It provides a number of data-sets.
     <pkg>netmeta</pkg>  works in a frequentist framework.
     Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
     provide network graphs and
@@ -802,6 +832,9 @@
       proposes a new statistical method to detect epistasis,
     <pkg>gap</pkg> combines p-values,
    <pkg>getmstatistic</pkg> quantifies systematic heterogeneity,
+   <pkg>getspres</pkg>
+   uses standardised predictive random effects to explore
+   heterogeneity in genetic association meta-analyses,
    <pkg>GMCM</pkg>
    uses a Gaussian mixture copula model for high-throughput
    experiments,
@@ -946,6 +979,7 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>gap</pkg>
   <pkg>gemtc</pkg>
   <pkg>getmstatistic</pkg>
+<pkg>getspres</pkg>
 <pkg>GMCM</pkg>
 <pkg>GENMETA</pkg>
   <pkg>harmonicmeanp</pkg>
@@ -989,12 +1023,15 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>MetaPCA</pkg>
   <pkg>metaplotr</pkg>
   <pkg>metaplus</pkg>
+<pkg>metapower</pkg>
   <pkg>metapro</pkg>
+<pkg>metarep</pkg>
   <pkg>metaRMST</pkg>
   <pkg>metaRNASeq</pkg>
   <pkg>metaSEM</pkg>
   <pkg>metasens</pkg>
   <pkg>MetaSKAT</pkg>
+  <pkg>MetaStan</pkg>
   <pkg>MetaSubtract</pkg>
   <pkg>metatest</pkg>
   <pkg>Metatron</pkg>
@@ -1012,6 +1049,7 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>netmeta</pkg>
   <pkg>nmadb</pkg>
 <pkg>NMADiagT</pkg>
+<pkg>nmaINLA</pkg>
 <pkg>NMAoutlier</pkg>
 <pkg>nmathresh</pkg>
   <pkg>ofGEM</pkg>
