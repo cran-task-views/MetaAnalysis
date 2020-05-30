@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-04-05</version>
+<version>2020-05-31</version>
 
 <info>
 <p>
@@ -789,9 +789,7 @@
   </p>
 
   <p>This is provided in a Bayesian framework by
-    <pkg>gemtc</pkg>,
-    which acts as a front-end to BUGS
-    or JAGS, and <pkg>pcnetmeta</pkg>,
+    <pkg>pcnetmeta</pkg>,
     which uses JAGS.
    It provides a number of data-sets.
    <pkg>nmaINLA</pkg> uses integrated nested Laplace approximations
@@ -977,7 +975,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>forestmodel</pkg>
   <pkg>forestplot</pkg>
   <pkg>gap</pkg>
-  <pkg>gemtc</pkg>
   <pkg>getmstatistic</pkg>
 <pkg>getspres</pkg>
 <pkg>GMCM</pkg>
