@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-05-31</version>
+<version>2020-06-03</version>
 
 <info>
 <p>
@@ -691,11 +691,6 @@
    Graphical methods are also provided.
   </li>
    <li>
-    <pkg>HSROC</pkg> provides HSROC with estimation
-    in a Bayesian framework. Graphical facilities are provided.
-    The case of imperfect reference standards is catered for.
-   </li>
-   <li>
    <pkg>CopulaDTA</pkg>
    uses the beta-binomial model to yield marginal mean sensitivity
    and specificity. Graphical facilities are available.
@@ -980,7 +975,6 @@ generates a flowchart conforming to the PRISMA statement.
 <pkg>GMCM</pkg>
 <pkg>GENMETA</pkg>
   <pkg>harmonicmeanp</pkg>
-  <pkg>HSROC</pkg>
   <pkg>ipdmeta</pkg>
 <pkg>jarbes</pkg>
   <pkg>joineRmeta</pkg>
