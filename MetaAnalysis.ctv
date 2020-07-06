@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-06-03</version>
+<version>2020-07-06</version>
 
 <info>
 <p>
@@ -221,11 +221,6 @@
     are provided and it is possible for the user to define
     new ones.
   </li>
-  <li><pkg>metagen</pkg> provides a range of methods for
-    random effects models and also facilities
-    for extensive simulation studies of the
-    properties of those methods.
-  </li>
   <li>
     <pkg>metaplus</pkg> fits random effects
     models relaxing the usual
@@ -353,8 +348,8 @@
   <ul>
   <li>
     Confidence intervals for the heterogeneity parameter
-    are provided in <pkg>metafor</pkg>,
-    <pkg>metagen</pkg>, and <pkg>psychmeta</pkg>.
+    are provided in <pkg>metafor</pkg>
+    and <pkg>psychmeta</pkg>.
   </li>
   <li>
   <pkg>altmeta</pkg>
@@ -720,7 +715,7 @@
     <pkg>psychmeta</pkg> also uses <pkg>metafor</pkg>.
   </li>
   <li>
-    <pkg>bmeta</pkg>, <pkg>metagen</pkg>,
+    <pkg>bmeta</pkg>,
     <pkg>metaLik</pkg>, <pkg>metansue</pkg>, <pkg>metaSEM</pkg>, and
     <pkg>metatest</pkg> also provide meta-regression.
   </li>
@@ -891,9 +886,6 @@
 <h4>Simulation</h4>
 
 <p>
-Extensive facilities for simulation are provided in
-<pkg>metagen</pkg> including the ability to make use
-of parallel processing.
 <pkg>psychmeta</pkg> provides
 facilities for simulation of psychometric data-sets.
 </p>
@@ -995,7 +987,6 @@ generates a flowchart conforming to the PRISMA statement.
 <pkg>metacart</pkg>
   <pkg>metaforest</pkg>
 <pkg>metagam</pkg>
-  <pkg>metagen</pkg>
 <pkg>MetaIntegrator</pkg>
   <pkg>metansue</pkg>
   <pkg>meta4diag</pkg>
@@ -1004,7 +995,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg priority="core">metafor</pkg>
   <pkg>metafuse</pkg>
   <pkg>metagear</pkg>
-  <pkg>metagen</pkg>
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
   <pkg>metamisc</pkg>
