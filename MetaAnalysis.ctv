@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-07-06</version>
+<version>2020-07-18</version>
 
 <info>
 <p>
@@ -850,9 +850,6 @@
    <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>,
    provide meta-analysis
       for the SKAT test,
-    <pkg>MultiMeta</pkg> for meta-analysis
-      of multivariate GWAS
-      results with graphics, designed to accept GEMMA format,
       <pkg>ofGEM</pkg>
       provides a method for identifying gene-environment interactions
       using meta-filtering,
@@ -1024,7 +1021,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>mixmeta</pkg>
   <pkg>mmeta</pkg>
   <pkg>MOTE</pkg>
-  <pkg>MultiMeta</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
