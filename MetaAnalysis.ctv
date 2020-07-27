@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-07-18</version>
+<version>2020-07-27</version>
 
 <info>
 <p>
@@ -847,8 +847,8 @@
       sequencing experiments,
       <pkg>MetaSubtract</pkg> uses leave-one-out methods to
       validate meta-GWAS results,
-   <pkg>MetaSKAT</pkg>, <pkg>seqMeta</pkg>,
-   provide meta-analysis
+   <pkg>MetaSKAT</pkg>
+   provides meta-analysis
       for the SKAT test,
       <pkg>ofGEM</pkg>
       provides a method for identifying gene-environment interactions
@@ -1054,7 +1054,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>SAMURAI</pkg>
   <pkg>SCMA</pkg>
   <pkg>selectMeta</pkg>
-  <pkg>seqMeta</pkg>
   <pkg>SingleCaseES</pkg>
 <pkg>SPAtest</pkg>
   <pkg>TFisher</pkg>
