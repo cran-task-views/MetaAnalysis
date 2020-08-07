@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-07-27</version>
+<version>2020-08-07</version>
 
 <info>
 <p>
@@ -120,11 +120,7 @@
    <pkg>metavcov</pkg> computes the variance-covariance
    matrix for multivariate meta-analysis
    when correlations between outcomes can be
-   provided but not between treatment effects, and
-  <pkg>clubSandwich</pkg>
-  imputes
-  variance-covariance matrix for multivariate meta-analysis
-  </li>
+   provided but not between treatment effects.
   <li>
     <pkg>metafuse</pkg> uses a fused lasso to merge
     covariate estimates across a number of independent datasets.
@@ -242,10 +238,6 @@
   <pkg>rma.exact</pkg>
    estimates exact confidence intervals in random effects
    normal-normal models and also provides plots of them.
-   </li>
-   <li>
-   <pkg>clubSandwich</pkg>
-   gives cluster-robust variance estimates.
    </li>
    <li>
    <pkg>pimeta</pkg>
@@ -935,7 +927,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>CAMAN</pkg>
 <pkg>catmap</pkg>
   <pkg>CIAAWconsensus</pkg>
-  <pkg>clubSandwich</pkg>
   <pkg>compute.es</pkg>
   <pkg>ConfoundedMeta</pkg>
   <pkg>CopulaDTA</pkg>
