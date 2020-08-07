@@ -120,7 +120,8 @@
    <pkg>metavcov</pkg> computes the variance-covariance
    matrix for multivariate meta-analysis
    when correlations between outcomes can be
-   provided but not between treatment effects.
+   provided but not between treatment effects
+  </li>
   <li>
     <pkg>metafuse</pkg> uses a fused lasso to merge
     covariate estimates across a number of independent datasets.
