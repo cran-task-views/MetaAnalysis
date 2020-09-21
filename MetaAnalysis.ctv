@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-08-07</version>
+<version>2020-09-21</version>
 
 <info>
 <p>
@@ -177,8 +177,6 @@
     provides two different models:
     a non-parametric and a semi-parametric.
     Graphical display of the results is provided.
-    <pkg>metamisc</pkg> provides a method
-    with priors suggested by Higgins.
     <pkg>mmeta</pkg> provides meta-analysis using
     beta-binomial prior distributions.
     A Bayesian approach is also provided by <pkg>bmeta</pkg> which
@@ -209,8 +207,7 @@
     functions. These are:
     <pkg>metaLik</pkg>
     which uses a more sophisticated approach to the likelihood,
-    <pkg>metamisc</pkg> which as well as the method of moments provides
-    two likelihood-based  methods, and
+    and
     <pkg>metatest</pkg> which provides
     another improved method of obtaining confidence intervals.
     <pkg>metaBMA</pkg> has a
@@ -407,9 +404,6 @@
     significant studies is provided by <pkg>PubBias</pkg>.
   </li>
    <li>
-   <pkg>metamisc</pkg> provides funnel plots and tests for asymmetry.
-   </li>
-   <li>
    <pkg>puniform</pkg>
    provides methods using only the statistically significant studies,
    methods for the special case of replication studies
@@ -489,10 +483,6 @@
 	the meta-analysis of studies of joint time-to-event
 	and disease progression.
   </li>
-  <li>
-   <pkg>metamisc</pkg> provides for meta-analysis of prognostic studies
-   using the c statistic or the O/E ratio. Some plots are provided.
-</li>
    <li>
    <pkg>dfmeta</pkg>
    provides meta-analysis of Phase I dose-finding
@@ -650,12 +640,6 @@
     <pkg>Metatron</pkg> provides a method for
     the Reitsma model
     incuding the case of an imperfect reference standard.
-  </li>
-  <li>
-    <pkg>metamisc</pkg> provides the method
-    of Riley which estimates a common
-    within and between correlation.
-    Graphical output is also provided.
   </li>
   <li>
     <pkg>bamdit</pkg> provides Bayesian meta-analysis
@@ -986,7 +970,6 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>metagear</pkg>
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
-  <pkg>metamisc</pkg>
   <pkg>metamedian</pkg>
   <pkg>metap</pkg>
   <pkg>MetaPath</pkg>
