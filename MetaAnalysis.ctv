@@ -76,6 +76,9 @@
    its output for input to another
    package like <pkg>metafor</pkg>
    or producing a CSV file.
+   <pkg>estimraw</pkg>
+   estimates the cell frequencies from one of odds ratio,
+   risk ratio, or risk difference.
    <pkg>effsize</pkg>
    contains functions to compute effect sizes mean difference (Cohen's
    d and Hedges g), dominance matrices (Cliff's Delta)
@@ -122,6 +125,11 @@
    when correlations between outcomes can be
    provided but not between treatment effects
   </li>
+  <li>
+  <pkg>clubSandwich</pkg>
+  imputes
+  variance-covariance matrix for multivariate meta-analysis
+  </li> 
   <li>
     <pkg>metafuse</pkg> uses a fused lasso to merge
     covariate estimates across a number of independent datasets.
@@ -171,6 +179,15 @@
   <pkg>psychmeta</pkg> implements the Hunter-Schmidt method
   including corrections for reliability and range-restriction issues
   </li>
+  <li><pkg>concurve</pkg>
+  provides consonance curves relying
+   on <pkg>metafor</pkg>
+  </li>
+   <li>
+   <pkg>clubSandwich</pkg>
+   gives cluster-robust variance estimates.
+   </li>
+
   <li>
     Bayesian approaches are contained in various packages.
     <pkg>bspmma</pkg> which 
@@ -198,6 +215,8 @@
    <pkg>RBesT</pkg>
    uses Bayesian synthesis to generate priors from various
    sources.
+    <pkg>metamisc</pkg> provides a method
+    with priors suggested by Higgins.
   </li>
   <li>
     Some packages concentrate on providing
@@ -249,6 +268,8 @@
    studies that report the median of the outcome. These methods estimate the
    pooled median in the one-group context and the pooled raw difference of
    medians across groups in the two-group context
+   <pkg>meta</pkg>
+   also provides methods for medians
    </li>
    <li>
    <pkg>MetaUtility</pkg>
@@ -318,6 +339,10 @@
     Baujat plots are provided in
     <pkg>meta</pkg> and <pkg>metafor</pkg>.
   </li>
+  <li>
+  <pkg>meta</pkg>
+  provides drapery plots
+  </li>
    <li>
    <pkg>metaplotr</pkg>
    provides a crosshair plot
@@ -355,6 +380,11 @@
    <pkg>mc.heterogeneity</pkg>
    implements a Monte Carlo based test for heterogeneity.
    </li>
+  <li>
+  <pkg>boot.heterogeneity</pkg>
+  provides a bootstrp test for heterogeneity for mean differences,
+  correlations, and odds ratios.
+  </li>
   </ul>
 
 <i>Model criticism</i>
@@ -397,6 +427,9 @@
   <li>
   <pkg>xmeta</pkg> provides a method in the context of
   multivariate meta-analysis.
+  </li>
+  <li>
+     <pkg>metamisc</pkg> provides funnel plots and tests for asymmetry.
   </li>
   <li>
     An exploratory technique for detecting
@@ -492,6 +525,9 @@
    <pkg>metaRMST</pkg>
    implements meta-analysis of trials with difference in
    restricted mean survival times
+   </li>
+   <li>
+   <pkg>metamisc</pkg> provides for meta-analysis of prognostic studies
    </li>
 
   </ul>
@@ -744,6 +780,11 @@
     logistic regression from aggregate data or
     individual data.
    </li>
+   <li><pkg>multinma</pkg>
+   provides network meta-analysis and network meta-regression models
+   for aggregate data, individual patient data,
+   and mixtures of both individual and aggregate data     
+   </li>
    </ul>
 
 <h4>Network meta-analysis</h4>
@@ -777,6 +818,13 @@
    provides network meta-analysis of diagnostic tests
    in a Bayesian framework using Stan as the engine,
    graphical output is provided.
+    <pkg>gemtc</pkg>,
+    which acts as a front-end to BUGS
+    or JAGS
+   <pkg>multinma</pkg>
+   provides network meta-analysis and network meta-regression models
+   for aggregate data, individual patient data,
+   and mixtures of both individual and aggregate data     
    </p>
    <p>
    <pkg>nmadb</pkg>
@@ -893,7 +941,10 @@ on meta-analysis in the agricultural sciences.
 <pkg>PRISMAstatement</pkg>
 generates a flowchart conforming to the PRISMA statement.
 </p>
-
+<p>
+<pkg>metabolic</pkg>
+provides data and code to support a book
+</p>
 
  </info>
 
@@ -905,11 +956,14 @@ generates a flowchart conforming to the PRISMA statement.
 <pkg>BayesCombo</pkg>
   <pkg>bayesmeta</pkg>
   <pkg>bmeta</pkg>
+<pkg>boot.heterogeneity</pkg>
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
 <pkg>catmap</pkg>
   <pkg>CIAAWconsensus</pkg>
+  <pkg>clubSandwich</pkg>
   <pkg>compute.es</pkg>
+<pkg>concurve</pkg>
   <pkg>ConfoundedMeta</pkg>
   <pkg>CopulaDTA</pkg>
   <pkg>CopulaREMADA</pkg>
@@ -923,6 +977,7 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>effsize</pkg>
   <pkg>epiR</pkg>
   <pkg>esc</pkg>
+<pkg>estimraw</pkg>
   <pkg>estmeansd</pkg>
   <pkg>es.dif</pkg>
   <pkg>etma</pkg>
@@ -933,6 +988,7 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>forestplot</pkg>
   <pkg>gap</pkg>
   <pkg>getmstatistic</pkg>
+    <pkg>gemtc</pkg>
 <pkg>getspres</pkg>
 <pkg>GMCM</pkg>
 <pkg>GENMETA</pkg>
@@ -954,6 +1010,7 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>MetABEL</pkg>
 <pkg>metaBLUE</pkg>
   <pkg>metaBMA</pkg>
+<pkg>metabolic</pkg>
 <pkg>metacart</pkg>
   <pkg>metaforest</pkg>
 <pkg>metagam</pkg>
@@ -968,6 +1025,7 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
   <pkg>metamedian</pkg>
+   <pkg>metamisc</pkg> 
   <pkg>metap</pkg>
   <pkg>MetaPath</pkg>
   <pkg>MetaPCA</pkg>
@@ -992,6 +1050,7 @@ generates a flowchart conforming to the PRISMA statement.
   <pkg>mixmeta</pkg>
   <pkg>mmeta</pkg>
   <pkg>MOTE</pkg>
+   <pkg>multinma</pkg>
   <pkg>mvmeta</pkg>
   <pkg>mvtmeta</pkg>
   <pkg>netmeta</pkg>
