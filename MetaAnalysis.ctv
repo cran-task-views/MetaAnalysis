@@ -126,6 +126,11 @@
    provided but not between treatment effects
   </li>
   <li>
+  <pkg>clubSandwich</pkg>
+  imputes
+  variance-covariance matrix for multivariate meta-analysis
+  </li> 
+  <li>
     <pkg>metafuse</pkg> uses a fused lasso to merge
     covariate estimates across a number of independent datasets.
   </li>
@@ -178,6 +183,11 @@
   provides consonance curves relying
    on <pkg>metafor</pkg>
   </li>
+   <li>
+   <pkg>clubSandwich</pkg>
+   gives cluster-robust variance estimates.
+   </li>
+
   <li>
     Bayesian approaches are contained in various packages.
     <pkg>bspmma</pkg> which 
@@ -949,6 +959,7 @@ provides data and code to support a book
   <pkg>CAMAN</pkg>
 <pkg>catmap</pkg>
   <pkg>CIAAWconsensus</pkg>
+  <pkg>clubSandwich</pkg>
   <pkg>compute.es</pkg>
 <pkg>concurve</pkg>
   <pkg>ConfoundedMeta</pkg>
