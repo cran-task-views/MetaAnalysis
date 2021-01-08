@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2020-11-16</version>
+<version>2021-01-08</version>
 
 <info>
 <p>
@@ -105,6 +105,8 @@
    <pkg>SingleCaseES</pkg>
    provides basic effect sizes for single-case
    designs, both parametric and non-overlap.
+   <pkg>smd</pkg>
+   computes standardised mean differences
   </li>
   <li>
     <pkg>meta</pkg> provides functions to read and work
@@ -188,6 +190,7 @@
    gives cluster-robust variance estimates.
    </li>
 
+
   <li>
     Bayesian approaches are contained in various packages.
     <pkg>bspmma</pkg> which 
@@ -217,6 +220,10 @@
    sources.
     <pkg>metamisc</pkg> provides a method
     with priors suggested by Higgins.
+   <pkg>RoBMA</pkg>
+   provides a framework for estimating
+   ensembles of meta-analytic models
+   and using Bayesian model averaging to combine them.
   </li>
   <li>
     Some packages concentrate on providing
@@ -294,6 +301,11 @@
    <li>
    <pkg>metarep</pkg>
    provides replicability analyses after a conventional analysis
+   </li>
+   <li>
+   <pkg>EvidenceSynthesis</pkg>
+   combines causal effect estimates and study
+   diagnostics across studies.
    </li>
    </ul>
 
@@ -409,6 +421,11 @@
    provides sensitivity analysis of the effect of
    unmeasured confounders
    </li>
+   <li>
+   <pkg>boutliers</pkg>
+   provides bootstrap distributions for outlier
+   detection and influence diagnostics
+   </li>
   </ul>
 
 <i>Investigating small study bias</i>
@@ -502,6 +519,15 @@
    estimates models accounting for publication
    bias or p-hacking using a Bayesian framework
    </li>
+   <li>
+   <pkg>fsn</pkg>
+   computes the fail-safe number with
+   confidence interval.
+   </li>
+   <li>
+   <pkg>RobustBayesianCopas</pkg>
+   fits a robust version of the Copas selection model.
+   </li>
   </ul>
 
  <i>Other study designs</i>
@@ -529,7 +555,15 @@
    <li>
    <pkg>metamisc</pkg> provides for meta-analysis of prognostic studies
    </li>
-
+   <li>
+   <pkg>metamicrobiomeR</pkg>
+   provides meta-analysis of zero-inflated beta microbiome data
+   fitted with GAMLSS models.
+   </li>
+   <li>
+   <pkg>metaSurvival</pkg>
+   estimates the survival curves from data extracted from primary study survival curves.
+   </li>
   </ul>
 
 <i>Meta-analysis of significance values</i>
@@ -795,8 +829,8 @@
     used for network meta-analysis with
    appropriate setup.
   </p>
-
-  <p>This is provided in a Bayesian framework by
+<ul>
+  <li>This is provided in a Bayesian framework by
     <pkg>pcnetmeta</pkg>,
     which uses JAGS.
    It provides a number of data-sets.
@@ -804,28 +838,38 @@
    as an alternative to MCMC.
    It provides a number of data-sets.
     <pkg>netmeta</pkg>  works in a frequentist framework.
-    Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
-    provide network graphs and
-    <pkg>netmeta</pkg> provides a heatmap for
-    displaying inconsistency and heterogeneity.
-    <pkg>nmathresh</pkg>
-   provides decision-invariant bias adjustment
-   thresholds and intervals the
-   smallest changes to the data that would result in a change of decision.
-   <pkg>NMAoutlier</pkg>
-   detects outliers in NMA using forward search,
    <pkg>NMADiagT</pkg>
    provides network meta-analysis of diagnostic tests
    in a Bayesian framework using Stan as the engine,
    graphical output is provided.
     <pkg>gemtc</pkg>,
     which acts as a front-end to BUGS
-    or JAGS
+    or JAGS.
+    </li>
+    <li>
    <pkg>multinma</pkg>
    provides network meta-analysis and network meta-regression models
    for aggregate data, individual patient data,
    and mixtures of both individual and aggregate data     
-   </p>
+   </li>
+   <li>
+    <pkg>nmathresh</pkg>
+   provides decision-invariant bias adjustment
+   thresholds and intervals the
+   smallest changes to the data that would result in a change of decision.
+   <pkg>NMAoutlier</pkg>
+   detects outliers in NMA using forward search,
+   </li>
+   <li>
+    Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
+    provide network graphs and
+    <pkg>netmeta</pkg> provides a heatmap for
+    displaying inconsistency and heterogeneity.
+   <pkg>nmaplateplot</pkg>
+   displays the results from an NMA using a heatplot
+   style and also displays SUCRA.
+  </li>
+</ul>
    <p>
    <pkg>nmadb</pkg>
    provides access to a database of network meta-analyses
@@ -955,6 +999,7 @@ provides data and code to support a book
   <pkg>bayesmeta</pkg>
   <pkg>bmeta</pkg>
 <pkg>boot.heterogeneity</pkg>
+<pkg>boutliers</pkg>
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
 <pkg>catmap</pkg>
@@ -980,10 +1025,12 @@ provides data and code to support a book
   <pkg>es.dif</pkg>
   <pkg>etma</pkg>
 <pkg>EValue</pkg>
+<pkg>EvidenceSynthesis</pkg>
   <pkg>exactmeta</pkg>
   <pkg>extfunnel</pkg>
   <pkg>forestmodel</pkg>
   <pkg>forestplot</pkg>
+<pkg>fsn</pkg>
   <pkg>gap</pkg>
   <pkg>getmstatistic</pkg>
     <pkg>gemtc</pkg>
@@ -1023,6 +1070,7 @@ provides data and code to support a book
   <pkg>metaLik</pkg>
   <pkg>metaMA</pkg>
   <pkg>metamedian</pkg>
+<pkg>metamicrobiomeR</pkg>
    <pkg>metamisc</pkg> 
   <pkg>metap</pkg>
   <pkg>MetaPath</pkg>
@@ -1037,6 +1085,7 @@ provides data and code to support a book
   <pkg>metasens</pkg>
   <pkg>MetaStan</pkg>
   <pkg>MetaSubtract</pkg>
+<pkg>metaSurvival</pkg>
   <pkg>metatest</pkg>
   <pkg>Metatron</pkg>
   <pkg>MetaUtility</pkg>
@@ -1055,6 +1104,7 @@ provides data and code to support a book
 <pkg>NMADiagT</pkg>
 <pkg>nmaINLA</pkg>
 <pkg>NMAoutlier</pkg>
+<pkg>nmaplateplot</pkg>
 <pkg>nmathresh</pkg>
   <pkg>ofGEM</pkg>
   <pkg>pcnetmeta</pkg>
@@ -1076,12 +1126,15 @@ provides data and code to support a book
   <pkg>revtools</pkg>
   <pkg>rma.exact</pkg>
   <pkg>rmeta</pkg>
+<pkg>RoBMA</pkg>
+<pkg>RobustBayesianCopas</pkg>
   <pkg>robumeta</pkg>
   <pkg>RobustRankAggreg</pkg>
   <pkg>SAMURAI</pkg>
   <pkg>SCMA</pkg>
   <pkg>selectMeta</pkg>
   <pkg>SingleCaseES</pkg>
+<pkg>smd</pkg>
 <pkg>SPAtest</pkg>
   <pkg>TFisher</pkg>
   <pkg>weightr</pkg>
