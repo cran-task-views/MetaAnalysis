@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2021-01-08</version>
+<version>2021-01-19</version>
 
 <info>
 <p>
@@ -301,11 +301,6 @@
    <li>
    <pkg>metarep</pkg>
    provides replicability analyses after a conventional analysis
-   </li>
-   <li>
-   <pkg>EvidenceSynthesis</pkg>
-   combines causal effect estimates and study
-   diagnostics across studies.
    </li>
    </ul>
 
@@ -1025,7 +1020,6 @@ provides data and code to support a book
   <pkg>es.dif</pkg>
   <pkg>etma</pkg>
 <pkg>EValue</pkg>
-<pkg>EvidenceSynthesis</pkg>
   <pkg>exactmeta</pkg>
   <pkg>extfunnel</pkg>
   <pkg>forestmodel</pkg>
