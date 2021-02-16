@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2021-01-19</version>
+<version>2021-02-16</version>
 
 <info>
 <p>
@@ -798,12 +798,6 @@
   </p>
   <ul>
   <li>
-    <pkg>ipdmeta</pkg> which uses information on aggregate
-    summary statistics and a covariate of interest
-    to assess whether a full IPD analysis
-    would have more power.
-  </li>
-  <li>
     <pkg>ecoreg</pkg> which is designed for ecological studies
     enables estimation of an individual level
     logistic regression from aggregate data or
@@ -1032,7 +1026,6 @@ provides data and code to support a book
 <pkg>GMCM</pkg>
 <pkg>GENMETA</pkg>
   <pkg>harmonicmeanp</pkg>
-  <pkg>ipdmeta</pkg>
 <pkg>jarbes</pkg>
   <pkg>joineRmeta</pkg>
   <pkg>joint.Cox</pkg>
