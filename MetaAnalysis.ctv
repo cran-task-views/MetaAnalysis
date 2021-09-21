@@ -4,7 +4,7 @@
 <name>MetaAnalysis</name>
 <topic>Meta-Analysis</topic>
 <maintainer email = "lists@dewey.myzen.co.uk">Michael Dewey</maintainer>
-<version>2021-07-24</version>
+<version>2021-09-21</version>
 
 <info>
 <p>
@@ -222,6 +222,9 @@
    provides a framework for estimating
    ensembles of meta-analytic models
    and using Bayesian model averaging to combine them.
+   <pkg>ra4bayesmeta</pkg>
+   provides principled reference analysis within the
+   Bayesian normal-normal model.
   </li>
   <li>
     Some packages concentrate on providing
@@ -473,6 +476,10 @@
    performs sensitivity analysis of the number of unpublished
    studies needed to have a specified influence.
    </li>
+   <li>
+   <pkg>metafor</pkg>
+   provides a variety of selection models.
+   </li>
    </ul>
 
 <i>Unobserved studies</i>
@@ -536,6 +543,10 @@
    <li>
    <pkg>RobustBayesianCopas</pkg>
    fits a robust version of the Copas selection model.
+   </li>
+   <li>
+   <pkg>metafor</pkg>
+   provides the test of excess signifcance.
    </li>
   </ul>
 
@@ -608,7 +619,12 @@
    uses the method of harmonic mean of p-values which
    is robust to correlation between the p-values.
    </li>
-    <li>
+   <li>
+   <pkg>amanida</pkg>
+   provides meta-analysis of metabolite data using p-values
+   and fold change.
+   </li>
+   <li>
     <pkg>metap</pkg> provides simple graphics.
    </li>
 </ul>
@@ -837,14 +853,21 @@
    appropriate setup.
   </p>
 <ul>
-  <li>This is provided in a Bayesian framework by
+   <li>
+    <pkg>netmeta</pkg>  works in a frequentist framework.
+    It provides an extensive range of graphical and other
+    displays including network graphs
+    and a heatmap for
+    displaying inconsistency and heterogeneity.
+    A frequentist analogue of SUCRA is also available.
+    </li>
+  <li>A Bayesian framework by
     <pkg>pcnetmeta</pkg>,
     which uses JAGS.
    It provides a number of data-sets.
    <pkg>nmaINLA</pkg> uses integrated nested Laplace approximations
    as an alternative to MCMC.
    It provides a number of data-sets.
-    <pkg>netmeta</pkg>  works in a frequentist framework.
    <pkg>NMADiagT</pkg>
    provides network meta-analysis of diagnostic tests
    in a Bayesian framework using Stan as the engine,
@@ -872,19 +895,18 @@
    detects outliers in NMA using forward search,
    </li>
    <li>
-    Both <pkg>pcnetmeta</pkg> and <pkg>netmeta</pkg>
-    provide network graphs and
-    <pkg>netmeta</pkg> provides a heatmap for
-    displaying inconsistency and heterogeneity.
+   <pkg>pcnetmeta</pkg>
+    provides network graphs.
    <pkg>nmaplateplot</pkg>
    displays the results from an NMA using a heatplot
    style and also displays SUCRA.
   </li>
+  <li>
+   <pkg>nmarank</pkg>
+   evaluates hierarchies of evidence in network
+   meta-analysis
+   </li>
 </ul>
-   <p>
-   <pkg>nmadb</pkg>
-   provides access to a database of network meta-analyses
-  </p>
 
 <h4>Genetics</h4>
   <p>
@@ -933,6 +955,18 @@
    <pkg>SPAtest</pkg>
    combines association results.
   </p>
+
+<h4>Data-sets</h4>
+   <ul>
+   <li>
+   <pkg>metadat</pkg>
+   provides a large number of data-sets used in meta-analysis
+   </li>
+   <li>
+   <pkg>nmadb</pkg>
+   provides access to a database of network meta-analyses
+  </li>
+  </ul>
 
 <h4>Interfaces</h4>
 <ul>
@@ -997,14 +1031,15 @@ provides data and code to support a book
  <packagelist>
   <pkg>aggregation</pkg>
   <pkg>altmeta</pkg>
-<pkg>baggr</pkg>
+  <pkg>amanida</pkg>
+  <pkg>baggr</pkg>
   <pkg>bamdit</pkg>
-<pkg>BayesCombo</pkg>
+  <pkg>BayesCombo</pkg>
   <pkg>bayesmeta</pkg>
   <pkg>bmeta</pkg>
-<pkg>bnma</pkg>
-<pkg>boot.heterogeneity</pkg>
-<pkg>boutliers</pkg>
+  <pkg>bnma</pkg>
+  <pkg>boot.heterogeneity</pkg>
+ <pkg>boutliers</pkg>
   <pkg>bspmma</pkg>
   <pkg>CAMAN</pkg>
 <pkg>catmap</pkg>
@@ -1064,6 +1099,7 @@ provides data and code to support a book
   <pkg>metaBMA</pkg>
 <pkg>metabolic</pkg>
 <pkg>metacart</pkg>
+   <pkg>metadat</pkg>
   <pkg>metaforest</pkg>
 <pkg>metagam</pkg>
 <pkg>MetaIntegrator</pkg>
@@ -1111,6 +1147,7 @@ provides data and code to support a book
 <pkg>NMADiagT</pkg>
 <pkg>nmaINLA</pkg>
 <pkg>NMAoutlier</pkg>
+   <pkg>nmarank</pkg>
 <pkg>nmaplateplot</pkg>
 <pkg>nmathresh</pkg>
   <pkg>ofGEM</pkg>
@@ -1124,6 +1161,7 @@ provides data and code to support a book
 <pkg>publipha</pkg>
   <pkg>PublicationBias</pkg>
   <pkg>puniform</pkg>
+<pkg>ra4bayesmeta</pkg>
   <pkg>RandMeta</pkg>
   <pkg>ratesci</pkg>
 <pkg>RBesT</pkg>
