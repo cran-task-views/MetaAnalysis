@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey
 email: lists@dewey.myzen.co.uk
-version: 2021-12-28
+version: 2022-01-07
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -579,10 +579,6 @@ to the meta-analysis.
 semiparametric mixtures as an alternative to the random effects model
 where there is heterogeneity. Covariates can be included to provide
 meta-regression.
-
-`r pkg("joineRmeta")` provides functions for meta-analysis
-of a single longitudinal and a single time-to-event outcome from
-multiple studies using joint models
 
 `r pkg("KenSyn")` provides data-sets to accompany a French
 language book on meta-analysis in the agricultural sciences.
