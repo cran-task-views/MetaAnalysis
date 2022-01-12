@@ -354,7 +354,8 @@ in addition to independent. The others above do not.
     p-values.
 -   `r pkg("amanida")` provides meta-analysis of metabolite
     data using p-values and fold change.
--   `r pkg("metap")` provides simple graphics.
+-   `r pkg("metap")` provides simple graphics including albatros
+    plots.
 
 Some methods are also provided in some of the genetics packages
 mentioned below.
