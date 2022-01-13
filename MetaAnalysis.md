@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey
 email: lists@dewey.myzen.co.uk
-version: 2022-01-07
+version: 2022-01-13
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -190,6 +190,9 @@ offer additional functionality.
     within study interactions
 -   `r pkg("metarep")` provides replicability analyses after
     a conventional analysis
+-    `r pkg("rema")` uses a permutation approach to handle meta-analyses
+    of rare event data
+
 
 *Graphical methods*
 
@@ -254,6 +257,8 @@ An extensive range of graphical procedures is available.
     effect of unmeasured confounders
 -   `r pkg("boutliers")` provides bootstrap distributions
     for outlier detection and influence diagnostics
+-   `r pkg("metaconfoundr")` provides a number of ways to visualise
+     confounding relationships in meta-analysis
 
 *Investigating small study bias*
 
@@ -462,6 +467,8 @@ draws that information together.
     hierarchical meta-regression
 -   `r pkg("metacart")` uses classification and regression
     trees to identify interactions between moderators
+-   `r pkg("pema")` provides a penalised approach to meta-regression
+    useful for situations with a large number of moderators relative to observations
 
 #### Individual participant data (IPD)
 
