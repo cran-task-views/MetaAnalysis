@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey
 email: lists@dewey.myzen.co.uk
-version: 2022-01-13
+version: 2022-01-18
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -259,6 +259,7 @@ An extensive range of graphical procedures is available.
     for outlier detection and influence diagnostics
 -   `r pkg("metaconfoundr")` provides a number of ways to visualise
      confounding relationships in meta-analysis
+-   `r pkg("RoBMA")` allows comparison of different meta-analytic models
 
 *Investigating small study bias*
 
@@ -284,6 +285,7 @@ mentioned above. In addition:
     influence.
 -   `r pkg("metafor")` provides a variety of selection
     models.
+-    `r pkg("RoBMA")` includes Bayesian versions of selection models
 
 *Unobserved studies*
 
