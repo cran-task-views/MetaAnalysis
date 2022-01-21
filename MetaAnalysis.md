@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey
 email: lists@dewey.myzen.co.uk
-version: 2022-01-18
+version: 2022-01-21
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -192,6 +192,10 @@ offer additional functionality.
     a conventional analysis
 -    `r pkg("rema")` uses a permutation approach to handle meta-analyses
     of rare event data
+-  `r pkg("meta.shrinkage")` uses shrinkage methods to provide better estimates of individual
+    means in meta-analysis
+-  `r pkg("metaumbrella")` provides facilities for umbrella reviews
+
 
 
 *Graphical methods*
@@ -200,7 +204,7 @@ An extensive range of graphical procedures is available.
 
 -   Forest plots are provided in `r pkg("forplo")`,
     `r pkg("forestmodel")` (using ggplot2),
-    `r pkg("forestplot")`, `r pkg("meta")`,
+    `r pkg("forestplot")`, `r pkg("forestploter")`, `r pkg("meta")`,
     `r pkg("metafor")`, `r pkg("metansue")`,
     `r pkg("psychmeta")`, and `r pkg("rmeta")`.
     Although the most basic plot can be produced by any of them they
@@ -524,10 +528,13 @@ meta-analysis with appropriate setup.
     using a heatplot style and also displays SUCRA.
 -   `r pkg("nmarank")` evaluates hierarchies of evidence in
     network meta-analysis
-
+-   `r pkg("rnmamod")` uses a Bayesian approach to perform NMA
+    while addressing (aggregate) missing participant outcome data.
+    
 #### Genetics
 
-There are a number of packages specialising in genetic data:
+There are a number of packages specialising in genetic data and
+see also `r view("Genetics")`:
 `r pkg("catmap")` combines case-control and family study
 data, graphical facilities are provided, `r pkg("CPBayes")`
 uses a Bayesian approach to study cross-phenotype genetic associations,
@@ -598,3 +605,6 @@ to the PRISMA statement.
 
 `r pkg("metabolic")` provides data and code to support a book.
 
+#### Links
+
+[R mailing list for meta-analysis](https://stat.ethz.ch/mailman/listinfo/r-sig-meta-analysis//)
