@@ -36,8 +36,7 @@ offer additional functionality.
     results. Convenience functions to convert these onto a common metric
     are presented by: `r pkg("compute.es")` which converts
     from various statistics to d, g, r, z and the log odds ratio,
-    `r pkg("MAc")` which converts to correlation
-    coefficients, `r pkg("MAd")` which converts to mean
+    `r pkg("MAd")` which converts to mean
     differences, and `r pkg("metafor", priority = "core")`
     which converts to effect sizes an extensive set of measures for
     comparative studies (such as binary data, person years, mean
@@ -80,7 +79,8 @@ offer additional functionality.
     the articles, generating a PRISMA diagram, and some tools for effect
     sizes. `r pkg("revtools")` provides tools for
     downloading from bibliographic databases and uses machine learning
-    methods to process them.
+    methods to process them. `r pkg("citationchaser")` assists
+    in the process of chasing citations
 -   `r pkg("metavcov")` computes the variance-covariance
     matrix for multivariate meta-analysis when correlations between
     outcomes can be provided but not between treatment effects
@@ -103,14 +103,11 @@ offer additional functionality.
     exact method which does not involve continuity corrections.
 -   Packages which work with specific effect sizes may be more congenial
     to workers in some areas of science and include
-    `r pkg("MAc")` and `r pkg("metacor")` which
-    provide meta-analysis of correlation coefficients and
+    `r pkg("metacor")` which
+    provides meta-analysis of correlation coefficients and
     `r pkg("MAd")` which provides meta-analysis of mean
-    differences. `r pkg("MAc")` and
-    `r pkg("MAd")` provide a range of graphics.
-    `r pkg("psychometric")` provides an extensive range of
-    functions for the meta-analysis of psychometric studies.
-    `r pkg("mixmeta")` provides an integrated interface to
+    differences. `r pkg("MAd")` provides a range of graphics.
+        `r pkg("mixmeta")` provides an integrated interface to
     standard meta-analysis and extensions like multivariate and
     dose-response.
 -   `r pkg("psychmeta")` implements the Hunter-Schmidt
@@ -120,6 +117,9 @@ offer additional functionality.
     on `r pkg("metafor")`
 -   `r pkg("clubSandwich")` gives cluster-robust variance
     estimates.
+-   `r pkg("wildmeta")` conducts single coefficient tests
+    and multiple-contrast hypothesis tests of meta-regression
+    models using cluster wild bootstrapping
 -   Bayesian approaches are contained in various packages.
     `r pkg("bspmma")` which provides two different models: a
     non-parametric and a semi-parametric. Graphical display of the
@@ -212,7 +212,7 @@ An extensive range of graphical procedures is available.
     `r pkg("metaviz")` provides a range of enhancements.
 -   Funnel plots are provided in `r pkg("meta")`,
     `r pkg("metafor")`, `r pkg("metansue")`,
-    `r pkg("psychometric")` `r pkg("rmeta")` and
+    `r pkg("rmeta")` and
     `r pkg("weightr")`. In addition to the standard funnel
     plots an enhanced funnel plot to assess the impact of extra evidence
     is available in `r pkg("extfunnel")`, a funnel plot for
@@ -296,8 +296,8 @@ mentioned above. In addition:
 A recurrent issue in meta-analysis has been the problem of unobserved
 studies.
 
--   Rosenthal's fail safe n is provided by `r pkg("MAc")`
-    and `r pkg("MAd")`. `r pkg("metafor")`
+-   Rosenthal's fail safe n is provided by `r pkg("MAd")`.
+   `r pkg("metafor")`
     provides it as well as two more recent methods by Orwin and
     Rosenberg.
 -   Duval's trim and fill method is provided by
@@ -454,8 +454,8 @@ draws that information together.
 -   `r pkg("metafor")` provides meta-regression (multiple
     moderators are catered for). Various packages rely on
     `r pkg("metafor")` to provide meta-regression
-    (`r pkg("meta")`, `r pkg("MAc")`, and
-    `r pkg("MAd")`) and all three of these provide bubble
+    (`r pkg("meta")`, and
+    `r pkg("MAd")`) and both of these provide bubble
     plots. `r pkg("psychmeta")` also uses
     `r pkg("metafor")`.
 -   `r pkg("metaLik")`, `r pkg("metansue")`,
@@ -491,6 +491,9 @@ packages which provide facilities related to IPD are:
     patient data, and mixtures of both individual and aggregate data
 -   `r pkg("MetaIntegration")` combines IPD data with
     external models.
+-    `r pkg("bipd")` uses a Bayesian approach for IPD.
+   It includes facilities for multiple imputation using mice
+
 
 #### Network meta-analysis
 
