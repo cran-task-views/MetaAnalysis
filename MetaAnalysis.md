@@ -536,8 +536,7 @@ meta-analysis with appropriate setup.
     
 #### Genetics
 
-There are a number of packages specialising in genetic data and
-see also `r view("Genetics")`:
+There are a number of packages specialising in genetic data:
 `r pkg("catmap")` combines case-control and family study
 data, graphical facilities are provided, `r pkg("CPBayes")`
 uses a Bayesian approach to study cross-phenotype genetic associations,
