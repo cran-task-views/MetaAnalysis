@@ -569,6 +569,8 @@ association results.
 
 -   `r pkg("metadat")` provides a large number of data-sets
     used in meta-analysis
+-   `r pkg("psymetadata")` provides more data-sets from
+    meta-analyses in psychology research
 -   `r pkg("nmadb")` provides access to a database of
     network meta-analyses
 
@@ -609,4 +611,4 @@ to the PRISMA statement.
 
 #### Links
 
-[R mailing list for meta-analysis](https://stat.ethz.ch/mailman/listinfo/r-sig-meta-analysis//)
+[R mailing list for meta-analysis](https://stat.ethz.ch/mailman/listinfo/r-sig-meta-analysis/)
