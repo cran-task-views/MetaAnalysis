@@ -90,6 +90,11 @@ offer additional functionality.
     covariate estimates across a number of independent datasets.
 -   `r pkg("metapower")` provides power analysis for
     meta-analysis and meta-regression
+- Several packages provide assistance in digitising data
+    from published figures `r pkg("metaDigitise")` and
+    `r pkg("juicr")` provide graphical interfaces and
+    accept a various input formats. `r pkg("digitize")`
+    has a more limited range of facilities.
 
 *Fitting the model*
 
@@ -125,7 +130,7 @@ offer additional functionality.
     non-parametric and a semi-parametric. Graphical display of the
     results is provided. `r pkg("mmeta")` provides
     meta-analysis using beta-binomial prior distributions.
-    `r pkg("bayesmeta")` includes shrinkage estimates,
+    `r pkg("bayesmeta")` includes shrinkage estimates, meta-regression,
     posterior predictive p-values and forest plots via either
     `r pkg("metafor")` or `r pkg("forestplot")`.
     Diagnostic graphical output is available.
@@ -214,8 +219,7 @@ An extensive range of graphical procedures is available.
     `r pkg("metafor")`, `r pkg("metansue")`,
     `r pkg("rmeta")` and
     `r pkg("weightr")`. In addition to the standard funnel
-    plots an enhanced funnel plot to assess the impact of extra evidence
-    is available in `r pkg("extfunnel")`, a funnel plot for
+    plots a funnel plot for
     limit meta-analysis in `r pkg("metasens")`, and
     `r pkg("metaviz")` provides an extensive range of
     enhanced funnel plots and also facilities for their use in the
@@ -227,7 +231,6 @@ An extensive range of graphical procedures is available.
 -   Baujat plots are provided in `r pkg("meta")` and
     `r pkg("metafor")`.
 -   `r pkg("meta")` provides drapery plots
--   `r pkg("metaplotr")` provides a crosshair plot
 -   `r pkg("MetaAnalyser")` provides an interactive
     visualisation of the results of a meta-analysis.
 -   `r pkg("metaviz")` provides rainforestplots, an enhanced
@@ -279,8 +282,6 @@ mentioned above. In addition:
     multivariate meta-analysis.
 -   `r pkg("metamisc")` provides funnel plots and tests for
     asymmetry.
--   An exploratory technique for detecting an excess of statistically
-    significant studies is provided by `r pkg("PubBias")`.
 -   `r pkg("puniform")` provides methods using only the
     statistically significant studies, methods for the special case of
     replication studies and sample size determinations.
@@ -309,9 +310,6 @@ studies.
     the parametric model of Iyengar and Greenhouse, the non-parametric
     model of Dear and Begg, and proposes a new non-parametric method
     imposing a monotonicity constraint.
--   `r pkg("SAMURAI")` performs a sensitivity analysis
-    assuming the number of unobserved studies is known, perhaps from a
-    trial registry, but not their outcome.
 -   The `r pkg("metansue")` package allows the inclusion by
     multiple imputation of studies known only to have a non-significant
     result.
@@ -432,7 +430,6 @@ these are equivalent.
 -   `r pkg("meta4diag")` provides Bayesian inference
     analysis for bivariate meta-analysis of diagnostic test studies and
     an extensive range of graphical methods.
--   `r pkg("CopulaREMADA")` uses a copula based mixed model
 -   `r pkg("diagmeta")` considers the case where the primary
     studies provide analysis using multiple cut-offs. Graphical methods
     are also provided.
@@ -475,6 +472,7 @@ draws that information together.
     trees to identify interactions between moderators
 -   `r pkg("pema")` provides a penalised approach to meta-regression
     useful for situations with a large number of moderators relative to observations
+-   `r pkg("bayesmeta")` includes meta-regression
 
 #### Individual participant data (IPD)
 
