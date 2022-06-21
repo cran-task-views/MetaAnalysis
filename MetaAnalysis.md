@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey
 email: lists@dewey.myzen.co.uk
-version: 2022-01-21
+version: 2022-06-21
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -104,8 +104,6 @@ offer additional functionality.
     `r pkg("rmeta")`.
 -   For binary data `r pkg("metafor")` provides the
     binomial-normal model.
--   For sparse binary data `r pkg("exactmeta")` provides an
-    exact method which does not involve continuity corrections.
 -   Packages which work with specific effect sizes may be more congenial
     to workers in some areas of science and include
     `r pkg("metacor")` which
@@ -422,8 +420,6 @@ these are equivalent.
     and univariate methods (diagnostic odds ratio and Lehman model) as
     well as the bivariate method due to Reitsma. Meta-regression is
     provided. Graphical facilities are also available.
--   `r pkg("Metatron")` provides a method for the Reitsma
-    model incuding the case of an imperfect reference standard.
 -   `r pkg("bamdit")` provides Bayesian meta-analysis with a
     bivariate random effects model (using JAGS to implement the MCMC
     method). Graphical methods are provided.
@@ -549,8 +545,7 @@ mixture copula model for high-throughput experiments,
 repeated measures network meta-analysis,
 `r pkg("MendelianRandomization")` provides several methods
 for performing Mendelian randomisation analyses with summarised data,
-`r pkg("MetABEL")` provides meta-analysis of genome wide SNP
-association results, `r pkg("MetaIntegrator")` provides
+`r pkg("MetaIntegrator")` provides
 meta-analysis of gene expression data, `r pkg("metaMA")`
 provides meta-analysis of p-values or moderated effect sizes to find
 differentially expressed genes, `r pkg("MetaPath")` performs
@@ -588,11 +583,6 @@ association results.
 psychometric data-sets.
 
 #### Others
-
-`r pkg("CRTSize")` provides meta-analysis as part of a
-package primarily dedicated to the determination of sample size in
-cluster randomised trials in particular by simulating adding a new study
-to the meta-analysis.
 
 `r pkg("CAMAN")` offers the possibility of using finite
 semiparametric mixtures as an alternative to the random effects model
