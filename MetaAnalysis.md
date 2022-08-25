@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2022-06-21
+version: 2022-08-25
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -57,9 +57,7 @@ offer additional functionality.
     (Cliff's Delta) and stochastic superiority (Vargha-Delaney A).
     `r pkg("effectsize")` provides a large number of
     different effect sizes and converts between them.
-    `r pkg("psychmeta")` provides extensive facilties for
-    converting effect sizes and for correcting for a variety of
-    restrictions and measurement errors. `r pkg("metansue")`
+    `r pkg("metansue")`
     provides some methods for converting to effect sizes
     `r pkg("es.dif")` from raw data computes Cohen's d,
     Hedges' d, biased/unbiased c (an effect size between a mean and a
@@ -113,9 +111,6 @@ offer additional functionality.
         `r pkg("mixmeta")` provides an integrated interface to
     standard meta-analysis and extensions like multivariate and
     dose-response.
--   `r pkg("psychmeta")` implements the Hunter-Schmidt
-    method including corrections for reliability and range-restriction
-    issues
 -   `r pkg("concurve")` provides consonance curves relying
     on `r pkg("metafor")`
 -   `r pkg("clubSandwich")` gives cluster-robust variance
@@ -158,8 +153,6 @@ offer additional functionality.
     the user to define new ones. `r pkg("gmeta")` which
     subsumes a very wide variety of models under the method of
     confidence distributions and also provides a graphical display,
-    `r pkg("EvidenceSynthesis")` combines causal effect
-    estimates and study diagnostics across studies.
     `r pkg("CoTiMA")` performs meta-analyses of correlation
     matrices of repeatedly measured variables for studies with different
     time lags using a SEM framework with OpenMx as the engine
@@ -198,6 +191,11 @@ offer additional functionality.
 -  `r pkg("meta.shrinkage")` uses shrinkage methods to provide better estimates of individual
     means in meta-analysis
 -  `r pkg("metaumbrella")` provides facilities for umbrella reviews
+-  `r pkg("vcmeta")` provides functions for varying-coefficient meta-analysis
+   as an alternative to the usual fixed or random effect methods.
+- `r pkg("robustmeta")` provides methods for meta-analysis for cases where
+    primary studies may have influential outlying values.
+    
 
 
 
@@ -209,7 +207,7 @@ An extensive range of graphical procedures is available.
     `r pkg("forestmodel")` (using ggplot2),
     `r pkg("forestplot")`, `r pkg("forestploter")`, `r pkg("meta")`,
     `r pkg("metafor")`, `r pkg("metansue")`,
-    `r pkg("psychmeta")`, and `r pkg("rmeta")`.
+    and `r pkg("rmeta")`.
     Although the most basic plot can be produced by any of them they
     each provide their own choice of enhancements.
     `r pkg("metaviz")` provides a range of enhancements.
@@ -240,7 +238,7 @@ An extensive range of graphical procedures is available.
 *Investigating heterogeneity*
 
 -   Confidence intervals for the heterogeneity parameter are provided in
-    `r pkg("metafor")` and `r pkg("psychmeta")`.
+    `r pkg("metafor")`.
 -   `r pkg("altmeta")` presents a variety of alternative
     methods for measuring and testing heterogeneity with a focus on
     robustness to outlying studies.
@@ -257,7 +255,6 @@ An extensive range of graphical procedures is available.
 -   An extensive series of plots of diagnostic statistics is provided in
     `r pkg("metafor")`.
 -   `r pkg("metaplus")` provides outlier diagnostics.
--   `r pkg("psychmeta")` provides leave-one-out methods.
 -   `r pkg("EValue")` provides sensitivity analysis of the
     effect of unmeasured confounders
 -   `r pkg("boutliers")` provides bootstrap distributions
@@ -320,7 +317,10 @@ studies.
 -   `r pkg("RobustBayesianCopas")` fits a robust version of
     the Copas selection model.
 -   `r pkg("metafor")` provides the test of excess
-    signifcance.
+    significance.
+- `r pkg("phacking")` provides methods for cases where selection has take place
+   within and between studies. 
+   
 
 *Other study designs*
 
@@ -404,6 +404,10 @@ is multivariate:
 -   `r pkg("CIAAWconsensus")` has a function for
     multivariate m-a in the context of atomic weights and estimating
     isotope ratios.
+-  `r pkg("BayesMultMeta")` provides Bayesian inference
+    for the parameters of the multivariate random effects model
+    with application to multivariate meta-analysis.
+
 
 #### Meta-analysis of studies of diagnostic tests
 
@@ -449,8 +453,7 @@ draws that information together.
     `r pkg("metafor")` to provide meta-regression
     (`r pkg("meta")`, and
     `r pkg("MAd")`) and both of these provide bubble
-    plots. `r pkg("psychmeta")` also uses
-    `r pkg("metafor")`.
+    plots.
 -   `r pkg("metaLik")`, `r pkg("metansue")`,
     `r pkg("metaSEM")`, and `r pkg("metatest")`
     also provide meta-regression.
@@ -548,15 +551,15 @@ for performing Mendelian randomisation analyses with summarised data,
 `r pkg("MetaIntegrator")` provides
 meta-analysis of gene expression data, `r pkg("metaMA")`
 provides meta-analysis of p-values or moderated effect sizes to find
-differentially expressed genes, `r pkg("MetaPath")` performs
-meta-analysis for pathway enrichment, `r pkg("metaRNASeq")`
+differentially expressed genes, `r pkg("metaRNASeq")`
 meta-analysis from multiple RNA sequencing experiments,
 `r pkg("MetaSubtract")` uses leave-one-out methods to
 validate meta-GWAS results, `r pkg("ofGEM")` provides a
 method for identifying gene-environment interactions using
 meta-filtering, `r pkg("RobustRankAggreg")` provides methods
 for aggregating lists of genes, `r pkg("SPAtest")` combines
-association results.
+association results,  `r pkg("MetaSKAT")` provides
+for meta-analysis of the SKAT.
 
 #### Data-sets
 
@@ -576,11 +579,6 @@ association results.
     `r pkg("MAd")` and `r pkg("metafor")`, and
     `r pkg("RcmdrPlugin.RMTCJags")` for network
     meta-analysis using BUGS code.
-
-#### Simulation
-
-`r pkg("psychmeta")` provides facilities for simulation of
-psychometric data-sets.
 
 #### Others
 
