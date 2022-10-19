@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2022-08-25
+version: 2022-10-19
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -57,6 +57,8 @@ offer additional functionality.
     (Cliff's Delta) and stochastic superiority (Vargha-Delaney A).
     `r pkg("effectsize")` provides a large number of
     different effect sizes and converts between them.
+    `r pkg("psychmeta")` provides extensive facilities for converting
+    effect sizes and correcting for various restrictions.
     `r pkg("metansue")`
     provides some methods for converting to effect sizes
     `r pkg("es.dif")` from raw data computes Cohen's d,
@@ -108,11 +110,11 @@ offer additional functionality.
     provides meta-analysis of correlation coefficients and
     `r pkg("MAd")` which provides meta-analysis of mean
     differences. `r pkg("MAd")` provides a range of graphics.
-        `r pkg("mixmeta")` provides an integrated interface to
+    `r pkg("mixmeta")` provides an integrated interface to
     standard meta-analysis and extensions like multivariate and
     dose-response.
--   `r pkg("concurve")` provides consonance curves relying
-    on `r pkg("metafor")`
+-    `r pkg("psychmeta")` implements the Hunter-Scmidt method including
+    corrections for reliability.
 -   `r pkg("clubSandwich")` gives cluster-robust variance
     estimates.
 -   `r pkg("wildmeta")` conducts single coefficient tests
@@ -121,8 +123,7 @@ offer additional functionality.
 -   Bayesian approaches are contained in various packages.
     `r pkg("bspmma")` which provides two different models: a
     non-parametric and a semi-parametric. Graphical display of the
-    results is provided. `r pkg("mmeta")` provides
-    meta-analysis using beta-binomial prior distributions.
+    results is provided.
     `r pkg("bayesmeta")` includes shrinkage estimates, meta-regression,
     posterior predictive p-values and forest plots via either
     `r pkg("metafor")` or `r pkg("forestplot")`.
@@ -142,6 +143,7 @@ offer additional functionality.
     to combine them. `r pkg("ra4bayesmeta")` provides
     principled reference analysis within the Bayesian normal-normal
     model.
+   `r pkg("metabup")` provides a Bayesian approach using basic uncertainty pooling.
 -   Some packages concentrate on providing a specialised version of the
     core meta-analysis function without providing the range of ancillary
     functions. These are: `r pkg("metaLik")` which uses a
@@ -196,9 +198,6 @@ offer additional functionality.
 - `r pkg("robustmeta")` provides methods for meta-analysis for cases where
     primary studies may have influential outlying values.
     
-
-
-
 *Graphical methods*
 
 An extensive range of graphical procedures is available.
@@ -206,7 +205,7 @@ An extensive range of graphical procedures is available.
 -   Forest plots are provided in `r pkg("forplo")`,
     `r pkg("forestmodel")` (using ggplot2),
     `r pkg("forestplot")`, `r pkg("forestploter")`, `r pkg("meta")`,
-    `r pkg("metafor")`, `r pkg("metansue")`,
+    `r pkg("metafor")`, `r pkg("metansue")`, `r pkg("psychmeta")`,
     and `r pkg("rmeta")`.
     Although the most basic plot can be produced by any of them they
     each provide their own choice of enhancements.
@@ -273,8 +272,6 @@ mentioned above. In addition:
     provide both the non-parametric method suggested by Begg and
     Mazumdar and a range of regression tests modelled after the approach
     of Egger.
--   `r pkg("xmeta")` provides a method in the context of
-    multivariate meta-analysis.
 -   `r pkg("metamisc")` provides funnel plots and tests for
     asymmetry.
 -   `r pkg("puniform")` provides methods using only the
@@ -393,8 +390,6 @@ is multivariate:
     taking account of clustering and allowing for level 2 and level 3
     heterogeneity. It also provides via a two-stage approach
     meta-analysis of correlation or covariance matrices.
--   `r pkg("xmeta")` provides various functions for
-    multivariate meta-analysis and also for detecting publication bias.
 -   `r pkg("dosresmeta")` concentrates on the situation
     where individual studies have information on the dose-response
     relationship. `r pkg("MBNMAdose")` provides a Bayesian
@@ -407,7 +402,8 @@ is multivariate:
 -  `r pkg("BayesMultMeta")` provides Bayesian inference
     for the parameters of the multivariate random effects model
     with application to multivariate meta-analysis.
-
+-   `r pkg("remaCor")` provides multivariate meta-analysis when the
+    correlation between effect sizes is known.
 
 #### Meta-analysis of studies of diagnostic tests
 
@@ -433,9 +429,6 @@ these are equivalent.
 -   `r pkg("diagmeta")` considers the case where the primary
     studies provide analysis using multiple cut-offs. Graphical methods
     are also provided.
--   `r pkg("CopulaDTA")` uses the beta-binomial model to
-    yield marginal mean sensitivity and specificity. Graphical
-    facilities are available.
 -   `r pkg("NMADiagT")` provides network meta-analysis of
     diagnostic tests in a Bayesian framework using Stan as the engine,
     graphical output is provided.
@@ -453,7 +446,7 @@ draws that information together.
     `r pkg("metafor")` to provide meta-regression
     (`r pkg("meta")`, and
     `r pkg("MAd")`) and both of these provide bubble
-    plots.
+    plots. `r pkg("psychmeta")` aso uses `r pkg("metafor")`.
 -   `r pkg("metaLik")`, `r pkg("metansue")`,
     `r pkg("metaSEM")`, and `r pkg("metatest")`
     also provide meta-regression.
