@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2022-10-19
+version: 2022-11-05
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
