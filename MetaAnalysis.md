@@ -23,7 +23,7 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("metavcov")` computes the variance-covariance matrix for multivariate meta-analysis when correlations between outcomes can be provided but not between treatment effects.
 - `r pkg("clubSandwich")` and `r pkg("metafor")` provide functions to impute variance-covariance matrix for multivariate meta-analysis.
 - `r pkg("metafuse")` uses a fused lasso to merge covariate estimates across a number of independent datasets.
-- `r pkg("metapower")` provides power analysis for meta-analysis and meta-regression.
+- `r pkg("metapower")` provides power analysis for meta-analysis and meta-regression. `r pkg("POMADE")` does the same for the overall average effect size in a meta-analysis of dependent effect sizes.
 - Several packages provide assistance in digitising data from published figures: `r pkg("metaDigitise")` and `r pkg("juicr")` provide graphical interfaces and accept various input formats. `r pkg("digitize")` has a more limited range of facilities.
 
 #### Fitting the model
