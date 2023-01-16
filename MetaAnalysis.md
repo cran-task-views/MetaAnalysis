@@ -193,6 +193,7 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("pcnetmeta")` provides network graphs. `r pkg("nmaplateplot")` displays the results from an NMA using a heatplot style and also displays SUCRA.
 - `r pkg("nmarank")` evaluates hierarchies of evidence in network meta-analysis.
 - `r pkg("rnmamod")` uses a Bayesian approach to perform NMA while addressing (aggregate) missing participant outcome data.
+- `r pkg("viscomp")` provides several visualization tools for exploring the behavior of the components in a network meta-analysis of multi-component interventions.
 
 ### Genetics
 
