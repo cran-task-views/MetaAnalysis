@@ -35,6 +35,9 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("clubSandwich")` and `r pkg("metafor")` provide cluster-robust variance estimates.
 - `r pkg("wildmeta")` conducts single coefficient tests and multiple-contrast hypothesis tests of meta-regression models using cluster wild bootstrapping.
 - Bayesian approaches are contained in various packages. `r pkg("bspmma")` provides two different models: a non-parametric and a semi-parametric. Graphical display of the results is provided. `r pkg("bayesmeta")` includes shrinkage estimates, meta-regression, posterior predictive p-values, and forest plots via either `r pkg("metafor")` or `r pkg("forestplot")`. Diagnostic graphical output is available. `r pkg("metaBMA")` provides a Bayesian approach using model averaging; a variety of priors are provided and it is possible for the user to define new ones. `r pkg("MetaStan")` includes binomial-normal hierarchical models and can use weakly informative priors for the heterogeneity and treatment effect parameters. `r pkg("baggr")` provides facilities using Stan for hierarchical Bayesian models; graphical facilities are provided. `r pkg("brms")` can also fit Bayesian meta-analytic models using Stan as the backend. `r pkg("BayesCombo")` provides facilities using a Bayesian approach and has graphical facilities. `r pkg("RBesT")` uses Bayesian synthesis to generate priors from various sources. `r pkg("metamisc")` provides a method with priors suggested by Higgins. `r pkg("RoBMA")` provides a framework for estimating ensembles of meta-analytic models and using Bayesian model averaging to combine them. `r pkg("ra4bayesmeta")` provides principled reference analysis within the Bayesian normal-normal model. `r pkg("metabup")` provides a Bayesian approach using basic uncertainty pooling.
+`r pkg("mmeta")` provides a Bayesian approach to, possibly dependent 2 by 2
+tables
+
 - Some packages concentrate on providing a specialised version of the core meta-analysis function without providing a full range of ancillary functions. These are: `r pkg("metaLik")` which uses a more sophisticated approach to the likelihood, `r pkg("metatest")` which provides another improved method of obtaining confidence intervals, `r pkg("gmeta")` which subsumes a very wide variety of models under the method of confidence distributions and also provides a graphical display, and `r pkg("CoTiMA")` which performs meta-analyses of correlation matrices of repeatedly measured variables for studies with different time lags using a SEM framework with OpenMx as the engine.
 - `r pkg("metaplus")` fits random effects models relaxing the usual assumption that the random effects have a normal distribution by providing t or a mixture of normals.
 - `r pkg("ratesci")` fits random effects models to binary data using a variety of methods for confidence intervals.
@@ -192,8 +195,11 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("nmathresh")` provides decision-invariant bias adjustment thresholds and intervals the smallest changes to the data that would result in a change of decision. `r pkg("NMAoutlier")` detects outliers in NMA using a forward search.
 - `r pkg("pcnetmeta")` provides network graphs. `r pkg("nmaplateplot")` displays the results from an NMA using a heatplot style and also displays SUCRA.
 - `r pkg("nmarank")` evaluates hierarchies of evidence in network meta-analysis.
-- `r pkg("rnmamod")` uses a Bayesian approach to perform NMA while addressing (aggregate) missing participant outcome data.
+- `r pkg("rnmamod")` uses a Bayesian approach to perform NMA while addressing (aggregate) missing participant outcome data
+and provides graphics.
 - `r pkg("viscomp")` provides several visualization tools for exploring the behavior of the components in a network meta-analysis of multi-component interventions.
+- `r pkg("OssaNMA")` calculates minimum total sample size needed for prespecified power
+ or optimal allocation for each treatment group with a fixed total sample size.
 
 ### Genetics
 
