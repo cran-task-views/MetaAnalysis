@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2023-03-09
+version: 2023-03-22
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -24,9 +24,10 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("clubSandwich")` and `r pkg("metafor")` provide functions to impute variance-covariance matrix for multivariate meta-analysis.
 - `r pkg("metafuse")` uses a fused lasso to merge covariate estimates across a number of independent datasets.
 - `r pkg("metapower")` provides power analysis for meta-analysis and meta-regression. `r pkg("POMADE")` does the same for the overall average effect size in a meta-analysis of dependent effect sizes.
-- `r pkg("PRISMA2020")` produces an interactive flow diagram that conforms to PRISMA 2020
-version,  `r pkg("PRISMAstatement")` also generates flowcharts conforming to the PRISMA statement.
+- `r pkg("PRISMA2020")` produces an interactive flow diagram that conforms to PRISMA 2020 version, `r pkg("PRISMAstatement")` also generates flowcharts conforming to the PRISMA statement.
+- `r pkg("reappraised")` provides tools for checking the integrity of groups of trials
 - Several packages provide assistance in digitising data from published figures: `r pkg("metaDigitise")` and `r pkg("juicr")` provide graphical interfaces and accept various input formats. `r pkg("digitize")` has a more limited range of facilities.
+
 #### Fitting the model
 
 - Four packages provide the inverse variance weighted, Mantel-Haenszel, and Peto methods: `r pkg("epiR")`, `r pkg("meta")`, `r pkg("metafor")`, and `r pkg("rmeta")`.
@@ -125,7 +126,8 @@ and publication biases
 
 #### Meta-analysis of significance values
 
-- Fisher's method and Lancaster's are available in `r pkg("aggregation")`, `r pkg("metap")`, and `r pkg("poolr")`.
+- Fisher's method and Lancaster's are available in `r pkg("aggregation")`, `r pkg("metap")`,
+`r pkg("metapro")`,  and `r pkg("poolr")`.
 - Stouffer's, Tippett's, and Wilkinson's method are available in `r pkg("metap")` and `r pkg("poolr")`.
 - Edgington's method, inverse-t, logit, mean of p, and mean of z are all available in `r pkg("metap")`.
 
@@ -134,7 +136,7 @@ In all cases `r pkg("poolr")` considers correlated p-values in addition to indep
 - `r pkg("TFisher")` provides Fisher's method using both hard and soft thresholding for the p-values. There is a wrapper in `r pkg("metap")` for the hard threshold case.
 - `r pkg("harmonicmeanp")` uses a method based on the harmonic mean of p-values which is robust to correlation between the p-values.
 - `r pkg("amanida")` provides meta-analysis of metabolite data using p-values and fold change.
-- `r pkg("metap")` provides simple graphics including albatros plots.
+- `r pkg("metap")` provides simple graphics including albatross plots.
 
 Some methods are also provided in some of the genetics packages mentioned below.
 
@@ -200,6 +202,9 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("rnmamod")` uses a Bayesian approach to perform NMA while addressing (aggregate) missing participant outcome data and provides graphics.
 - `r pkg("viscomp")` provides several visualization tools for exploring the behavior of the components in a network meta-analysis of multi-component interventions.
 - `r pkg("OssaNMA")` calculates minimum total sample size needed for prespecified power or optimal allocation for each treatment group with a fixed total sample size.
+- `r pkg("MBNMAtime")` provides for analysis of multiple time points
+from studies using a Bayseian framework.
+
 
 ### Genetics
 
