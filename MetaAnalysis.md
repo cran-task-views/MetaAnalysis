@@ -71,6 +71,7 @@ An extensive range of graphical procedures is available.
 - `r pkg("metaviz")` provides rainforest plots, an enhanced version of forest plots. It accepts input from `r pkg("metafor")`.
 - `r pkg("DTAplots")` produces various plots for diagnostic studies including forest and SROC plots.
 - GOSH plots are provided in `r pkg("metafor")`.
+- `r pkg("robvis")` can be used to visualize the results of risk-of-bias (rob) assessments.
 
 #### Investigating heterogeneity
 
@@ -112,6 +113,7 @@ A related issue in meta-analysis is the problem of unobserved studies and public
 - `r pkg("metafor")` provides the test of excess significance.
 - `r pkg("phacking")` provides methods for cases where selection has taken place within and between studies.
 - `r pkg("multibiasmeta")` conducts sensitivity analyses for the joint effects of internal and publication biases.
+- `r pkg("metabias")` provides common components (classes, methods, documentation) for several other packages to investigate within- and across-study biases in meta-analysis.
 
 #### Other study designs
 
@@ -201,6 +203,7 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("viscomp")` provides several visualization tools for exploring the behavior of the components in a network meta-analysis of multi-component interventions.
 - `r pkg("OssaNMA")` calculates minimum total sample size needed for prespecified power or optimal allocation for each treatment group with a fixed total sample size.
 - `r pkg("MBNMAtime")` provides for analysis of multiple time points from studies using a Bayesian framework.
+- `r pkg("crossnma")` can be used to conduct a network meta-analysis for individual participant data, aggregate data, and mixtures thereof in a Bayesian framework.
 
 ### Genetics
 
