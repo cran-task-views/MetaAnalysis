@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2023-03-22
+version: 2023-03-23
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -25,7 +25,7 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("metafuse")` uses a fused lasso to merge covariate estimates across a number of independent datasets.
 - `r pkg("metapower")` provides power analysis for meta-analysis and meta-regression. `r pkg("POMADE")` does the same for the overall average effect size in a meta-analysis of dependent effect sizes.
 - `r pkg("PRISMA2020")` produces an interactive flow diagram that conforms to PRISMA 2020 version, `r pkg("PRISMAstatement")` also generates flowcharts conforming to the PRISMA statement.
-- `r pkg("reappraised")` provides tools for checking the integrity of groups of trials
+- `r pkg("reappraised")` provides tools for checking the integrity of groups of trials.
 - Several packages provide assistance in digitising data from published figures: `r pkg("metaDigitise")` and `r pkg("juicr")` provide graphical interfaces and accept various input formats. `r pkg("digitize")` has a more limited range of facilities.
 
 #### Fitting the model
@@ -111,8 +111,7 @@ A related issue in meta-analysis is the problem of unobserved studies and public
 - `r pkg("publipha")` estimates models accounting for publication bias or p-hacking using a Bayesian framework.
 - `r pkg("metafor")` provides the test of excess significance.
 - `r pkg("phacking")` provides methods for cases where selection has taken place within and between studies.
-- `r pkg("multibiasmeta")` conducts sensitivity analyses for the joint effects of internal
-and publication biases 
+- `r pkg("multibiasmeta")` conducts sensitivity analyses for the joint effects of internal and publication biases.
 
 #### Other study designs
 
@@ -126,8 +125,7 @@ and publication biases
 
 #### Meta-analysis of significance values
 
-- Fisher's method and Lancaster's are available in `r pkg("aggregation")`, `r pkg("metap")`,
-`r pkg("metapro")`,  and `r pkg("poolr")`.
+- Fisher's method and Lancaster's are available in `r pkg("aggregation")`, `r pkg("metap")`, `r pkg("metapro")`, and `r pkg("poolr")`.
 - Stouffer's, Tippett's, and Wilkinson's method are available in `r pkg("metap")` and `r pkg("poolr")`.
 - Edgington's method, inverse-t, logit, mean of p, and mean of z are all available in `r pkg("metap")`.
 
@@ -202,18 +200,11 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("rnmamod")` uses a Bayesian approach to perform NMA while addressing (aggregate) missing participant outcome data and provides graphics.
 - `r pkg("viscomp")` provides several visualization tools for exploring the behavior of the components in a network meta-analysis of multi-component interventions.
 - `r pkg("OssaNMA")` calculates minimum total sample size needed for prespecified power or optimal allocation for each treatment group with a fixed total sample size.
-- `r pkg("MBNMAtime")` provides for analysis of multiple time points
-from studies using a Bayseian framework.
-
+- `r pkg("MBNMAtime")` provides for analysis of multiple time points from studies using a Bayesian framework.
 
 ### Genetics
 
-There are a number of packages specialising in genetic data: `r pkg("catmap")` combines case-control and family study data, graphical facilities are provided, `r pkg("CPBayes")` uses a Bayesian approach to study cross-phenotype genetic associations,
- `r pkg("etma")` proposes a new statistical method to detect epistasis, `r pkg("gap")` combines p-values, `r pkg("getmstatistic")` quantifies systematic heterogeneity,
- `r pkg("getspres")` uses standardised predictive random effects to explore heterogeneity in genetic association meta-analyses, `r pkg("GMCM")` uses a Gaussian mixture copula model for high-throughput experiments, 
- `r pkg("MendelianRandomization")` provides several methods for performing Mendelian randomisation analyses with summarised data,
-`r pkg("metaGE")` provides meta-analysis of genome-wide association studies for studying Genotype x Environment interactions.
- `r pkg("MetaIntegrator")` provides meta-analysis of gene expression data, `r pkg("metaMA")` provides meta-analysis of p-values or moderated effect sizes to find differentially expressed genes, `r pkg("metaRNASeq")` does meta-analysis from multiple RNA sequencing experiments, `r pkg("MetaSubtract")` uses leave-one-out methods to validate meta-GWAS results, `r pkg("ofGEM")` provides a method for identifying gene-environment interactions using meta-filtering, `r pkg("RobustRankAggreg")` provides methods for aggregating lists of genes, `r pkg("SPAtest")` combines association results, `r pkg("MetaSKAT")` provides for meta-analysis of the SKAT, and `r pkg("metaGE")` provides functions for a meta-analysis of genome-wide association studies for studying genotype x environment interactions.
+There are a number of packages specialising in genetic data: `r pkg("catmap")` combines case-control and family study data, graphical facilities are provided, `r pkg("CPBayes")` uses a Bayesian approach to study cross-phenotype genetic associations, `r pkg("etma")` proposes a new statistical method to detect epistasis, `r pkg("gap")` combines p-values, `r pkg("getmstatistic")` quantifies systematic heterogeneity, `r pkg("getspres")` uses standardised predictive random effects to explore heterogeneity in genetic association meta-analyses, `r pkg("GMCM")` uses a Gaussian mixture copula model for high-throughput experiments, `r pkg("MendelianRandomization")` provides several methods for performing Mendelian randomisation analyses with summarised data, `r pkg("MetaIntegrator")` provides meta-analysis of gene expression data, `r pkg("metaMA")` provides meta-analysis of p-values or moderated effect sizes to find differentially expressed genes, `r pkg("metaRNASeq")` does meta-analysis from multiple RNA sequencing experiments, `r pkg("MetaSubtract")` uses leave-one-out methods to validate meta-GWAS results, `r pkg("ofGEM")` provides a method for identifying gene-environment interactions using meta-filtering, `r pkg("RobustRankAggreg")` provides methods for aggregating lists of genes, `r pkg("SPAtest")` combines association results, `r pkg("MetaSKAT")` provides for meta-analysis of the SKAT, and `r pkg("metaGE")` provides functions for a meta-analysis of genome-wide association studies for studying genotype x environment interactions.
 
 ### Data-sets
 
