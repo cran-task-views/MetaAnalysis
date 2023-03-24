@@ -30,21 +30,18 @@ Where summary statistics are not available, a meta-analysis of significance leve
 
 #### Fitting the model
 
-- Four packages provide the inverse variance weighted, Mantel-Haenszel, and Peto methods: `r pkg("epiR")`, `r pkg("meta")`, `r pkg("metafor")`, and `r pkg("rmeta")`.
-- For binary and time-to-event data, `r pkg("metafor")` provides binomial-normal and the Poisson-normal models.
-- Packages which work with specific effect sizes may be more congenial to workers in some areas of science and include `r pkg("metacor")` which provides meta-analysis of correlation coefficients and `r pkg("MAd")` which provides meta-analysis of mean differences. `r pkg("MAd")` provides a range of graphics. `r pkg("mixmeta")` provides an integrated interface to standard meta-analysis and extensions like multivariate and dose-response.
-- `r pkg("psychmeta")` implements the Hunter-Schmidt method including corrections for reliability.
-- `r pkg("clubSandwich")` and `r pkg("metafor")` provide cluster-robust variance estimates.
-- `r pkg("wildmeta")` conducts single coefficient tests and multiple-contrast hypothesis tests of meta-regression models using cluster wild bootstrapping.
+- Four packages provide the inverse variance weighted, Mantel-Haenszel, and Peto methods: `r pkg("meta")`, `r pkg("metafor")`, `r pkg("rmeta")`, and `r pkg("epiR")`.
+- For binary and time-to-event data, `r pkg("metafor")` also provides binomial-normal and the Poisson-normal models.
+- Packages which work with specific effect sizes may be more congenial to workers in some areas of science and include `r pkg("metacor")` which provides meta-analysis of correlation coefficients and `r pkg("MAd")` which provides meta-analysis of mean differences and provides a range of graphics.
+- `r pkg("psychmeta")` implements the Hunter-Schmidt method (also known as psychometric meta-analysis) including corrections for reliability and other artifacts.
 - Bayesian approaches are contained in various packages. `r pkg("bspmma")` provides two different models: a non-parametric and a semi-parametric. Graphical display of the results is provided. `r pkg("bayesmeta")` includes shrinkage estimates, meta-regression, posterior predictive p-values, and forest plots via either `r pkg("metafor")` or `r pkg("forestplot")`. Diagnostic graphical output is available. `r pkg("metaBMA")` provides a Bayesian approach using model averaging; a variety of priors are provided and it is possible for the user to define new ones. `r pkg("MetaStan")` includes binomial-normal hierarchical models and can use weakly informative priors for the heterogeneity and treatment effect parameters. `r pkg("baggr")` provides facilities using Stan for hierarchical Bayesian models; graphical facilities are provided. `r pkg("brms")` can also fit Bayesian meta-analytic models using Stan as the backend. `r pkg("BayesCombo")` provides facilities using a Bayesian approach and has graphical facilities. `r pkg("RBesT")` uses Bayesian synthesis to generate priors from various sources. `r pkg("metamisc")` provides a method with priors suggested by Higgins. `r pkg("RoBMA")` provides a framework for estimating ensembles of meta-analytic models and using Bayesian model averaging to combine them. `r pkg("ra4bayesmeta")` provides principled reference analysis within the Bayesian normal-normal model. `r pkg("metabup")` provides a Bayesian approach using basic uncertainty pooling. `r pkg("mmeta")` provides a Bayesian approach to possibly dependent 2 by 2 tables.
-
 - Some packages concentrate on providing a specialised version of the core meta-analysis function without providing a full range of ancillary functions. These are: `r pkg("metaLik")` which uses a more sophisticated approach to the likelihood, `r pkg("metatest")` which provides another improved method of obtaining confidence intervals, `r pkg("gmeta")` which subsumes a very wide variety of models under the method of confidence distributions and also provides a graphical display, and `r pkg("CoTiMA")` which performs meta-analyses of correlation matrices of repeatedly measured variables for studies with different time lags using a SEM framework with OpenMx as the engine.
 - `r pkg("metaplus")` fits random effects models relaxing the usual assumption that the random effects have a normal distribution by providing t or a mixture of normals.
 - `r pkg("ratesci")` fits random effects models to binary data using a variety of methods for confidence intervals.
 - `r pkg("RandMeta")` estimates exact confidence intervals in random effects models using an efficient algorithm.
 - `r pkg("rma.exact")` estimates exact confidence intervals in random effects normal-normal models and also provides plots of them.
 - `r pkg("pimeta")` provides a range of methods for prediction interval estimation from random effects models and has graphical facilities.
-- `r pkg("metamedian")` implements several methods to meta-analyze one-group or two-group studies that report the median of the outcome. These methods estimate the pooled median in the one-group context and the pooled raw difference of medians across groups in the two-group context. `r pkg("meta")` also provides methods for medians.
+- `r pkg("metamedian")` implements several methods to meta-analyze one-group or two-group studies that report the median as the outcome. These methods estimate the pooled median in the one-group context and the pooled raw difference of medians across groups in the two-group context. `r pkg("meta")` and `r pkg("metafor")` also provide methods for medians.
 - `r pkg("MetaUtility")` proposes a metric for estimating the proportion of effects above a cut-off of scientific importance.
 - `r pkg("metasens")` provides imputation methods for missing binary data.
 - `r pkg("metagam")` provides a framework for meta-analysis of generalised additive models including the case where individual participant data cannot be shared across locations.
@@ -53,7 +50,7 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("rema")` uses a permutation approach to handle meta-analyses of rare event data.
 - `r pkg("meta.shrinkage")` uses shrinkage methods to provide better estimates of individual means in meta-analysis.
 - `r pkg("metaumbrella")` provides facilities for umbrella reviews.
-- `r pkg("vcmeta")` provides functions for varying-coefficient meta-analysis as an alternative to the usual fixed or random effect methods.
+- `r pkg("vcmeta")` provides functions for varying-coefficient meta-analysis as an alternative to the usual fixed- or random-effects methods.
 - `r pkg("robustmeta")` provides methods for meta-analysis for cases where primary studies may have influential outlying values.
 - `r pkg("coefa")` provides a method for conducting a meta-analysis of factor analyses based on co-occurrence matrices.
 
@@ -145,12 +142,14 @@ Some methods are also provided in some of the genetics packages mentioned below.
 Standard methods outlined above assume that the effect sizes are independent. This assumption may be violated in a number of ways: within each primary study multiple treatments may be compared to the same control, each primary study may report multiple endpoints or multiple assessments, or primary studies may be clustered for instance because they come from the same country or the same research team.
 
 - `r pkg("mvmeta")` assumes the within study covariances are known and provides a variety of options for fitting random effects. `r pkg("metafor")` provides fixed effects and likelihood based random effects model fitting procedures. Both these packages include meta-regression, `r pkg("metafor")` also provides for clustered and hierarchical models.
+- `r pkg("mixmeta")` provides an integrated interface to standard meta-analysis and extensions like multivariate and dose-response models.
 - `r pkg("mvtmeta")` provides multivariate meta-analysis using the method of moments for random effects although not meta-regression.
+- `r pkg("clubSandwich")`, `r pkg("robumeta")`, and `r pkg("metafor")` provide cluster-robust variance estimates for clustered and hierarchical estimates.
+- `r pkg("wildmeta")` conducts single coefficient tests and multiple-contrast hypothesis tests of meta-regression models using cluster wild bootstrapping.
 - `r pkg("metaSEM")` provides multivariate (and univariate) meta-analysis and meta-regression by embedding it in the structural equation framework and using OpenMx for the structural equation modelling. It can provide a three-level meta-analysis taking account of clustering and allowing for level 2 and level 3 heterogeneity. It also provides via a two-stage approach meta-analysis of correlation or covariance matrices.
-- `r pkg("dosresmeta")` concentrates on the situation where individual studies have information on the dose-response relationship. `r pkg("MBNMAdose")` provides a Bayesian analysis using network meta-analysis of dose response studies.
-- `r pkg("robumeta")` and `r pkg("metafor")` provide robust variance estimation for clustered and hierarchical estimates.
+- `r pkg("dosresmeta")` concentrates on the situation where individual studies provide information about a dose-response relationship. `r pkg("MBNMAdose")` provides a Bayesian analysis using network meta-analysis of dose-response studies.
 - `r pkg("CIAAWconsensus")` has a function for multivariate meta-analysis in the context of atomic weights and estimating isotope ratios.
-- `r pkg("BayesMultMeta")` provides Bayesian inference for the parameters of a multivariate random effects model with application to multivariate meta-analysis.
+- `r pkg("BayesMultMeta")` provides Bayesian inference for the parameters of a multivariate random-effects model with application to multivariate meta-analysis.
 - `r pkg("remaCor")` provides multivariate meta-analysis when the correlation between effect sizes is known.
 
 ### Meta-analysis of studies of diagnostic tests
