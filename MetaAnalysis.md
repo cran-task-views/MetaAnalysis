@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2023-03-23
+version: 2023-03-26
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -203,6 +203,7 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("OssaNMA")` calculates minimum total sample size needed for prespecified power or optimal allocation for each treatment group with a fixed total sample size.
 - `r pkg("MBNMAtime")` provides for analysis of multiple time points from studies using a Bayesian framework.
 - `r pkg("crossnma")` can be used to conduct a network meta-analysis for individual participant data, aggregate data, and mixtures thereof in a Bayesian framework.
+- `r pkg("PINMA")` provides improved methods to construct prediction intervals for network meta-analysis.
 
 ### Genetics
 
