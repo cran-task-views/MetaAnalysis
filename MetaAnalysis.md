@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2023-03-26
+version: 2023-10-12
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -59,7 +59,7 @@ Where summary statistics are not available, a meta-analysis of significance leve
 
 An extensive range of graphical procedures is available.
 
-- Forest plots are provided in `r pkg("forplo")`, `r pkg("forestmodel")` (using ggplot2), `r pkg("forestplot")`, `r pkg("forestploter")`, `r pkg("meta")`, `r pkg("metafor")`, `r pkg("metansue")`, `r pkg("psychmeta")`, and `r pkg("rmeta")`. Although the most basic plot can be produced by any of them, they each provide their own choice of enhancements. `r pkg("metaviz")` provides a range of enhancements.
+- Forest plots are provided in `r pkg("forplo")`, `r pkg("forestly")` (interactive plots), `r pkg("forestmodel")` (using ggplot2), `r pkg("forestplot")`, `r pkg("forestploter")`, `r pkg("meta")`, `r pkg("metafor")`, `r pkg("metansue")`, `r pkg("psychmeta")`, and `r pkg("rmeta")`. Although the most basic plot can be produced by any of them, they each provide their own choice of enhancements. `r pkg("metaviz")` provides a range of enhancements.
 - Funnel plots are provided in `r pkg("meta")`, `r pkg("metafor")`, `r pkg("metansue")`, `r pkg("rmeta")` and `r pkg("weightr")`. In addition to standard funnel plots, a funnel plot for limit meta-analysis is provided in `r pkg("metasens")`, and `r pkg("metaviz")` provides an extensive range of enhanced funnel plots and also facilities for their use in the context of visual inference.
 - Radial (Galbraith) plots are provided in `r pkg("meta")` and `r pkg("metafor")`.
 - L'Abbe plots are provided in `r pkg("meta")` and `r pkg("metafor")`.
@@ -106,6 +106,7 @@ A related issue in meta-analysis is the problem of unobserved studies and public
 - `r pkg("selectMeta")` provides various selection models: the parametric model of Iyengar and Greenhouse, the non-parametric model of Dear and Begg, and proposes a new non-parametric method imposing a monotonicity constraint.
 - `r pkg("weightr")` provides facilities for using the weight function model of Vevea and Hedges. `r pkg("metafor")` also provides an implementation thereof and a variety of other selection models.
 - `r pkg("RoBMA")` includes Bayesian versions of selection models.
+- `r pkg("phacking")` models only non-affirmative studies to allow for selection of stuides and selection within studies.
 - `r pkg("puniform")` provides methods using only the statistically significant studies, methods for the special case of replication studies, and sample size determinations.
 - `r pkg("PublicationBias")` performs sensitivity analysis of the number of unpublished studies needed to have a specified influence.
 - The `r pkg("metansue")` package allows the inclusion by multiple imputation of studies known only to have a non-significant result.
@@ -211,6 +212,9 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("PINMA")` provides improved methods to construct prediction intervals for network meta-analysis.
 - `r pkg("rankinma")` provides treatment ranking in NMA.
 - `r pkg("ssifs")` evaluates consistency in NMA.
+- `r pkg("NMA")` uses a contrast-based approach, includes the standard
+diagnostic and graphical methods. It uses an improved REML estimation
+procedure.
 
 ### Genetics
 
