@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2023-10-12
+version: 2023-11-13
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -106,7 +106,7 @@ A related issue in meta-analysis is the problem of unobserved studies and public
 - `r pkg("selectMeta")` provides various selection models: the parametric model of Iyengar and Greenhouse, the non-parametric model of Dear and Begg, and proposes a new non-parametric method imposing a monotonicity constraint.
 - `r pkg("weightr")` provides facilities for using the weight function model of Vevea and Hedges. `r pkg("metafor")` also provides an implementation thereof and a variety of other selection models.
 - `r pkg("RoBMA")` includes Bayesian versions of selection models.
-- `r pkg("phacking")` models only non-affirmative studies to allow for selection of stuides and selection within studies.
+- `r pkg("phacking")` models only non-affirmative studies to allow for selection of studies and selection within studies.
 - `r pkg("puniform")` provides methods using only the statistically significant studies, methods for the special case of replication studies, and sample size determinations.
 - `r pkg("PublicationBias")` performs sensitivity analysis of the number of unpublished studies needed to have a specified influence.
 - The `r pkg("metansue")` package allows the inclusion by multiple imputation of studies known only to have a non-significant result.
@@ -184,6 +184,7 @@ Where suitable moderator variables are available they may be included using meta
 - `r pkg("pema")` provides a penalised approach to meta-regression useful for situations with a large number of moderators relative to observations.
 - `r pkg("bayesmeta")` includes meta-regression in a Bayesian framework.
 - `r pkg("CAMAN")` offers the possibility of using finite semiparametric mixtures as an alternative to the random effects model where there is heterogeneity. Covariates can be included to provide meta-regression.
+- `r pkg("crwbmetareg")` fits meta-regression models using weighted least squares and then uses cluster robust wild bootstrap methodology for inferences.
 
 ### Individual participant data (IPD)
 
@@ -212,9 +213,7 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("PINMA")` provides improved methods to construct prediction intervals for network meta-analysis.
 - `r pkg("rankinma")` provides treatment ranking in NMA.
 - `r pkg("ssifs")` evaluates consistency in NMA.
-- `r pkg("NMA")` uses a contrast-based approach, includes the standard
-diagnostic and graphical methods. It uses an improved REML estimation
-procedure.
+- `r pkg("NMA")` uses a contrast-based approach and includes standard diagnostic and graphical methods. It uses an improved REML estimation procedure.
 
 ### Genetics
 
