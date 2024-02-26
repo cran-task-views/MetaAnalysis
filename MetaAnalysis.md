@@ -54,6 +54,14 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("vcmeta")` provides functions for varying-coefficient meta-analysis as an alternative to the usual fixed- or random-effects methods.
 - `r pkg("robustmeta")` provides methods for meta-analysis for cases where primary studies may have influential outlying values.
 - `r pkg("coefa")` provides a method for conducting a meta-analysis of factor analyses based on co-occurrence matrices.
+- `r pkg("CausalMetaR")`
+provides robust and efficient methods for estimating causal
+effects in a target population using a multi-source dataset.
+- `r pkg("metainc")`
+Assessment of inconsistency in meta-analysis by calculating the
+Decision Inconsistency index (DI) and the Across-Studies
+Inconsistency (ASI) index.
+Alows input from a variety of packages.
 
 #### Graphical methods
 
@@ -155,6 +163,9 @@ Standard methods outlined above assume that the effect sizes are independent. Th
 - `r pkg("BayesMultMeta")` provides Bayesian inference for the parameters of a multivariate random-effects model with application to multivariate meta-analysis.
 - `r pkg("remaCor")` provides multivariate meta-analysis when the correlation between effect sizes is known.
 - `r pkg("xmeta")` provides a variety of methods for multivariate meta-analysis.
+- `r pkg("crwbmetareg")`
+Uses the WLS estimator of Stanley and Doucouliagos both with and without covariates
+followed by computing the relevant p-values using the cluster robust wild bootstrap methodology.
 
 ### Meta-analysis of studies of diagnostic tests
 
@@ -231,6 +242,7 @@ There are a number of packages specialising in genetic data: `r pkg("catmap")` c
 
 - Plug-ins for Rcmdr are provided by: `r pkg("RcmdrPlugin.EZR")` which uses `r pkg("meta")` and `r pkg("metatest")`, `r pkg("RcmdrPlugin.MA")` which uses `r pkg("MAd")` and `r pkg("metafor")`, and `r pkg("RcmdrPlugin.RMTCJags")` for network meta-analysis using BUGS code.
 - Both [JASP](https://jasp-stats.org) and [jamovi](https://www.jamovi.org) provide meta-analysis with R as the backend (the latter via the [MAJOR](https://github.com/kylehamilton/MAJOR) module).
+- `r pkg("miniMeta")` provides a shiny interface to `r pkg("meta")`
 
 ### Links
 
