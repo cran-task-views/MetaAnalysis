@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2024-05-10
+version: 2024-06-04
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -20,7 +20,7 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - The primary studies often use a range of statistics to present their results. Convenience functions to convert these onto a common metric are presented by: `r pkg("compute.es")` which converts from various statistics to d, g, r, z, and the log odds ratio, `r pkg("MAd")` which converts to mean differences, and `r pkg("metafor", priority = "core")` which converts to an extensive set of effect size measures for comparative studies (such as binary data, person years, mean differences and ratios, and so on), for studies of association (a wide range of correlation types), and for non-comparative studies (proportions, incidence rates, and mean change). It also provides for a measure used in psychometrics (Cronbach's alpha). `r pkg("esc")` provides a range of effect size calculations with partial overlap with `r pkg("metafor")` but with some extras, noticeably for converting test statistics, and also includes a convenience function for collating its output for input to another package like `r pkg("metafor")` or producing a CSV file. `r pkg("estimraw")` estimates the cell frequencies from odds ratios, risk ratios, or risk differences. `r pkg("effsize")` contains functions to compute mean difference effect sizes (Cohen's d and Hedges' g) and measures of dominance (Cliff's delta) and stochastic superiority (Vargha-Delaney A). `r pkg("effectsize")` provides a large number of different effect sizes and converts between them. `r pkg("psychmeta")` provides extensive facilities for converting effect sizes and correcting for various restrictions and measurement artifacts. `r pkg("metansue")` provides some methods for converting to effect sizes, while `r pkg("es.dif")` computes Cohen's d, Hedges' g, biased/unbiased c (an effect size between a mean and a constant), and e (an effect size between means without assuming variance equality) from raw data. `r pkg("MOTE")` provides a variety of conversions based on Cohen's d. `r pkg("estmeansd")` converts between quantiles and means and standard deviations. `r pkg("metaBLUE")` estimates means and standard deviations from various order statistics. `r pkg("SingleCaseES")` provides basic effect sizes for single-case designs including parametric and non-overlap measures. `r pkg("smd")` computes standardised mean differences. `r pkg("CohensdpLibrary")` provides Cohen's d from a variety of designs.
 - `r pkg("meta", priority = "core")` provides functions to read and work with files output by RevMan 4 and 5.
 - `r pkg("metagear")` provides many tools for the systematic review process including screening articles, downloading the articles, generating a PRISMA diagram, and some tools for effect sizes. `r pkg("revtools")` provides tools for downloading from bibliographic databases and uses machine learning methods to process them. `r pkg("citationchaser")` assists in the process of chasing citations.
-`r pkg("esci")` also provides a large range of effect sizes.
+- `r pkg("esci")` also provides a large range of effect sizes.
 - `r pkg("metavcov")` computes the variance-covariance matrix for multivariate meta-analysis when correlations between outcomes can be provided but not between treatment effects.
 - `r pkg("clubSandwich")` and `r pkg("metafor")` provide functions to impute variance-covariance matrix for multivariate meta-analysis.
 - `r pkg("metafuse")` uses a fused lasso to merge covariate estimates across a number of independent datasets.
@@ -55,15 +55,9 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("vcmeta")` provides functions for varying-coefficient meta-analysis as an alternative to the usual fixed- or random-effects methods.
 - `r pkg("robustmeta")` provides methods for meta-analysis for cases where primary studies may have influential outlying values.
 - `r pkg("coefa")` provides a method for conducting a meta-analysis of factor analyses based on co-occurrence matrices.
-- `r pkg("CausalMetaR")`
-provides robust and efficient methods for estimating causal
-effects in a target population using a multi-source dataset.
-- `r pkg("metainc")`
-Assessment of inconsistency in meta-analysis by calculating the
-Decision Inconsistency index (DI) and the Across-Studies
-Inconsistency (ASI) index.
-Alows input from a variety of packages.
-- `r pkg("aides")` provides analysis of study sizes and includes sequential analysis
+- `r pkg("CausalMetaR")` provides robust and efficient methods for estimating causal effects in a target population using a multi-source dataset.
+- `r pkg("metainc")` assesses inconsistency in meta-analyses by calculating the Decision Inconsistency index (DI) and the Across-Studies Inconsistency (ASI) index. Allows input from a variety of packages.
+- `r pkg("aides")` provides analysis of study sizes and includes sequential analysis.
 
 #### Graphical methods
 
@@ -109,7 +103,7 @@ The issue of whether small studies give different results from large studies can
 
 A related issue in meta-analysis is the problem of unobserved studies and publication bias.
 
-- Rosenthal's fail safe n is provided by `r pkg("MAd")`. `r pkg("metafor")` provides it as well as two more recent methods by Orwin and Rosenberg.
+- Rosenthal's fail safe n is provided by `r pkg("MAd")`. `r pkg("metafor")` provides it as well as two more recent methods by Orwin and Rosenberg and a generalization to random-effects models.
 - `r pkg("fsn")` computes the fail-safe number with confidence interval.
 - Duval's trim and fill method is provided by `r pkg("meta")` and `r pkg("metafor")`.
 - `r pkg("metasens")` provides the Copas selection model and also the method of limit meta-analysis (a regression based approach for dealing with small study effects) due to Rücker and colleagues.
@@ -166,9 +160,7 @@ Standard methods outlined above assume that the effect sizes are independent. Th
 - `r pkg("BayesMultMeta")` provides Bayesian inference for the parameters of a multivariate random-effects model with application to multivariate meta-analysis.
 - `r pkg("remaCor")` provides multivariate meta-analysis when the correlation between effect sizes is known.
 - `r pkg("xmeta")` provides a variety of methods for multivariate meta-analysis.
-- `r pkg("crwbmetareg")`
-Uses the WLS estimator of Stanley and Doucouliagos both with and without covariates
-followed by computing the relevant p-values using the cluster robust wild bootstrap methodology.
+- `r pkg("crwbmetareg")` uses the WLS estimator of Stanley and Doucouliagos both with and without covariates followed by computing the relevant p-values using the cluster robust wild bootstrap methodology.
 
 ### Meta-analysis of studies of diagnostic tests
 
@@ -232,8 +224,7 @@ Also known as multiple treatment comparison, this is a very active area of resea
 
 ### Genetics
 
-There are a number of packages specialising in genetic data: `r pkg("catmap")` combines case-control and family study data, graphical facilities are provided, `r pkg("CPBayes")` uses a Bayesian approach to study cross-phenotype genetic associations, `r pkg("corrmeta")` performs correlated meta-analysis across multiple scans, `r pkg("etma")` proposes a new statistical method to detect epistasis, `r pkg("gap")` combines p-values, `r pkg("getmstatistic")` quantifies systematic heterogeneity, `r pkg("getspres")` uses standardised predictive random effects to explore heterogeneity in genetic association meta-analyses, `r pkg("GMCM")` uses a Gaussian mixture copula model for high-throughput experiments, `r pkg("MendelianRandomization")` provides several methods for performing Mendelian randomisation analyses with summarised data, `r pkg("MetaIntegrator")` provides meta-analysis of gene expression data, `r pkg("metaMA")` provides meta-analysis of p-values or moderated effect sizes to find differentially expressed genes, `r pkg("metaRNASeq")` does meta-analysis from multiple RNA sequencing experiments, `r pkg("MetaSubtract")` uses leave-one-out methods to validate meta-GWAS results, `r pkg("ofGEM")` provides a method for identifying gene-environment interactions using meta-filtering, `r pkg("RobustRankAggreg")` provides methods for aggregating lists of genes, `r pkg("SPAtest")` combines association results, `r pkg("MetaSKAT")` provides for meta-analysis of the SKAT, and `r pkg("metaGE")` provides functions for a meta-analysis of genome-wide association studies for studying genotype x environment interactions.
-
+There are a number of packages specialising in genetic data: `r pkg("catmap")` combines case-control and family study data, graphical facilities are provided, `r pkg("CPBayes")` uses a Bayesian approach to study cross-phenotype genetic associations, `r pkg("corrmeta")` performs correlated meta-analysis across multiple scans, `r pkg("gap")` combines p-values, `r pkg("getmstatistic")` quantifies systematic heterogeneity, `r pkg("getspres")` uses standardised predictive random effects to explore heterogeneity in genetic association meta-analyses, `r pkg("GMCM")` uses a Gaussian mixture copula model for high-throughput experiments, `r pkg("MendelianRandomization")` provides several methods for performing Mendelian randomisation analyses with summarised data, `r pkg("MetaIntegrator")` provides meta-analysis of gene expression data, `r pkg("metaMA")` provides meta-analysis of p-values or moderated effect sizes to find differentially expressed genes, `r pkg("metaRNASeq")` does meta-analysis from multiple RNA sequencing experiments, `r pkg("MetaSubtract")` uses leave-one-out methods to validate meta-GWAS results, `r pkg("ofGEM")` provides a method for identifying gene-environment interactions using meta-filtering, `r pkg("RobustRankAggreg")` provides methods for aggregating lists of genes, `r pkg("SPAtest")` combines association results, `r pkg("MetaSKAT")` provides for meta-analysis of the SKAT, and `r pkg("metaGE")` provides functions for a meta-analysis of genome-wide association studies for studying genotype x environment interactions.
 
 ### Data-sets
 
@@ -247,7 +238,7 @@ There are a number of packages specialising in genetic data: `r pkg("catmap")` c
 
 - Plug-ins for Rcmdr are provided by: `r pkg("RcmdrPlugin.EZR")` which uses `r pkg("meta")` and `r pkg("metatest")`, `r pkg("RcmdrPlugin.MA")` which uses `r pkg("MAd")` and `r pkg("metafor")`, and `r pkg("RcmdrPlugin.RMTCJags")` for network meta-analysis using BUGS code.
 - Both [JASP](https://jasp-stats.org) and [jamovi](https://www.jamovi.org) provide meta-analysis with R as the backend (the latter via the [MAJOR](https://github.com/kylehamilton/MAJOR) module).
-- `r pkg("miniMeta")` provides a shiny interface to `r pkg("meta")`
+- `r pkg("miniMeta")` provides a shiny interface to `r pkg("meta")`.
 
 ### Links
 
