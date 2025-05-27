@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2025-03-31
+version: 2025-05-27
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -28,6 +28,7 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("PRISMA2020")` produces an interactive flow diagram that conforms to PRISMA 2020 version, `r pkg("PRISMAstatement")` also generates flowcharts conforming to the PRISMA statement.
 - `r pkg("reappraised")` provides tools for checking the integrity of groups of trials.
 - `r pkg("RTSA")` provides Trial Sequential Analysis.
+- `r pkg("AIscreenR")` uses a large language model to screen titles and abstracts.
 - Several packages provide assistance in digitising data from published figures: `r pkg("metaDigitise")` and `r pkg("juicr")` provide graphical interfaces and accept various input formats. `r pkg("digitize")` has a more limited range of facilities.
 
 #### Fitting the model
@@ -43,7 +44,8 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("RandMeta")` estimates exact confidence intervals in random effects models using an efficient algorithm.
 - `r pkg("rma.exact")` estimates exact confidence intervals in random effects normal-normal models and also provides plots of them.
 - `r pkg("pimeta")` provides a range of methods for prediction interval estimation from random effects models and has graphical facilities.
-- `r pkg("metamedian")` implements several methods to meta-analyze one-group or two-group studies that report the median as the outcome. These methods estimate the pooled median in the one-group context and the pooled raw difference of medians across groups in the two-group context. `r pkg("meta")` and `r pkg("metafor")` also provide methods for medians.
+- `r pkg("metamedian")` implements several methods to meta-analyze one-group or two-group studies that report the median as the outcome. These methods estimate the pooled median in the one-group context and the pooled raw difference of medians across groups in the two-group context
+and also analyses median survival time studies. `r pkg("meta")` and `r pkg("metafor")` also provide methods for medians.
 - `r pkg("MetaUtility")` proposes a metric for estimating the proportion of effects above a cut-off of scientific importance.
 - `r pkg("metasens")` provides imputation methods for missing binary data.
 - `r pkg("metagam")` provides a framework for meta-analysis of generalised additive models including the case where individual participant data cannot be shared across locations and `r pkg("EvidenceSynthesis")` also combines across sites where individual participant data cannot be shared.
@@ -58,6 +60,8 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("CausalMetaR")` provides robust and efficient methods for estimating causal effects in a target population using a multi-source dataset.
 - `r pkg("metainc")` assesses inconsistency in meta-analyses by calculating the Decision Inconsistency index (DI) and the Across-Studies Inconsistency (ASI) index. Allows input from a variety of packages.
 - `r pkg("aides")` provides analysis of study sizes and includes sequential analysis.
+- `r pkg("mars")` performs univariate and multivariate meta-analysis
+with estimation of the asymptotic variance-covariance matrix
 
 #### Graphical methods
 
@@ -208,6 +212,8 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("netmeta")` works in a frequentist framework. It provides an extensive range of graphical and other displays including network graphs and a heatmap for displaying inconsistency and heterogeneity. A frequentist analogue of SUCRA is also available.
 - A Bayesian framework is provided by `r pkg("pcnetmeta")`, which uses JAGS. It provides a number of data-sets. `r pkg("nmaINLA")` uses integrated nested Laplace approximations as an alternative to MCMC. It provides a number of data-sets. `r pkg("NMADiagT")` provides network meta-analysis of diagnostic tests in a Bayesian framework using Stan as the engine; graphical output is provided. `r pkg("gemtc")` acts as a front-end to BUGS or JAGS, `r pkg("bnma")` provides arm-based methods using JAGS as the engine, and `r pkg("metapack")` provides methods using built-in MCMC code.
 - `r pkg("multinma")` provides network meta-analysis and network meta-regression models for aggregate data, individual patient data, and mixtures thereof.
+- `r pkg("netdose")` provides NMA of does-rsponse studies in a
+frequentist way.
 - `r pkg("nmathresh")` provides decision-invariant bias adjustment thresholds and intervals the smallest changes to the data that would result in a change of decision. `r pkg("NMAoutlier")` detects outliers in NMA using a forward search.
 - `r pkg("pcnetmeta")` provides network graphs. `r pkg("nmaplateplot")` displays the results from an NMA using a heatplot style and also displays SUCRA.
 - `r pkg("nmarank")` evaluates hierarchies of evidence in network meta-analysis.
@@ -232,6 +238,8 @@ There are a number of packages specialising in genetic data: `r pkg("catmap")` c
 - `r pkg("metadat")` provides a large number of data-sets used in meta-analysis.
 - `r pkg("psymetadata")` provides more data-sets from meta-analyses in psychology research.
 - `r pkg("nmadb")` provides access to a database of network meta-analyses.
+- `r pkg("tracenma")` provides a database of network systematic
+reviews for use in checking transitivity.
 - `r pkg("KenSyn")` provides data-sets to accompany a French language book on meta-analysis in the agricultural sciences.
 - `r pkg("metabolic")` provides data and code for a published meta-analysis.
 
