@@ -21,6 +21,8 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("meta", priority = "core")` provides functions to read and work with files output by RevMan 4 and 5.
 - `r pkg("metagear")` provides many tools for the systematic review process including screening articles, downloading the articles, generating a PRISMA diagram, and some tools for effect sizes. `r pkg("revtools")` provides tools for downloading from bibliographic databases and uses machine learning methods to process them. `r pkg("citationchaser")` assists in the process of chasing citations. `r pkg("MetaNLP")` pre--processes titles and abstracts for use in screening before a meta-analysis.
 - `r pkg("esci")` also provides a large range of effect sizes.
+-`r pkg("metacor")` calculates effect sizes in pre-post studies
+and imputes missing variances and correlations.
 - `r pkg("metavcov")` computes the variance-covariance matrix for multivariate meta-analysis when correlations between outcomes can be provided but not between treatment effects.
 - `r pkg("clubSandwich")` and `r pkg("metafor")` provide functions to impute variance-covariance matrix for multivariate meta-analysis.
 - `r pkg("metafuse")` uses a fused lasso to merge covariate estimates across a number of independent datasets.
@@ -62,6 +64,9 @@ and also analyses median survival time studies. `r pkg("meta")` and `r pkg("meta
 - `r pkg("aides")` provides analysis of study sizes and includes sequential analysis.
 - `r pkg("mars")` performs univariate and multivariate meta-analysis
 with estimation of the asymptotic variance-covariance matrix
+- `r pkg("twotrials")` deals with the special case of exactly two trials.
+- `r pkg("mmeta")` provides for multivariate analysis of two by two tables.
+- The Doi model (IVhet) is covered in `r pkg("meta")`
 
 #### Graphical methods
 
