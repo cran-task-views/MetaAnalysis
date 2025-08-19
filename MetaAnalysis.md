@@ -236,7 +236,6 @@ There are a number of packages specialising in genetic data: `r pkg("catmap")` c
 
 - `r pkg("metadat")` provides a large number of data-sets used in meta-analysis.
 - `r pkg("psymetadata")` provides more data-sets from meta-analyses in psychology research.
-- `r pkg("nmadb")` provides access to a database of network meta-analyses.
 - `r pkg("tracenma")` provides a database of network systematic reviews for use in checking transitivity.
 - `r pkg("KenSyn")` provides data-sets to accompany a French language book on meta-analysis in the agricultural sciences.
 - `r pkg("metabolic")` provides data and code for a published meta-analysis.
