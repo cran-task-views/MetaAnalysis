@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2025-05-27
+version: 2025-10-28
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -88,6 +88,8 @@ An extensive range of graphical procedures is available.
 - `r pkg("mc.heterogeneity")` implements a Monte Carlo based test for heterogeneity.
 - `r pkg("boot.heterogeneity")` provides a bootstrap test for heterogeneity for mean differences, correlations, and odds ratios.
 - `r pkg("heterometa")` converts between various summary measures of heterogeneity.
+- `r pkg("metagroup")` groups studies by heterogeneity and examines covariates.
+
 
 #### Model criticism
 
@@ -224,9 +226,12 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("PINMA")` provides improved methods to construct prediction intervals for network meta-analysis.
 - `r pkg("rankinma")` provides treatment ranking in NMA.
 - `r pkg("ssifs")` evaluates consistency in NMA.
-- `r pkg("NMA")` uses a contrast-based approach and includes standard diagnostic and graphical methods. It uses an improved REML estimation procedure.
+- `r pkg("NMA")` uses a contrast-based approach and includes standard diagnostic and graphical methods and includes NMA of time-to-event data. It uses an improved REML estimation procedure.
 - `r pkg("CBnetworkMA")` performs contrast-based NMA in a Bayesian framework.
 - `r pkg("closeloop")` calculate distance between single-arm observational studies using covariate information to remove heterogeneity in NMA.
+- `r pkg("NMAforest")` provides customized forest plots for network meta-analysis incorporating direct, indirect, and network meta-analysis effects
+- `r pkg("NMADTA")` performs NMA of a number of diagnostic tests. Uses JAGS.
+
 
 ### Genetics
 
