@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2025-10-28
+version: 2025-12-23
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -45,7 +45,6 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("RandMeta")` estimates exact confidence intervals in random effects models using an efficient algorithm.
 - `r pkg("rma.exact")` estimates exact confidence intervals in random effects normal-normal models and also provides plots of them.
 - `r pkg("pimeta")` provides a range of methods for prediction interval estimation from random effects models and has graphical facilities.
-- `r pkg("metamedian")` implements several methods to meta-analyze one-group or two-group studies that report the median as the outcome. These methods estimate the pooled median in the one-group context and the pooled raw difference of medians across groups in the two-group context and also analyses median survival time studies. `r pkg("meta")` and `r pkg("metafor")` also provide methods for medians.
 - `r pkg("MetaUtility")` proposes a metric for estimating the proportion of effects above a cut-off of scientific importance.
 - `r pkg("metasens")` provides imputation methods for missing binary data.
 - `r pkg("metagam")` provides a framework for meta-analysis of generalised additive models including the case where individual participant data cannot be shared across locations and `r pkg("EvidenceSynthesis")` also combines across sites where individual participant data cannot be shared.
@@ -63,12 +62,22 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("twotrials")` deals with the special case of exactly two trials.
 - `r pkg("mmeta")` provides for multivariate analysis of two by two tables.
 - The Doi model (IVhet) is covered in `r pkg("meta")` and `r pkg("metafor")`.
+- `r pkg("CaMeA")` implements causally meaningful meta-analysis.
+- `r pkg("MAIVE")` uses an instrumental variable approach to limit bias.
+- For the analysis of medians options include `r pkg("metamedian")` which implements
+ several methods to meta-analyze one-group or two-group studies
+ that report the median as the outcome.
+ These methods estimate the pooled median in the one-group context and the
+ pooled raw difference of medians across groups in the two-group context
+ and also analyses median survival time studies. `r pkg("metaquant")` also provides meta-analysis
+ starting from medians and quantiles.
+`r pkg("meta")` and `r pkg("metafor")` also provide methods for medians.
 
 #### Graphical methods
 
 An extensive range of graphical procedures is available.
 
-- Forest plots are provided in `r pkg("forplo")`, `r pkg("forestly")` (interactive plots), `r pkg("forestmodel")` (using ggplot2), `r pkg("forestplot")`, `r pkg("forestploter")`, `r pkg("meta")`, `r pkg("metafor")`, `r pkg("metansue")`, `r pkg("psychmeta")`, and `r pkg("rmeta")`. Although the most basic plot can be produced by any of them, they each provide their own choice of enhancements. `r pkg("metaviz")` provides a range of enhancements.
+- Forest plots are provided in `r pkg("contourforest")`, `r pkg("forplo")`, `r pkg("forestly")` (interactive plots), `r pkg("forestmodel")` (using ggplot2), `r pkg("forestplot")`, `r pkg("forestploter")`, `r pkg("meta")`, `r pkg("metafor")`, `r pkg("metansue")`, `r pkg("psychmeta")`, and `r pkg("rmeta")`. Although the most basic plot can be produced by any of them, they each provide their own choice of enhancements. `r pkg("metaviz")` provides a range of enhancements.
 - Funnel plots are provided in `r pkg("meta")`, `r pkg("metafor")`, `r pkg("metansue")`, `r pkg("rmeta")` and `r pkg("weightr")`. In addition to standard funnel plots, a funnel plot for limit meta-analysis is provided in `r pkg("metasens")`, and `r pkg("metaviz")` provides an extensive range of enhanced funnel plots and also facilities for their use in the context of visual inference.
 - Radial (Galbraith) plots are provided in `r pkg("meta")` and `r pkg("metafor")`.
 - L'Abbe plots are provided in `r pkg("meta")` and `r pkg("metafor")`.
@@ -79,7 +88,6 @@ An extensive range of graphical procedures is available.
 - `r pkg("DTAplots")` produces various plots for diagnostic studies including forest and SROC plots.
 - GOSH plots are provided in `r pkg("metafor")`.
 - `r pkg("robvis")` can be used to visualize the results of risk-of-bias (rob) assessments.
-- `r pkg("xmeta")` provides galaxy plots, an analogue of funnel plots for multivariate meta-analysis.
 
 #### Investigating heterogeneity
 
@@ -107,6 +115,8 @@ The issue of whether small studies give different results from large studies can
 - `r pkg("meta")` and `r pkg("metafor")` provide both the non-parametric rank correlation test suggested by Begg and Mazumdar and a range of regression tests modelled after the approach of Egger.
 - `r pkg("metamisc")` provides funnel plots and tests for asymmetry.
 - `r pkg("xmeta")` provides methods for small study effects in multivariate meta-analysis.
+- `r pkg("PublicationBiasBenchmark")` implements a unified interface for benchmarking
+meta-analytic publication bias correction methods through simulation studies.
 
 A related issue in meta-analysis is the problem of unobserved studies and publication bias.
 
