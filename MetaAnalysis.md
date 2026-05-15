@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2025-12-23
+version: 2026-05-15
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -30,7 +30,7 @@ Where summary statistics are not available, a meta-analysis of significance leve
 - `r pkg("reappraised")` provides tools for checking the integrity of groups of trials.
 - `r pkg("RTSA")` provides Trial Sequential Analysis.
 - `r pkg("AIscreenR")` uses a large language model to screen titles and abstracts.
-- Several packages provide assistance in digitising data from published figures: `r pkg("metaDigitise")` and `r pkg("juicr")` provide graphical interfaces and accept various input formats. `r pkg("digitize")` has a more limited range of facilities.
+- Several packages provide assistance in digitising data from published figures: `r pkg("metaDigitise")` and `r pkg("juicr")` provide graphical interfaces and accept various input formats.
 
 #### Fitting the model
 
@@ -72,6 +72,15 @@ Where summary statistics are not available, a meta-analysis of significance leve
  and also analyses median survival time studies. `r pkg("metaquant")` also provides meta-analysis
  starting from medians and quantiles.
 `r pkg("meta")` and `r pkg("metafor")` also provide methods for medians.
+- `r pkg("metasplines")` pools estimates reported in meta-analyses
+and estimates based on individual participant data (IPD).
+- `r pkg("metarep")` provides replicability analyses after a conventional analysis.
+- `r pkg("artma")` provides an interface for performing a variety of meta-analysis methods.
+- `r pkg("drmeta")` implements design robust meta-analysis, Fixed and random effects are
+subsets of design robust.
+- `r pkg("confMeta")` uses p-value functions for combination.
+- `r pkg("minter")` analyses effect sizes from factorial designs.
+
 
 #### Graphical methods
 
@@ -155,7 +164,6 @@ In all cases `r pkg("poolr")` considers correlated p-values in addition to indep
 
 - `r pkg("TFisher")` provides Fisher's method using both hard and soft thresholding for the p-values. There is a wrapper in `r pkg("metap")` for the hard threshold case.
 - `r pkg("harmonicmeanp")` uses a method based on the harmonic mean of p-values which is robust to correlation between the p-values.
-- `r pkg("amanida")` provides meta-analysis of metabolite data using p-values and fold change.
 - `r pkg("metap")` provides simple graphics including albatross plots.
 
 Some methods are also provided in some of the genetics packages mentioned below.
@@ -176,6 +184,14 @@ Standard methods outlined above assume that the effect sizes are independent. Th
 - `r pkg("remaCor")` provides multivariate meta-analysis when the correlation between effect sizes is known.
 - `r pkg("xmeta")` provides a variety of methods for multivariate meta-analysis.
 - `r pkg("crwbmetareg")` uses the WLS estimator of Stanley and Doucouliagos both with and without covariates followed by computing the relevant p-values using the cluster robust wild bootstrap methodology.
+- `r pkg("metaDyn")` uses Open Mx to perform multivariate analysis
+of dynamci model estimates.
+- `r pkg("splinemixmeta")` augments package `r pkg("mixmeta")` to
+allow for non-linear moderators using splines.
+- `r pkg("MetaDose")` provides flexible dose-response meta-analyses,
+with built-in visualization of fitted dose-response curves.
+- `r pkg("metaLong")` analyses longitudinal stdies with
+multiple follow-up times and employs robust variance estimation.
 
 ### Meta-analysis of studies of diagnostic tests
 
@@ -222,7 +238,7 @@ Where all studies provide individual participant data, software for the analysis
 Also known as multiple treatment comparison, this is a very active area of research and development. Note that some of the packages mentioned above under multivariate meta-analysis can also be used for network meta-analysis with appropriate setup.
 
 - `r pkg("netmeta")` works in a frequentist framework. It provides an extensive range of graphical and other displays including network graphs and a heatmap for displaying inconsistency and heterogeneity. A frequentist analogue of SUCRA is also available.
-- A Bayesian framework is provided by `r pkg("pcnetmeta")`, which uses JAGS. It provides a number of data-sets. `r pkg("nmaINLA")` uses integrated nested Laplace approximations as an alternative to MCMC. It provides a number of data-sets. `r pkg("NMADiagT")` provides network meta-analysis of diagnostic tests in a Bayesian framework using Stan as the engine; graphical output is provided. `r pkg("gemtc")` acts as a front-end to BUGS or JAGS, `r pkg("bnma")` provides arm-based methods using JAGS as the engine, and `r pkg("metapack")` provides methods using built-in MCMC code.
+- A Bayesian framework is provided by `r pkg("pcnetmeta")`, which uses JAGS. It provides a number of data-sets. `r pkg("nmaINLA")` uses integrated nested Laplace approximations as an alternative to MCMC. It provides a number of data-sets. `r pkg("NMADiagT")` provides network meta-analysis of diagnostic tests in a Bayesian framework using Stan as the engine; graphical output is provided. `r pkg("gemtc")` acts as a front-end to BUGS or JAGS, and `r pkg("bnma")` provides arm-based methods using JAGS as the engine.
 - `r pkg("multinma")` provides network meta-analysis and network meta-regression models for aggregate data, individual patient data, and mixtures thereof.
 - `r pkg("netdose")` provides NMA of does-response studies in a frequentist way.
 - `r pkg("nmathresh")` provides decision-invariant bias adjustment thresholds and intervals the smallest changes to the data that would result in a change of decision. `r pkg("NMAoutlier")` detects outliers in NMA using a forward search.
@@ -249,11 +265,13 @@ There are a number of packages specialising in genetic data: `r pkg("catmap")` c
 
 ### Data-sets
 
-- `r pkg("metadat")` provides a large number of data-sets used in meta-analysis.
+- `r pkg("metadat")` provides more than 100 data-sets used in meta-analysis.
 - `r pkg("psymetadata")` provides more data-sets from meta-analyses in psychology research.
 - `r pkg("tracenma")` provides a database of network systematic reviews for use in checking transitivity.
 - `r pkg("KenSyn")` provides data-sets to accompany a French language book on meta-analysis in the agricultural sciences.
 - `r pkg("metabolic")` provides data and code for a published meta-analysis.
+- `r pkg("metabook")` contains code and data-sets to accompany a
+general text on meta-analysis.
 
 ### Interfaces
 
