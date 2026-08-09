@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2026-05-15
+version: 2026-08-09
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -80,6 +80,7 @@ and estimates based on individual participant data (IPD).
 subsets of design robust.
 - `r pkg("confMeta")` uses p-value functions for combination.
 - `r pkg("minter")` analyses effect sizes from factorial designs.
+- `r pkg("WMAP")` implements integrative weighting approaches. 
 
 
 #### Graphical methods
@@ -97,12 +98,12 @@ An extensive range of graphical procedures is available.
 - `r pkg("DTAplots")` produces various plots for diagnostic studies including forest and SROC plots.
 - GOSH plots are provided in `r pkg("metafor")`.
 - `r pkg("robvis")` can be used to visualize the results of risk-of-bias (rob) assessments.
+- orchard plots are available in `r pkg("orchaRd")` and in `r pkg("metafor")`.
 
 #### Investigating heterogeneity
 
 - Confidence intervals for the heterogeneity parameter are provided in `r pkg("metafor")`.
 - `r pkg("altmeta")` presents a variety of alternative methods for measuring and testing heterogeneity with a focus on robustness to outlying studies.
-- `r pkg("mc.heterogeneity")` implements a Monte Carlo based test for heterogeneity.
 - `r pkg("boot.heterogeneity")` provides a bootstrap test for heterogeneity for mean differences, correlations, and odds ratios.
 - `r pkg("heterometa")` converts between various summary measures of heterogeneity.
 - `r pkg("metagroup")` groups studies by heterogeneity and examines covariates.
@@ -151,7 +152,6 @@ A related issue in meta-analysis is the problem of unobserved studies and public
 - `r pkg("SCMA")` provides single case meta-analysis. It is part of a suite of packages dedicated to single-case designs.
 - `r pkg("joint.Cox")` provides facilities for the meta-analysis of studies of joint time-to-event and disease progression.
 - `r pkg("metamisc")` provides for meta-analysis of prognostic studies.
-- `r pkg("metamicrobiomeR")` provides meta-analysis of zero-inflated beta microbiome data fitted via GAMLSS models.
 - `r pkg("metaSurvival")` estimates the survival curves from data extracted from primary study survival curves.
 
 #### Meta-analysis of significance values
@@ -232,6 +232,7 @@ Where all studies provide individual participant data, software for the analysis
 - `r pkg("multinma")` provides network meta-analysis and network meta-regression models for aggregate data, individual patient data, and mixtures thereof.
 - `r pkg("MetaIntegration")` combines IPD data with external models.
 - `r pkg("bipd")` uses a Bayesian approach for IPD. It includes facilities for multiple imputation using mice.
+- `r pkg("mlumr")` Bayesian multilevel unanchored meta-regression for indirect treatment comparisons using individual patient data (IPD) and aggregate data (AgD). 
 
 ### Network meta-analysis
 
@@ -257,25 +258,27 @@ Also known as multiple treatment comparison, this is a very active area of resea
 - `r pkg("closeloop")` calculate distance between single-arm observational studies using covariate information to remove heterogeneity in NMA.
 - `r pkg("NMAforest")` provides customized forest plots for network meta-analysis incorporating direct, indirect, and network meta-analysis effects
 - `r pkg("NMADTA")` performs NMA of a number of diagnostic tests. Uses JAGS.
+- `r pkg("RaCE.NMA")` implements the Rank-Clustered Estimation for Network Meta-Analysis for post-hoc clustering of treatments or interventions.
+- `r pkg("mvnma")` tools to conduct Bayesian multivariate network meta-analysis.
 
 
 ### Genetics
 
-There are a number of packages specialising in genetic data: `r pkg("catmap")` combines case-control and family study data, graphical facilities are provided, `r pkg("CPBayes")` uses a Bayesian approach to study cross-phenotype genetic associations, `r pkg("corrmeta")` performs correlated meta-analysis across multiple scans, `r pkg("gap")` combines p-values, `r pkg("getmstatistic")` quantifies systematic heterogeneity, `r pkg("getspres")` uses standardised predictive random effects to explore heterogeneity in genetic association meta-analyses, `r pkg("GMCM")` uses a Gaussian mixture copula model for high-throughput experiments, `r pkg("GSEMA")` performs the different steps of gene set enrichment meta-analysis, `r pkg("MendelianRandomization")` provides several methods for performing Mendelian randomisation analyses with summarised data, `r pkg("metaGE")` provides functions for a meta-analysis of genome-wide association studies for studying genotype x environment interactions. `r pkg("MetaHD")` performs multivariate meta-analysis for high-dimensional metabolomics data, `r pkg("MetaIntegrator")` provides meta-analysis of gene expression data, `r pkg("metaMA")` provides meta-analysis of p-values or moderated effect sizes to find differentially expressed genes, `r pkg("metaRNASeq")` does meta-analysis from multiple RNA sequencing experiments, `r pkg("MetaSKAT")` provides for meta-analysis of the SKAT, `r pkg("MetaSubtract")` uses leave-one-out methods to validate meta-GWAS results, `r pkg("ofGEM")` provides a method for identifying gene-environment interactions using meta-filtering, `r pkg("RobustRankAggreg")` provides methods for aggregating lists of genes, and `r pkg("SPAtest")` combines association results.
+There are a number of packages specialising in genetic data:  `r pkg("CPBayes")` uses a Bayesian approach to study cross-phenotype genetic associations, `r pkg("corrmeta")` performs correlated meta-analysis across multiple scans, `r pkg("gap")` combines p-values, `r pkg("getmstatistic")` quantifies systematic heterogeneity, `r pkg("getspres")` uses standardised predictive random effects to explore heterogeneity in genetic association meta-analyses, `r pkg("GMCM")` uses a Gaussian mixture copula model for high-throughput experiments, `r pkg("GSEMA")` performs the different steps of gene set enrichment meta-analysis, `r pkg("MendelianRandomization")` provides several methods for performing Mendelian randomisation analyses with summarised data, `r pkg("metaGE")` provides functions for a meta-analysis of genome-wide association studies for studying genotype x environment interactions. `r pkg("MetaHD")` performs multivariate meta-analysis for high-dimensional metabolomics data, `r pkg("MetaIntegrator")` provides meta-analysis of gene expression data, `r pkg("metalcor")` performs meta-analysis of genetic association study summary statistics correlated due to cryptic relatedness,
+`r pkg("metaMA")` provides meta-analysis of p-values or moderated effect sizes to find differentially expressed genes, `r pkg("metaRNASeq")` does meta-analysis from multiple RNA sequencing experiments, `r pkg("MetaSKAT")` provides for meta-analysis of the SKAT, `r pkg("MetaSubtract")` uses leave-one-out methods to validate meta-GWAS results, `r pkg("ofGEM")` provides a method for identifying gene-environment interactions using meta-filtering, `r pkg("RobustRankAggreg")` provides methods for aggregating lists of genes, and `r pkg("SPAtest")` combines association results.
 
 ### Data-sets
 
 - `r pkg("metadat")` provides more than 100 data-sets used in meta-analysis.
 - `r pkg("psymetadata")` provides more data-sets from meta-analyses in psychology research.
 - `r pkg("tracenma")` provides a database of network systematic reviews for use in checking transitivity.
-- `r pkg("KenSyn")` provides data-sets to accompany a French language book on meta-analysis in the agricultural sciences.
 - `r pkg("metabolic")` provides data and code for a published meta-analysis.
 - `r pkg("metabook")` contains code and data-sets to accompany a
 general text on meta-analysis.
 
 ### Interfaces
 
-- Plug-ins for Rcmdr are provided by: `r pkg("RcmdrPlugin.EZR")` which uses `r pkg("meta")` and `r pkg("metatest")`, `r pkg("RcmdrPlugin.MA")` which uses `r pkg("MAd")` and `r pkg("metafor")`, and `r pkg("RcmdrPlugin.RMTCJags")` for network meta-analysis using BUGS code.
+- Plug-ins for Rcmdr are provided by: `r pkg("RcmdrPlugin.EZR")` which uses `r pkg("meta")` and `r pkg("metatest")`, and `r pkg("RcmdrPlugin.RMTCJags")` for network meta-analysis using BUGS code.
 - Both [JASP](https://jasp-stats.org) and [jamovi](https://www.jamovi.org) provide meta-analysis with R as the backend (the latter via the [MAJOR](https://github.com/kylehamilton/MAJOR) module).
 - `r pkg("miniMeta")` provides a shiny interface to `r pkg("meta")`.
 
