@@ -3,7 +3,7 @@ name: MetaAnalysis
 topic: Meta-Analysis
 maintainer: Michael Dewey, Wolfgang Viechtbauer
 email: lists@dewey.myzen.co.uk
-version: 2026-08-25
+version: 2026-10-26
 source: https://github.com/cran-task-views/MetaAnalysis/
 ---
 
@@ -115,18 +115,18 @@ The issue of whether small studies give different results from large studies can
 - `r pkg("metamisc")` provides funnel plots and tests for asymmetry.
 - `r pkg("xmeta")` provides methods for small study effects in multivariate meta-analysis.
 - `r pkg("PublicationBiasBenchmark")` implements a unified interface for benchmarking meta-analytic publication bias correction methods through simulation studies.
-- `r pkg("metaselection")` fits a flexible class of p-value selection models for meta-analysis and meta-regression models, providing standard errors and confidence intervals based on either cluster-robust variance estimators or cluster-level bootstrapping to handle dependent effect size estimates,
 
 A related issue in meta-analysis is the problem of unobserved studies and publication bias.
 
 - Rosenthal's fail safe n is provided by `r pkg("MAd")`. `r pkg("metafor")` provides it as well as two more recent methods by Orwin and Rosenberg and a generalization to random-effects models.
-- `r pkg("fsn")` computes the fail-safe number with confidence interval.
+- `r pkg("fsn")` computes the fail-safe number with a confidence interval.
 - Duval's trim and fill method is provided by `r pkg("meta")` and `r pkg("metafor")`.
 - `r pkg("metasens")` provides the Copas selection model and also the method of limit meta-analysis (a regression based approach for dealing with small study effects) due to Rücker and colleagues.
 - `r pkg("RobustBayesianCopas")` fits a robust version of the Copas selection model.
 - `r pkg("selectMeta")` provides various selection models: the parametric model of Iyengar and Greenhouse, the non-parametric model of Dear and Begg, and proposes a new non-parametric method imposing a monotonicity constraint.
 - `r pkg("weightr")` provides facilities for using the weight function model of Vevea and Hedges. `r pkg("metafor")` also provides an implementation thereof and a variety of other selection models.
 - `r pkg("RoBMA")` includes Bayesian versions of selection models.
+- `r pkg("metaselection")` fits a flexible class of p-value selection models for meta-analysis and meta-regression models, providing standard errors and confidence intervals based on either cluster-robust variance estimators or cluster-level bootstrapping to handle dependent effect size estimates.
 - `r pkg("phacking")` models only non-affirmative studies to allow for selection of studies and selection within studies.
 - `r pkg("puniform")` provides methods using only the statistically significant studies, methods for the special case of replication studies, and sample size determinations.
 - `r pkg("PublicationBias")` performs sensitivity analysis of the number of unpublished studies needed to have a specified influence.
@@ -150,8 +150,8 @@ A related issue in meta-analysis is the problem of unobserved studies and public
 
 In all cases `r pkg("poolr")` considers correlated p-values in addition to independent. The others above do not.
 
-- `r pkg("DPComb")` provides tools for performing p-value combination tests with discrete input p-values
-- `r pkg("GFisher")`  provides computationally efficient p-value calculation methods for a general family of Fisher type statistics hence covering among others Fisher's combination, Good's statistic, Lancaster's statistic, weighted Z-score combination.
+- `r pkg("DPComb")` provides tools for performing p-value combination tests with discrete input p-values.
+- `r pkg("GFisher")`  provides computationally efficient p-value calculation methods for a general family of Fisher type statistics hence covering among others Fisher's combination, Good's statistic, Lancaster's statistic, and weighted Z-score combination.
 - `r pkg("TFisher")` provides Fisher's method using both hard and soft thresholding for the p-values. There is a wrapper in `r pkg("metap")` for the hard threshold case.
 - `r pkg("harmonicmeanp")` uses a method based on the harmonic mean of p-values which is robust to correlation between the p-values.
 - `r pkg("metap")` provides simple graphics including albatross plots.
@@ -191,7 +191,7 @@ A special case of multivariate meta-analysis is the case of summarising studies 
 - `r pkg("MVPBT")` provides tests for small study effects in diagnostic test meta-analysis.
 - `r pkg("dmetatools")` provides confidence intervals for the AUC of the summary ROC curve and related methods.
 - `r pkg("CopulaREMADA")` provides the bivariate copula mixed model for meta-analysis of diagnostic test accuracy studies.
-- `r pkg("dtametaTMB")` provides a selection of methods and includes graphical facilities.
+- `r pkg("dtametaTMB")` provides a selection of models and includes graphical facilities.
 
 ### Meta-regression
 
